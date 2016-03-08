@@ -1,0 +1,3665 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='false' generator='JOSM'>
+  <node id='-4968' visible='true' lat='41.8776713' lon='-87.6644355' />
+  <node id='-4966' visible='true' lat='41.8776741' lon='-87.6643145' />
+  <node id='-4964' visible='true' lat='41.8776948' lon='-87.6626703' />
+  <node id='-4962' visible='true' lat='41.8777047' lon='-87.6618792' />
+  <node id='-4960' visible='true' lat='41.8777155' lon='-87.6613537' />
+  <node id='-4958' visible='true' lat='41.8777333' lon='-87.6604913' />
+  <node id='-4956' visible='true' lat='41.8777549' lon='-87.6594474' />
+  <node id='-4954' visible='true' lat='41.8777904' lon='-87.6570284' />
+  <node id='-4952' visible='true' lat='41.8778299' lon='-87.6545679' />
+  <node id='-4950' visible='true' lat='41.8778387' lon='-87.6539767' />
+  <node id='-4948' visible='true' lat='41.8778613' lon='-87.6524904' />
+  <node id='-4946' visible='true' lat='41.8778702' lon='-87.6519068' />
+  <node id='-4944' visible='true' lat='41.8778905' lon='-87.650756' />
+  <node id='-4942' visible='true' lat='41.8779007' lon='-87.6501636' />
+  <node id='-4940' visible='true' lat='41.8779078' lon='-87.6496836' />
+  <node id='-4938' visible='true' lat='41.8779088' lon='-87.649584' />
+  <node id='-4936' visible='true' lat='41.8779181' lon='-87.6489912' />
+  <node id='-4934' visible='true' lat='41.8779267' lon='-87.6484122' />
+  <node id='-4932' visible='true' lat='41.8779467' lon='-87.6472349' />
+  <node id='-4930' visible='true' lat='41.8780383' lon='-87.6395787' />
+  <node id='-4928' visible='true' lat='41.8780635' lon='-87.6382406' />
+  <node id='-4762' visible='true' lat='41.8799764' lon='-87.6473061' />
+  <node id='-4760' visible='true' lat='41.8796541' lon='-87.6472938' />
+  <node id='-4758' visible='true' lat='41.8792135' lon='-87.6472769' />
+  <node id='-4756' visible='true' lat='41.8785827' lon='-87.6472498' />
+  <node id='-4754' visible='true' lat='41.8784002' lon='-87.6472455' />
+  <node id='-4752' visible='true' lat='41.877315' lon='-87.647207' />
+  <node id='-4750' visible='true' lat='41.876678' lon='-87.6471943' />
+  <node id='-4748' visible='true' lat='41.8697637' lon='-87.6381334' />
+  <node id='-4746' visible='true' lat='41.8697611' lon='-87.6393024' />
+  <node id='-4736' visible='true' lat='41.8753284' lon='-87.6507467' />
+  <node id='-4734' visible='true' lat='41.8753103' lon='-87.6498145' />
+  <node id='-4732' visible='true' lat='41.876082' lon='-87.648343' />
+  <node id='-4730' visible='true' lat='41.8765779' lon='-87.6483635' />
+  <node id='-4728' visible='true' lat='41.8766564' lon='-87.6483667' />
+  <node id='-4726' visible='true' lat='41.8767341' lon='-87.6483695' />
+  <node id='-4724' visible='true' lat='41.8778478' lon='-87.6484094' />
+  <node id='-4722' visible='true' lat='41.8780196' lon='-87.6484153' />
+  <node id='-4720' visible='true' lat='41.878232' lon='-87.6484224' />
+  <node id='-4718' visible='true' lat='41.8788016' lon='-87.6484415' />
+  <node id='-4716' visible='true' lat='41.8790491' lon='-87.6484497' />
+  <node id='-4714' visible='true' lat='41.8791166' lon='-87.648452' />
+  <node id='-4712' visible='true' lat='41.8791889' lon='-87.6484544' />
+  <node id='-4710' visible='true' lat='41.8792803' lon='-87.6484571' />
+  <node id='-4702' visible='true' lat='41.8762198' lon='-87.6506832' />
+  <node id='-4700' visible='true' lat='41.8765364' lon='-87.6506949' />
+  <node id='-4698' visible='true' lat='41.8766192' lon='-87.650698' />
+  <node id='-4696' visible='true' lat='41.876708' lon='-87.6507021' />
+  <node id='-4694' visible='true' lat='41.8777311' lon='-87.6507488' />
+  <node id='-4692' visible='true' lat='41.8777956' lon='-87.6507517' />
+  <node id='-4690' visible='true' lat='41.8779756' lon='-87.6507587' />
+  <node id='-4688' visible='true' lat='41.8785455' lon='-87.6507768' />
+  <node id='-4686' visible='true' lat='41.8790845' lon='-87.650792' />
+  <node id='-4684' visible='true' lat='41.8791572' lon='-87.650794' />
+  <node id='-4682' visible='true' lat='41.8792285' lon='-87.6507964' />
+  <node id='-4672' visible='true' lat='41.8793254' lon='-87.6385506' />
+  <node id='-4670' visible='true' lat='41.8793251' lon='-87.6385749' />
+  <node id='-4668' visible='true' lat='41.8793069' lon='-87.6396095' />
+  <node id='-4522' visible='true' lat='41.8672454' lon='-87.6440984' />
+  <node id='-4512' visible='true' lat='41.8648217' lon='-87.6421109' />
+  <node id='-4510' visible='true' lat='41.8666903' lon='-87.6421657' />
+  <node id='-4508' visible='true' lat='41.8671626' lon='-87.6421814' />
+  <node id='-4470' visible='true' lat='41.8753229' lon='-87.6492141' />
+  <node id='-4468' visible='true' lat='41.8752961' lon='-87.6487108' />
+  <node id='-4466' visible='true' lat='41.8752046' lon='-87.6477276' />
+  <node id='-4464' visible='true' lat='41.875191' lon='-87.6474979' />
+  <node id='-4462' visible='true' lat='41.8751846' lon='-87.6473041' />
+  <node id='-4460' visible='true' lat='41.8751847' lon='-87.6470987' />
+  <node id='-4458' visible='true' lat='41.8751891' lon='-87.6469222' />
+  <node id='-4456' visible='true' lat='41.875189' lon='-87.6468303' />
+  <node id='-4454' visible='true' lat='41.8751846' lon='-87.6467376' />
+  <node id='-4328' visible='true' lat='41.8753217' lon='-87.658543' />
+  <node id='-4326' visible='true' lat='41.8673138' lon='-87.6382193' />
+  <node id='-4324' visible='true' lat='41.8673021' lon='-87.6392312' />
+  <node id='-4304' visible='true' lat='41.8720566' lon='-87.6371946' />
+  <node id='-4302' visible='true' lat='41.8720526' lon='-87.6374494' />
+  <node id='-4286' visible='true' lat='41.8733599' lon='-87.6617632' />
+  <node id='-4284' visible='true' lat='41.8733262' lon='-87.6641901' />
+  <node id='-4282' visible='true' lat='41.8732479' lon='-87.6568254' />
+  <node id='-4280' visible='true' lat='41.8732318' lon='-87.6574822' />
+  <node id='-4278' visible='true' lat='41.8732312' lon='-87.6575198' />
+  <node id='-4276' visible='true' lat='41.8732171' lon='-87.6584117' />
+  <node id='-4274' visible='true' lat='41.8731911' lon='-87.6602308' />
+  <node id='-4272' visible='true' lat='41.8731814' lon='-87.6607499' />
+  <node id='-4270' visible='true' lat='41.8731725' lon='-87.6612228' />
+  <node id='-4268' visible='true' lat='41.8731641' lon='-87.6617558' />
+  <node id='-4266' visible='true' lat='41.8668295' lon='-87.6640064' />
+  <node id='-4264' visible='true' lat='41.8664889' lon='-87.6639987' />
+  <node id='-4262' visible='true' lat='41.8660404' lon='-87.6639878' />
+  <node id='-4260' visible='true' lat='41.865943' lon='-87.6639738' />
+  <node id='-4258' visible='true' lat='41.8658529' lon='-87.6639435' />
+  <node id='-4246' visible='true' lat='41.8798951' lon='-87.6643774' />
+  <node id='-4244' visible='true' lat='41.8795684' lon='-87.6643682' />
+  <node id='-4242' visible='true' lat='41.8794668' lon='-87.6643653' />
+  <node id='-4240' visible='true' lat='41.8790207' lon='-87.6643526' />
+  <node id='-4238' visible='true' lat='41.8789353' lon='-87.6643502' />
+  <node id='-4236' visible='true' lat='41.8788529' lon='-87.6643479' />
+  <node id='-4234' visible='true' lat='41.8784181' lon='-87.6643356' />
+  <node id='-4232' visible='true' lat='41.8777241' lon='-87.6643159' />
+  <node id='-4230' visible='true' lat='41.8776001' lon='-87.6643124' />
+  <node id='-4228' visible='true' lat='41.8770472' lon='-87.6643011' />
+  <node id='-4226' visible='true' lat='41.876962' lon='-87.664298' />
+  <node id='-4224' visible='true' lat='41.8764803' lon='-87.6642806' />
+  <node id='-4222' visible='true' lat='41.8763911' lon='-87.6642781' />
+  <node id='-4216' visible='true' lat='41.8786453' lon='-87.6425476' />
+  <node id='-4214' visible='true' lat='41.8786644' lon='-87.6410816' />
+  <node id='-4208' visible='true' lat='41.87862' lon='-87.6440242' />
+  <node id='-4188' visible='true' lat='41.8636011' lon='-87.6449141' />
+  <node id='-4186' visible='true' lat='41.8635994' lon='-87.6450184' />
+  <node id='-4184' visible='true' lat='41.8635888' lon='-87.6456599' />
+  <node id='-4182' visible='true' lat='41.86357' lon='-87.6468073' />
+  <node id='-4180' visible='true' lat='41.8703156' lon='-87.6601202' />
+  <node id='-4178' visible='true' lat='41.8703075' lon='-87.660706' />
+  <node id='-4176' visible='true' lat='41.8703013' lon='-87.66115' />
+  <node id='-4174' visible='true' lat='41.8703' lon='-87.6612406' />
+  <node id='-4172' visible='true' lat='41.8702941' lon='-87.6616717' />
+  <node id='-4170' visible='true' lat='41.870504' lon='-87.6422957' />
+  <node id='-4168' visible='true' lat='41.8705184' lon='-87.6408227' />
+  <node id='-4166' visible='true' lat='41.8705376' lon='-87.6395223' />
+  <node id='-4164' visible='true' lat='41.8642946' lon='-87.6590559' />
+  <node id='-4162' visible='true' lat='41.8633885' lon='-87.6590395' />
+  <node id='-4160' visible='true' lat='41.8693744' lon='-87.6591891' />
+  <node id='-4158' visible='true' lat='41.8689105' lon='-87.6591698' />
+  <node id='-4156' visible='true' lat='41.8685771' lon='-87.6591589' />
+  <node id='-4154' visible='true' lat='41.8681967' lon='-87.6591506' />
+  <node id='-4152' visible='true' lat='41.868143' lon='-87.6591501' />
+  <node id='-4150' visible='true' lat='41.8677995' lon='-87.6591383' />
+  <node id='-4148' visible='true' lat='41.8674318' lon='-87.6591265' />
+  <node id='-4146' visible='true' lat='41.8670237' lon='-87.6591093' />
+  <node id='-4144' visible='true' lat='41.8669037' lon='-87.6591067' />
+  <node id='-4142' visible='true' lat='41.8664846' lon='-87.6591012' />
+  <node id='-4140' visible='true' lat='41.8661064' lon='-87.6590963' />
+  <node id='-4138' visible='true' lat='41.8651899' lon='-87.659059' />
+  <node id='-4136' visible='true' lat='41.8651963' lon='-87.6588359' />
+  <node id='-4134' visible='true' lat='41.8643012' lon='-87.6588172' />
+  <node id='-4100' visible='true' lat='41.8666543' lon='-87.6440704' />
+  <node id='-4098' visible='true' lat='41.8643001' lon='-87.6578586' />
+  <node id='-4096' visible='true' lat='41.8643145' lon='-87.6579159' />
+  <node id='-4094' visible='true' lat='41.8643204' lon='-87.6579857' />
+  <node id='-4092' visible='true' lat='41.8643066' lon='-87.6585845' />
+  <node id='-4090' visible='true' lat='41.8642872' lon='-87.6595258' />
+  <node id='-4088' visible='true' lat='41.864284' lon='-87.6597284' />
+  <node id='-4086' visible='true' lat='41.864274' lon='-87.6603627' />
+  <node id='-4084' visible='true' lat='41.8642563' lon='-87.6614849' />
+  <node id='-4058' visible='true' lat='41.8690084' lon='-87.6407749' />
+  <node id='-4056' visible='true' lat='41.8689828' lon='-87.6422455' />
+  <node id='-4054' visible='true' lat='41.8735765' lon='-87.6409106' />
+  <node id='-4052' visible='true' lat='41.8735578' lon='-87.6424013' />
+  <node id='-4050' visible='true' lat='41.8679147' lon='-87.6640233' />
+  <node id='-4048' visible='true' lat='41.8679109' lon='-87.6635126' />
+  <node id='-4046' visible='true' lat='41.8679464' lon='-87.663115' />
+  <node id='-4044' visible='true' lat='41.8678995' lon='-87.663012' />
+  <node id='-4042' visible='true' lat='41.8677233' lon='-87.6630106' />
+  <node id='-4040' visible='true' lat='41.8677369' lon='-87.6624944' />
+  <node id='-4038' visible='true' lat='41.8681956' lon='-87.6407449' />
+  <node id='-4036' visible='true' lat='41.8681766' lon='-87.6422169' />
+  <node id='-4030' visible='true' lat='41.8651388' lon='-87.6624064' />
+  <node id='-4028' visible='true' lat='41.8651516' lon='-87.6615224' />
+  <node id='-4026' visible='true' lat='41.8648043' lon='-87.6450337' />
+  <node id='-4024' visible='true' lat='41.8647771' lon='-87.6468486' />
+  <node id='-4022' visible='true' lat='41.8647652' lon='-87.6479274' />
+  <node id='-4020' visible='true' lat='41.8648472' lon='-87.6406228' />
+  <node id='-4014' visible='true' lat='41.8759803' lon='-87.6518493' />
+  <node id='-4012' visible='true' lat='41.8759642' lon='-87.6531965' />
+  <node id='-4010' visible='true' lat='41.8759854' lon='-87.6533665' />
+  <node id='-4008' visible='true' lat='41.8761529' lon='-87.654378' />
+  <node id='-4006' visible='true' lat='41.8761689' lon='-87.6544356' />
+  <node id='-4004' visible='true' lat='41.8761899' lon='-87.6544759' />
+  <node id='-4002' visible='true' lat='41.8762218' lon='-87.6545014' />
+  <node id='-3998' visible='true' lat='41.8721877' lon='-87.6617281' />
+  <node id='-3996' visible='true' lat='41.8721934' lon='-87.6612051' />
+  <node id='-3994' visible='true' lat='41.8722042' lon='-87.6601966' />
+  <node id='-3992' visible='true' lat='41.872206' lon='-87.6600795' />
+  <node id='-3990' visible='true' lat='41.8722312' lon='-87.658481' />
+  <node id='-3988' visible='true' lat='41.872233' lon='-87.6583693' />
+  <node id='-3986' visible='true' lat='41.8722358' lon='-87.6580602' />
+  <node id='-3984' visible='true' lat='41.872239' lon='-87.6574554' />
+  <node id='-3982' visible='true' lat='41.8722421' lon='-87.6568419' />
+  <node id='-3980' visible='true' lat='41.8725261' lon='-87.6617361' />
+  <node id='-3978' visible='true' lat='41.8724961' lon='-87.6641644' />
+  <node id='-3976' visible='true' lat='41.8727982' lon='-87.6423794' />
+  <node id='-3974' visible='true' lat='41.8728257' lon='-87.640887' />
+  <node id='-3874' visible='true' lat='41.8796962' lon='-87.657082' />
+  <node id='-3872' visible='true' lat='41.8790544' lon='-87.6570639' />
+  <node id='-3858' visible='true' lat='41.8685388' lon='-87.6616222' />
+  <node id='-3856' visible='true' lat='41.8685103' lon='-87.664056' />
+  <node id='-3854' visible='true' lat='41.865912' lon='-87.6450675' />
+  <node id='-3852' visible='true' lat='41.8658974' lon='-87.6463839' />
+  <node id='-3850' visible='true' lat='41.8658917' lon='-87.6468816' />
+  <node id='-3848' visible='true' lat='41.8791385' lon='-87.6519453' />
+  <node id='-3846' visible='true' lat='41.8790963' lon='-87.6544995' />
+  <node id='-3844' visible='true' lat='41.8790944' lon='-87.654614' />
+  <node id='-3842' visible='true' lat='41.8790689' lon='-87.6561742' />
+  <node id='-3840' visible='true' lat='41.8790655' lon='-87.6563821' />
+  <node id='-3838' visible='true' lat='41.8790431' lon='-87.6577686' />
+  <node id='-3836' visible='true' lat='41.8790418' lon='-87.6578486' />
+  <node id='-3834' visible='true' lat='41.8790321' lon='-87.6584499' />
+  <node id='-3832' visible='true' lat='41.8790285' lon='-87.6586734' />
+  <node id='-3830' visible='true' lat='41.8790249' lon='-87.6588981' />
+  <node id='-3828' visible='true' lat='41.8790162' lon='-87.659437' />
+  <node id='-3826' visible='true' lat='41.8790155' lon='-87.6594824' />
+  <node id='-3824' visible='true' lat='41.8790114' lon='-87.6597319' />
+  <node id='-3822' visible='true' lat='41.8789995' lon='-87.6604466' />
+  <node id='-3820' visible='true' lat='41.878975' lon='-87.6619201' />
+  <node id='-3818' visible='true' lat='41.8789498' lon='-87.6634413' />
+  <node id='-3816' visible='true' lat='41.8789367' lon='-87.6642355' />
+  <node id='-3806' visible='true' lat='41.8712489' lon='-87.6601325' />
+  <node id='-3804' visible='true' lat='41.8712249' lon='-87.6601538' />
+  <node id='-3802' visible='true' lat='41.8712019' lon='-87.6601569' />
+  <node id='-3800' visible='true' lat='41.8693628' lon='-87.6600998' />
+  <node id='-3798' visible='true' lat='41.8726619' lon='-87.6602125' />
+  <node id='-3796' visible='true' lat='41.8727177' lon='-87.6602144' />
+  <node id='-3794' visible='true' lat='41.8736838' lon='-87.6584293' />
+  <node id='-3792' visible='true' lat='41.8737254' lon='-87.6583932' />
+  <node id='-3790' visible='true' lat='41.8737477' lon='-87.6583349' />
+  <node id='-3788' visible='true' lat='41.8737634' lon='-87.6575413' />
+  <node id='-3786' visible='true' lat='41.873776' lon='-87.6568377' />
+  <node id='-3770' visible='true' lat='41.8796489' lon='-87.6496299' />
+  <node id='-3768' visible='true' lat='41.8792562' lon='-87.6496176' />
+  <node id='-3766' visible='true' lat='41.8791715' lon='-87.6496149' />
+  <node id='-3764' visible='true' lat='41.8790925' lon='-87.6496133' />
+  <node id='-3762' visible='true' lat='41.878469' lon='-87.6496005' />
+  <node id='-3760' visible='true' lat='41.8783144' lon='-87.649597' />
+  <node id='-3758' visible='true' lat='41.8782066' lon='-87.6495932' />
+  <node id='-3756' visible='true' lat='41.878014' lon='-87.6495864' />
+  <node id='-3754' visible='true' lat='41.8778053' lon='-87.6495799' />
+  <node id='-3752' visible='true' lat='41.8767243' lon='-87.6495383' />
+  <node id='-3750' visible='true' lat='41.8766376' lon='-87.6495346' />
+  <node id='-3742' visible='true' lat='41.8713096' lon='-87.6568217' />
+  <node id='-3740' visible='true' lat='41.8713006' lon='-87.6580416' />
+  <node id='-3738' visible='true' lat='41.8712944' lon='-87.6583436' />
+  <node id='-3736' visible='true' lat='41.8712926' lon='-87.6584489' />
+  <node id='-3734' visible='true' lat='41.8712657' lon='-87.6600661' />
+  <node id='-3732' visible='true' lat='41.8712624' lon='-87.6601027' />
+  <node id='-3730' visible='true' lat='41.871311' lon='-87.6395652' />
+  <node id='-3728' visible='true' lat='41.8712931' lon='-87.6408443' />
+  <node id='-3726' visible='true' lat='41.8712724' lon='-87.6423218' />
+  <node id='-3724' visible='true' lat='41.8712518' lon='-87.6437882' />
+  <node id='-3722' visible='true' lat='41.8727476' lon='-87.6583915' />
+  <node id='-3720' visible='true' lat='41.8693949' lon='-87.6579669' />
+  <node id='-3718' visible='true' lat='41.8689344' lon='-87.6579503' />
+  <node id='-3716' visible='true' lat='41.868167' lon='-87.6579283' />
+  <node id='-3714' visible='true' lat='41.8678166' lon='-87.6579175' />
+  <node id='-3712' visible='true' lat='41.8674498' lon='-87.6579091' />
+  <node id='-3710' visible='true' lat='41.8670403' lon='-87.6578998' />
+  <node id='-3700' visible='true' lat='41.8716927' lon='-87.6629411' />
+  <node id='-3698' visible='true' lat='41.8710089' lon='-87.6629178' />
+  <node id='-3690' visible='true' lat='41.8785025' lon='-87.651926' />
+  <node id='-3688' visible='true' lat='41.8765973' lon='-87.6518681' />
+  <node id='-3668' visible='true' lat='41.8744219' lon='-87.6379456' />
+  <node id='-3666' visible='true' lat='41.8744041' lon='-87.6395071' />
+  <node id='-3640' visible='true' lat='41.8634101' lon='-87.6577824' />
+  <node id='-3638' visible='true' lat='41.8642006' lon='-87.6578131' />
+  <node id='-3636' visible='true' lat='41.8642586' lon='-87.6578288' />
+  <node id='-3634' visible='true' lat='41.8762548' lon='-87.6618426' />
+  <node id='-3632' visible='true' lat='41.8754319' lon='-87.6618251' />
+  <node id='-3630' visible='true' lat='41.8758219' lon='-87.6518445' />
+  <node id='-3628' visible='true' lat='41.8754754' lon='-87.6518331' />
+  <node id='-3626' visible='true' lat='41.8752362' lon='-87.6518252' />
+  <node id='-3624' visible='true' lat='41.8751136' lon='-87.6518232' />
+  <node id='-3622' visible='true' lat='41.8744125' lon='-87.6518121' />
+  <node id='-3620' visible='true' lat='41.8743166' lon='-87.6518106' />
+  <node id='-3450' visible='true' lat='41.875751' lon='-87.6474173' />
+  <node id='-3448' visible='true' lat='41.8757341' lon='-87.6490311' />
+  <node id='-3400' visible='true' lat='41.8779794' lon='-87.6440049' />
+  <node id='-3398' visible='true' lat='41.8779912' lon='-87.6432591' />
+  <node id='-3396' visible='true' lat='41.8779932' lon='-87.6431307' />
+  <node id='-3394' visible='true' lat='41.8780006' lon='-87.642529' />
+  <node id='-3392' visible='true' lat='41.8780232' lon='-87.6410632' />
+  <node id='-3310' visible='true' lat='41.8791991' lon='-87.6479651' />
+  <node id='-3308' visible='true' lat='41.8791811' lon='-87.6490314' />
+  <node id='-3306' visible='true' lat='41.8791736' lon='-87.6494893' />
+  <node id='-3304' visible='true' lat='41.8791558' lon='-87.6506948' />
+  <node id='-3302' visible='true' lat='41.8791513' lon='-87.6511543' />
+  <node id='-3236' visible='true' lat='41.8840954' lon='-87.6452339' />
+  <node id='-3212' visible='true' lat='41.8761669' lon='-87.6471856' />
+  <node id='-3210' visible='true' lat='41.8755229' lon='-87.6471646' />
+  <node id='-3208' visible='true' lat='41.8749756' lon='-87.6471467' />
+  <node id='-3206' visible='true' lat='41.8757311' lon='-87.6491758' />
+  <node id='-3204' visible='true' lat='41.8758043' lon='-87.6499579' />
+  <node id='-3202' visible='true' lat='41.8758338' lon='-87.6503291' />
+  <node id='-3200' visible='true' lat='41.8758501' lon='-87.6505684' />
+  <node id='-3198' visible='true' lat='41.8758598' lon='-87.650795' />
+  <node id='-3196' visible='true' lat='41.8758636' lon='-87.6510155' />
+  <node id='-3194' visible='true' lat='41.8758704' lon='-87.651846' />
+  <node id='-3192' visible='true' lat='41.8765024' lon='-87.6572801' />
+  <node id='-3146' visible='true' lat='41.8647186' lon='-87.6499261' />
+  <node id='-3144' visible='true' lat='41.8647139' lon='-87.6509798' />
+  <node id='-3138' visible='true' lat='41.8647071' lon='-87.6519225' />
+  <node id='-3136' visible='true' lat='41.8646835' lon='-87.6535709' />
+  <node id='-3134' visible='true' lat='41.8646554' lon='-87.6553455' />
+  <node id='-3120' visible='true' lat='41.8753215' lon='-87.6618206' />
+  <node id='-3118' visible='true' lat='41.8752662' lon='-87.6618184' />
+  <node id='-3116' visible='true' lat='41.8751896' lon='-87.661816' />
+  <node id='-3114' visible='true' lat='41.8742481' lon='-87.6617864' />
+  <node id='-3112' visible='true' lat='41.8741486' lon='-87.6617838' />
+  <node id='-3110' visible='true' lat='41.8737882' lon='-87.6617744' />
+  <node id='-3108' visible='true' lat='41.8737663' lon='-87.6617738' />
+  <node id='-3106' visible='true' lat='41.8729495' lon='-87.6617491' />
+  <node id='-3104' visible='true' lat='41.8721247' lon='-87.6617263' />
+  <node id='-3102' visible='true' lat='41.8712572' lon='-87.6617005' />
+  <node id='-3100' visible='true' lat='41.8709616' lon='-87.6616917' />
+  <node id='-3098' visible='true' lat='41.869807' lon='-87.6616584' />
+  <node id='-3096' visible='true' lat='41.8697214' lon='-87.6616554' />
+  <node id='-3094' visible='true' lat='41.8693372' lon='-87.6616418' />
+  <node id='-3092' visible='true' lat='41.8681588' lon='-87.6616098' />
+  <node id='-3090' visible='true' lat='41.8677526' lon='-87.6615965' />
+  <node id='-3088' visible='true' lat='41.8673898' lon='-87.6615795' />
+  <node id='-3086' visible='true' lat='41.8669866' lon='-87.6615606' />
+  <node id='-3084' visible='true' lat='41.8668527' lon='-87.661558' />
+  <node id='-3082' visible='true' lat='41.8664467' lon='-87.66155' />
+  <node id='-3080' visible='true' lat='41.8660617' lon='-87.6615425' />
+  <node id='-3078' visible='true' lat='41.8647088' lon='-87.6615039' />
+  <node id='-3076' visible='true' lat='41.8633746' lon='-87.6614677' />
+  <node id='-3074' visible='true' lat='41.8633485' lon='-87.6614672' />
+  <node id='-3072' visible='true' lat='41.8703411' lon='-87.658315' />
+  <node id='-3070' visible='true' lat='41.8697814' lon='-87.6582975' />
+  <node id='-3068' visible='true' lat='41.8693915' lon='-87.6582781' />
+  <node id='-3066' visible='true' lat='41.8716622' lon='-87.6580488' />
+  <node id='-3064' visible='true' lat='41.8718718' lon='-87.658053' />
+  <node id='-3062' visible='true' lat='41.87035' lon='-87.657811' />
+  <node id='-3060' visible='true' lat='41.8703573' lon='-87.6572814' />
+  <node id='-3058' visible='true' lat='41.8703639' lon='-87.6568028' />
+  <node id='-3056' visible='true' lat='41.8678407' lon='-87.6567164' />
+  <node id='-3054' visible='true' lat='41.8753122' lon='-87.6397764' />
+  <node id='-3052' visible='true' lat='41.8748489' lon='-87.639745' />
+  <node id='-3050' visible='true' lat='41.8745301' lon='-87.6397364' />
+  <node id='-3028' visible='true' lat='41.8752592' lon='-87.643912' />
+  <node id='-3026' visible='true' lat='41.8752612' lon='-87.643674' />
+  <node id='-3024' visible='true' lat='41.8752715' lon='-87.6426713' />
+  <node id='-3022' visible='true' lat='41.8752737' lon='-87.6424506' />
+  <node id='-3020' visible='true' lat='41.875293' lon='-87.6409682' />
+  <node id='-3018' visible='true' lat='41.8672005' lon='-87.6392284' />
+  <node id='-3016' visible='true' lat='41.8675933' lon='-87.6392398' />
+  <node id='-3014' visible='true' lat='41.8678458' lon='-87.6392474' />
+  <node id='-3012' visible='true' lat='41.8679594' lon='-87.6392504' />
+  <node id='-3010' visible='true' lat='41.8695402' lon='-87.6392921' />
+  <node id='-3008' visible='true' lat='41.8696159' lon='-87.6392945' />
+  <node id='-2848' visible='true' lat='41.875377' lon='-87.6499005' />
+  <node id='-2772' visible='true' lat='41.8673154' lon='-87.6380819' />
+  <node id='-2762' visible='true' lat='41.8671366' lon='-87.6442121' />
+  <node id='-2760' visible='true' lat='41.8671381' lon='-87.6440936' />
+  <node id='-2758' visible='true' lat='41.8671438' lon='-87.6436514' />
+  <node id='-2756' visible='true' lat='41.8671815' lon='-87.6407081' />
+  <node id='-2754' visible='true' lat='41.8672139' lon='-87.638188' />
+  <node id='-2750' visible='true' lat='41.8720327' lon='-87.6393618' />
+  <node id='-2732' visible='true' lat='41.8753964' lon='-87.6400088' />
+  <node id='-2730' visible='true' lat='41.8753938' lon='-87.6399344' />
+  <node id='-2728' visible='true' lat='41.8753911' lon='-87.6399027' />
+  <node id='-2726' visible='true' lat='41.8753847' lon='-87.6398689' />
+  <node id='-2724' visible='true' lat='41.8753751' lon='-87.6398391' />
+  <node id='-2722' visible='true' lat='41.8753589' lon='-87.6398104' />
+  <node id='-2720' visible='true' lat='41.8753377' lon='-87.639791' />
+  <node id='-2714' visible='true' lat='41.8719628' lon='-87.6444231' />
+  <node id='-2712' visible='true' lat='41.8719711' lon='-87.6438138' />
+  <node id='-2710' visible='true' lat='41.871991' lon='-87.6423562' />
+  <node id='-2708' visible='true' lat='41.8720293' lon='-87.6395576' />
+  <node id='-2690' visible='true' lat='41.876758' lon='-87.6410304' />
+  <node id='-2688' visible='true' lat='41.8767412' lon='-87.6421696' />
+  <node id='-2686' visible='true' lat='41.8767364' lon='-87.6424927' />
+  <node id='-2684' visible='true' lat='41.8767294' lon='-87.6432251' />
+  <node id='-2682' visible='true' lat='41.8767185' lon='-87.6439609' />
+  <node id='-2632' visible='true' lat='41.8672677' lon='-87.6421851' />
+  <node id='-2630' visible='true' lat='41.8676744' lon='-87.6421995' />
+  <node id='-2628' visible='true' lat='41.8677306' lon='-87.6422014' />
+  <node id='-2626' visible='true' lat='41.8682699' lon='-87.6422204' />
+  <node id='-2624' visible='true' lat='41.8697233' lon='-87.6422705' />
+  <node id='-2622' visible='true' lat='41.8765038' lon='-87.6570898' />
+  <node id='-2620' visible='true' lat='41.8764734' lon='-87.6594111' />
+  <node id='-2618' visible='true' lat='41.8764532' lon='-87.6604214' />
+  <node id='-2616' visible='true' lat='41.8764353' lon='-87.6613133' />
+  <node id='-2614' visible='true' lat='41.8764246' lon='-87.6618469' />
+  <node id='-2612' visible='true' lat='41.876414' lon='-87.6626179' />
+  <node id='-2582' visible='true' lat='41.8792934' lon='-87.6410954' />
+  <node id='-2580' visible='true' lat='41.8776359' lon='-87.6618775' />
+  <node id='-2578' visible='true' lat='41.8774296' lon='-87.6618723' />
+  <node id='-2476' visible='true' lat='41.8780652' lon='-87.6381525' />
+  <node id='-2474' visible='true' lat='41.878066' lon='-87.6373667' />
+  <node id='-2468' visible='true' lat='41.8767867' lon='-87.6379593' />
+  <node id='-2412' visible='true' lat='41.8743326' lon='-87.6463494' />
+  <node id='-2410' visible='true' lat='41.8743684' lon='-87.6465896' />
+  <node id='-2408' visible='true' lat='41.8743719' lon='-87.6467954' />
+  <node id='-2406' visible='true' lat='41.8743765' lon='-87.6470699' />
+  <node id='-2404' visible='true' lat='41.8743785' lon='-87.6471781' />
+  <node id='-2402' visible='true' lat='41.8743963' lon='-87.6474999' />
+  <node id='-2400' visible='true' lat='41.8744613' lon='-87.6482031' />
+  <node id='-2398' visible='true' lat='41.8744559' lon='-87.6491936' />
+  <node id='-2396' visible='true' lat='41.8744442' lon='-87.6498758' />
+  <node id='-2394' visible='true' lat='41.8743844' lon='-87.6534108' />
+  <node id='-2392' visible='true' lat='41.8743622' lon='-87.6546759' />
+  <node id='-2390' visible='true' lat='41.8743566' lon='-87.65499' />
+  <node id='-2388' visible='true' lat='41.8743495' lon='-87.6553922' />
+  <node id='-2386' visible='true' lat='41.8743253' lon='-87.656751' />
+  <node id='-2384' visible='true' lat='41.8743213' lon='-87.6569212' />
+  <node id='-2382' visible='true' lat='41.8727923' lon='-87.6513346' />
+  <node id='-2380' visible='true' lat='41.8727263' lon='-87.6513071' />
+  <node id='-2378' visible='true' lat='41.8726161' lon='-87.6512831' />
+  <node id='-2376' visible='true' lat='41.8724848' lon='-87.6512703' />
+  <node id='-2374' visible='true' lat='41.871937' lon='-87.6512535' />
+  <node id='-2372' visible='true' lat='41.8718028' lon='-87.6512491' />
+  <node id='-2370' visible='true' lat='41.8711497' lon='-87.6512336' />
+  <node id='-2368' visible='true' lat='41.870556' lon='-87.6512119' />
+  <node id='-2366' visible='true' lat='41.8699824' lon='-87.6511979' />
+  <node id='-2364' visible='true' lat='41.8698754' lon='-87.6511901' />
+  <node id='-2362' visible='true' lat='41.8697849' lon='-87.6511257' />
+  <node id='-2360' visible='true' lat='41.865962' lon='-87.6542525' />
+  <node id='-2358' visible='true' lat='41.8661668' lon='-87.6546932' />
+  <node id='-2356' visible='true' lat='41.8661455' lon='-87.6566524' />
+  <node id='-2354' visible='true' lat='41.8661289' lon='-87.6574472' />
+  <node id='-2352' visible='true' lat='41.8661261' lon='-87.65758' />
+  <node id='-2350' visible='true' lat='41.8661123' lon='-87.6586434' />
+  <node id='-2348' visible='true' lat='41.8660825' lon='-87.6604057' />
+  <node id='-2346' visible='true' lat='41.8660719' lon='-87.6609822' />
+  <node id='-2344' visible='true' lat='41.8660459' lon='-87.6626095' />
+  <node id='-2342' visible='true' lat='41.8696941' lon='-87.6444019' />
+  <node id='-2340' visible='true' lat='41.8696998' lon='-87.6437366' />
+  <node id='-2338' visible='true' lat='41.8697124' lon='-87.6429529' />
+  <node id='-2336' visible='true' lat='41.8697416' lon='-87.6408005' />
+  <node id='-2334' visible='true' lat='41.8696819' lon='-87.6453667' />
+  <node id='-2330' visible='true' lat='41.8681473' lon='-87.6407432' />
+  <node id='-2328' visible='true' lat='41.8676943' lon='-87.640727' />
+  <node id='-2326' visible='true' lat='41.8672848' lon='-87.6407119' />
+  <node id='-2324' visible='true' lat='41.8642003' lon='-87.6450147' />
+  <node id='-2322' visible='true' lat='41.8641765' lon='-87.6468207' />
+  <node id='-2320' visible='true' lat='41.8677516' lon='-87.664054' />
+  <node id='-2318' visible='true' lat='41.8677817' lon='-87.6640302' />
+  <node id='-2316' visible='true' lat='41.8678186' lon='-87.6640217' />
+  <node id='-2314' visible='true' lat='41.8681365' lon='-87.664035' />
+  <node id='-2312' visible='true' lat='41.8692076' lon='-87.6640681' />
+  <node id='-2310' visible='true' lat='41.869295' lon='-87.6640696' />
+  <node id='-2308' visible='true' lat='41.8693835' lon='-87.6640724' />
+  <node id='-2306' visible='true' lat='41.8697161' lon='-87.664083' />
+  <node id='-2304' visible='true' lat='41.8697566' lon='-87.664084' />
+  <node id='-2302' visible='true' lat='41.8711392' lon='-87.6641207' />
+  <node id='-2300' visible='true' lat='41.8716716' lon='-87.6641456' />
+  <node id='-2298' visible='true' lat='41.8720767' lon='-87.6641506' />
+  <node id='-2296' visible='true' lat='41.8729095' lon='-87.6641762' />
+  <node id='-2294' visible='true' lat='41.8733378' lon='-87.6641905' />
+  <node id='-2292' visible='true' lat='41.8737464' lon='-87.6642064' />
+  <node id='-2290' visible='true' lat='41.873982' lon='-87.6642163' />
+  <node id='-2288' visible='true' lat='41.8717234' lon='-87.6619831' />
+  <node id='-2286' visible='true' lat='41.8717077' lon='-87.6620854' />
+  <node id='-2284' visible='true' lat='41.8717037' lon='-87.6623156' />
+  <node id='-2282' visible='true' lat='41.8716821' lon='-87.6635467' />
+  <node id='-2280' visible='true' lat='41.8720114' lon='-87.6408693' />
+  <node id='-2278' visible='true' lat='41.8733928' lon='-87.6423965' />
+  <node id='-2276' visible='true' lat='41.8741846' lon='-87.6424193' />
+  <node id='-2274' visible='true' lat='41.8743741' lon='-87.6424248' />
+  <node id='-2272' visible='true' lat='41.8747373' lon='-87.6424352' />
+  <node id='-2270' visible='true' lat='41.8771824' lon='-87.6425055' />
+  <node id='-2268' visible='true' lat='41.8775084' lon='-87.6425149' />
+  <node id='-2266' visible='true' lat='41.8792794' lon='-87.6425658' />
+  <node id='-2260' visible='true' lat='41.8702284' lon='-87.6408151' />
+  <node id='-2258' visible='true' lat='41.8701905' lon='-87.6408141' />
+  <node id='-2256' visible='true' lat='41.8743207' lon='-87.6570819' />
+  <node id='-2254' visible='true' lat='41.8742762' lon='-87.6597513' />
+  <node id='-2252' visible='true' lat='41.8742602' lon='-87.6609444' />
+  <node id='-2250' visible='true' lat='41.8742431' lon='-87.6620804' />
+  <node id='-2248' visible='true' lat='41.8742335' lon='-87.6626489' />
+  <node id='-2246' visible='true' lat='41.8742266' lon='-87.6630557' />
+  <node id='-2244' visible='true' lat='41.8742323' lon='-87.6634053' />
+  <node id='-2242' visible='true' lat='41.8742385' lon='-87.6637852' />
+  <node id='-2240' visible='true' lat='41.8746466' lon='-87.6470865' />
+  <node id='-2238' visible='true' lat='41.8747051' lon='-87.6470875' />
+  <node id='-2236' visible='true' lat='41.8748859' lon='-87.6471469' />
+  <node id='-2234' visible='true' lat='41.8670958' lon='-87.6469112' />
+  <node id='-2232' visible='true' lat='41.8671095' lon='-87.646163' />
+  <node id='-2230' visible='true' lat='41.8671249' lon='-87.6451225' />
+  <node id='-2228' visible='true' lat='41.8671261' lon='-87.6450289' />
+  <node id='-2226' visible='true' lat='41.8693851' lon='-87.6453612' />
+  <node id='-2224' visible='true' lat='41.8692821' lon='-87.6453653' />
+  <node id='-2222' visible='true' lat='41.8691834' lon='-87.6453693' />
+  <node id='-2220' visible='true' lat='41.8690456' lon='-87.6453746' />
+  <node id='-2218' visible='true' lat='41.8689173' lon='-87.6453722' />
+  <node id='-2216' visible='true' lat='41.8687779' lon='-87.6453612' />
+  <node id='-2214' visible='true' lat='41.8686421' lon='-87.6453398' />
+  <node id='-2212' visible='true' lat='41.8684355' lon='-87.645308' />
+  <node id='-2210' visible='true' lat='41.8682532' lon='-87.6452765' />
+  <node id='-2208' visible='true' lat='41.8681547' lon='-87.6452574' />
+  <node id='-2206' visible='true' lat='41.8680469' lon='-87.6452351' />
+  <node id='-2204' visible='true' lat='41.867911' lon='-87.645211' />
+  <node id='-2202' visible='true' lat='41.8677672' lon='-87.6451949' />
+  <node id='-2200' visible='true' lat='41.8676174' lon='-87.6451842' />
+  <node id='-2198' visible='true' lat='41.8674918' lon='-87.6451739' />
+  <node id='-2196' visible='true' lat='41.8673506' lon='-87.6451576' />
+  <node id='-2194' visible='true' lat='41.8672333' lon='-87.6451405' />
+  <node id='-2192' visible='true' lat='41.8670228' lon='-87.6451014' />
+  <node id='-2190' visible='true' lat='41.8669128' lon='-87.6450864' />
+  <node id='-2188' visible='true' lat='41.8668105' lon='-87.6450769' />
+  <node id='-2186' visible='true' lat='41.8742887' lon='-87.6471768' />
+  <node id='-2184' visible='true' lat='41.8741644' lon='-87.6471751' />
+  <node id='-2182' visible='true' lat='41.8735595' lon='-87.647161' />
+  <node id='-2180' visible='true' lat='41.873358' lon='-87.6471543' />
+  <node id='-2178' visible='true' lat='41.8729167' lon='-87.6471414' />
+  <node id='-2176' visible='true' lat='41.8726151' lon='-87.6471323' />
+  <node id='-2174' visible='true' lat='41.8720394' lon='-87.647114' />
+  <node id='-2172' visible='true' lat='41.8719741' lon='-87.6471119' />
+  <node id='-2170' visible='true' lat='41.8718763' lon='-87.6471088' />
+  <node id='-2168' visible='true' lat='41.8718187' lon='-87.647107' />
+  <node id='-2166' visible='true' lat='41.8716704' lon='-87.6471022' />
+  <node id='-2164' visible='true' lat='41.8711628' lon='-87.6470859' />
+  <node id='-2162' visible='true' lat='41.870851' lon='-87.6470763' />
+  <node id='-2160' visible='true' lat='41.8704172' lon='-87.647066' />
+  <node id='-2158' visible='true' lat='41.8700603' lon='-87.6470564' />
+  <node id='-2156' visible='true' lat='41.8696661' lon='-87.6470451' />
+  <node id='-2154' visible='true' lat='41.8695431' lon='-87.6470399' />
+  <node id='-2152' visible='true' lat='41.8691375' lon='-87.6470269' />
+  <node id='-2150' visible='true' lat='41.8684372' lon='-87.6470068' />
+  <node id='-2148' visible='true' lat='41.8681349' lon='-87.6469374' />
+  <node id='-2146' visible='true' lat='41.8742275' lon='-87.6567484' />
+  <node id='-2144' visible='true' lat='41.8742422' lon='-87.6560498' />
+  <node id='-2142' visible='true' lat='41.8742595' lon='-87.6549874' />
+  <node id='-2140' visible='true' lat='41.8742888' lon='-87.6534092' />
+  <node id='-2138' visible='true' lat='41.8743168' lon='-87.6519418' />
+  <node id='-2136' visible='true' lat='41.8743181' lon='-87.6517081' />
+  <node id='-2134' visible='true' lat='41.8743269' lon='-87.6511179' />
+  <node id='-2132' visible='true' lat='41.8743299' lon='-87.6509141' />
+  <node id='-2130' visible='true' lat='41.8743469' lon='-87.6498729' />
+  <node id='-2128' visible='true' lat='41.8743607' lon='-87.6491903' />
+  <node id='-2126' visible='true' lat='41.8743554' lon='-87.6482299' />
+  <node id='-2124' visible='true' lat='41.8742904' lon='-87.6473843' />
+  <node id='-2122' visible='true' lat='41.8742867' lon='-87.6470644' />
+  <node id='-2120' visible='true' lat='41.8742254' lon='-87.6569185' />
+  <node id='-2118' visible='true' lat='41.8741448' lon='-87.6569163' />
+  <node id='-2116' visible='true' lat='41.8697197' lon='-87.6455395' />
+  <node id='-2114' visible='true' lat='41.8697036' lon='-87.6459325' />
+  <node id='-2112' visible='true' lat='41.8696997' lon='-87.6461417' />
+  <node id='-2110' visible='true' lat='41.8696746' lon='-87.6468867' />
+  <node id='-2108' visible='true' lat='41.8696568' lon='-87.6472173' />
+  <node id='-2106' visible='true' lat='41.8696315' lon='-87.6486258' />
+  <node id='-2104' visible='true' lat='41.8696212' lon='-87.6493168' />
+  <node id='-2102' visible='true' lat='41.8696177' lon='-87.6495538' />
+  <node id='-2100' visible='true' lat='41.8696166' lon='-87.649624' />
+  <node id='-2098' visible='true' lat='41.8696149' lon='-87.649744' />
+  <node id='-2096' visible='true' lat='41.8695896' lon='-87.6503502' />
+  <node id='-2094' visible='true' lat='41.8695766' lon='-87.6509777' />
+  <node id='-2092' visible='true' lat='41.8695162' lon='-87.6511152' />
+  <node id='-2090' visible='true' lat='41.8669386' lon='-87.6566699' />
+  <node id='-2088' visible='true' lat='41.8665131' lon='-87.6566617' />
+  <node id='-2086' visible='true' lat='41.8663586' lon='-87.6566578' />
+  <node id='-2084' visible='true' lat='41.8657004' lon='-87.6566408' />
+  <node id='-2082' visible='true' lat='41.8652288' lon='-87.6566254' />
+  <node id='-2080' visible='true' lat='41.8634281' lon='-87.6565621' />
+  <node id='-2078' visible='true' lat='41.8632636' lon='-87.6565555' />
+  <node id='-2076' visible='true' lat='41.8672081' lon='-87.6469146' />
+  <node id='-2074' visible='true' lat='41.8671886' lon='-87.6479343' />
+  <node id='-2072' visible='true' lat='41.8671869' lon='-87.6481479' />
+  <node id='-2070' visible='true' lat='41.8671768' lon='-87.6485563' />
+  <node id='-2068' visible='true' lat='41.8671621' lon='-87.649427' />
+  <node id='-2066' visible='true' lat='41.8671551' lon='-87.6503943' />
+  <node id='-2064' visible='true' lat='41.8671504' lon='-87.6510494' />
+  <node id='-2062' visible='true' lat='41.8671167' lon='-87.6532331' />
+  <node id='-2060' visible='true' lat='41.8671166' lon='-87.6532777' />
+  <node id='-2058' visible='true' lat='41.8670815' lon='-87.6551595' />
+  <node id='-2056' visible='true' lat='41.8670738' lon='-87.6554735' />
+  <node id='-2054' visible='true' lat='41.8670711' lon='-87.6556005' />
+  <node id='-2052' visible='true' lat='41.8670529' lon='-87.656515' />
+  <node id='-2050' visible='true' lat='41.8670512' lon='-87.6566746' />
+  <node id='-2048' visible='true' lat='41.8670489' lon='-87.6568409' />
+  <node id='-2046' visible='true' lat='41.866956' lon='-87.6639868' />
+  <node id='-2044' visible='true' lat='41.8692892' lon='-87.6511155' />
+  <node id='-2042' visible='true' lat='41.866923' lon='-87.6576107' />
+  <node id='-2040' visible='true' lat='41.866928' lon='-87.657377' />
+  <node id='-2038' visible='true' lat='41.8669332' lon='-87.6568236' />
+  <node id='-2036' visible='true' lat='41.8669908' lon='-87.653385' />
+  <node id='-2034' visible='true' lat='41.8669968' lon='-87.6530801' />
+  <node id='-2032' visible='true' lat='41.8670186' lon='-87.6519802' />
+  <node id='-2030' visible='true' lat='41.8670217' lon='-87.6518265' />
+  <node id='-2028' visible='true' lat='41.8670378' lon='-87.6510434' />
+  <node id='-2026' visible='true' lat='41.8670595' lon='-87.64942' />
+  <node id='-2024' visible='true' lat='41.8670794' lon='-87.6479379' />
+  <node id='-2022' visible='true' lat='41.8670892' lon='-87.6474049' />
+  <node id='-2020' visible='true' lat='41.8741407' lon='-87.6642251' />
+  <node id='-2018' visible='true' lat='41.8741305' lon='-87.6635154' />
+  <node id='-2016' visible='true' lat='41.8741287' lon='-87.6633936' />
+  <node id='-2014' visible='true' lat='41.8741287' lon='-87.6629672' />
+  <node id='-2012' visible='true' lat='41.8741339' lon='-87.6626999' />
+  <node id='-2010' visible='true' lat='41.8741384' lon='-87.6624667' />
+  <node id='-2008' visible='true' lat='41.8741407' lon='-87.6623503' />
+  <node id='-2006' visible='true' lat='41.8741587' lon='-87.6610601' />
+  <node id='-2004' visible='true' lat='41.8741706' lon='-87.6600784' />
+  <node id='-2002' visible='true' lat='41.8742026' lon='-87.6582314' />
+  <node id='-2000' visible='true' lat='41.8742123' lon='-87.6576734' />
+  <node id='-1998' visible='true' lat='41.8743903' lon='-87.6409379' />
+  <node id='-1910' visible='true' lat='41.8678774' lon='-87.6551946' />
+  <node id='-1908' visible='true' lat='41.8678781' lon='-87.655161' />
+  <node id='-1906' visible='true' lat='41.8678831' lon='-87.6551329' />
+  <node id='-1904' visible='true' lat='41.8678951' lon='-87.6551056' />
+  <node id='-1902' visible='true' lat='41.8679191' lon='-87.6550849' />
+  <node id='-1900' visible='true' lat='41.86794' lon='-87.6550855' />
+  <node id='-1898' visible='true' lat='41.867961' lon='-87.6550913' />
+  <node id='-1896' visible='true' lat='41.8679809' lon='-87.6551097' />
+  <node id='-1894' visible='true' lat='41.8679919' lon='-87.6551418' />
+  <node id='-1892' visible='true' lat='41.8679919' lon='-87.65517' />
+  <node id='-1890' visible='true' lat='41.8679849' lon='-87.6552049' />
+  <node id='-1888' visible='true' lat='41.8679731' lon='-87.6552293' />
+  <node id='-1886' visible='true' lat='41.8679531' lon='-87.6552413' />
+  <node id='-1884' visible='true' lat='41.8679311' lon='-87.6552426' />
+  <node id='-1882' visible='true' lat='41.8679062' lon='-87.6552376' />
+  <node id='-1880' visible='true' lat='41.8678863' lon='-87.6552202' />
+  <node id='-1878' visible='true' lat='41.8701247' lon='-87.655282' />
+  <node id='-1876' visible='true' lat='41.8698852' lon='-87.6552727' />
+  <node id='-1874' visible='true' lat='41.8694354' lon='-87.6552553' />
+  <node id='-1872' visible='true' lat='41.8690568' lon='-87.655245' />
+  <node id='-1870' visible='true' lat='41.8690036' lon='-87.6552424' />
+  <node id='-1868' visible='true' lat='41.8686966' lon='-87.6552295' />
+  <node id='-1866' visible='true' lat='41.8682804' lon='-87.6552211' />
+  <node id='-1864' visible='true' lat='41.8682144' lon='-87.6552181' />
+  <node id='-1862' visible='true' lat='41.8681957' lon='-87.6552102' />
+  <node id='-1860' visible='true' lat='41.8681837' lon='-87.6551941' />
+  <node id='-1858' visible='true' lat='41.8681797' lon='-87.655174' />
+  <node id='-1856' visible='true' lat='41.8681777' lon='-87.6551516' />
+  <node id='-1854' visible='true' lat='41.8681827' lon='-87.6551288' />
+  <node id='-1852' visible='true' lat='41.8681907' lon='-87.6551154' />
+  <node id='-1850' visible='true' lat='41.8682087' lon='-87.655102' />
+  <node id='-1848' visible='true' lat='41.8682257' lon='-87.6550993' />
+  <node id='-1846' visible='true' lat='41.8682476' lon='-87.655107' />
+  <node id='-1844' visible='true' lat='41.8682616' lon='-87.6551217' />
+  <node id='-1842' visible='true' lat='41.8682706' lon='-87.6551418' />
+  <node id='-1840' visible='true' lat='41.8682776' lon='-87.65517' />
+  <node id='-1832' visible='true' lat='41.8764484' lon='-87.6471904' />
+  <node id='-1830' visible='true' lat='41.8636775' lon='-87.6391326' />
+  <node id='-1828' visible='true' lat='41.863493' lon='-87.6391253' />
+  <node id='-1820' visible='true' lat='41.8694767' lon='-87.6509803' />
+  <node id='-1818' visible='true' lat='41.8694921' lon='-87.6496199' />
+  <node id='-1816' visible='true' lat='41.8694964' lon='-87.6493128' />
+  <node id='-1814' visible='true' lat='41.8695089' lon='-87.6486222' />
+  <node id='-1812' visible='true' lat='41.869535' lon='-87.6471932' />
+  <node id='-1810' visible='true' lat='41.8695512' lon='-87.6468845' />
+  <node id='-1808' visible='true' lat='41.8696243' lon='-87.6455214' />
+  <node id='-1804' visible='true' lat='41.8786681' lon='-87.6570524' />
+  <node id='-1802' visible='true' lat='41.8786127' lon='-87.6570507' />
+  <node id='-1800' visible='true' lat='41.87851' lon='-87.6570481' />
+  <node id='-1798' visible='true' lat='41.8782294' lon='-87.6570411' />
+  <node id='-1796' visible='true' lat='41.8781428' lon='-87.6570386' />
+  <node id='-1794' visible='true' lat='41.877721' lon='-87.6570269' />
+  <node id='-1792' visible='true' lat='41.8771268' lon='-87.6570141' />
+  <node id='-1790' visible='true' lat='41.8770088' lon='-87.6570089' />
+  <node id='-1788' visible='true' lat='41.8692927' lon='-87.6641999' />
+  <node id='-1786' visible='true' lat='41.8692978' lon='-87.6639096' />
+  <node id='-1784' visible='true' lat='41.8693159' lon='-87.6628691' />
+  <node id='-1782' visible='true' lat='41.8694067' lon='-87.6567749' />
+  <node id='-1780' visible='true' lat='41.8694543' lon='-87.6543287' />
+  <node id='-1778' visible='true' lat='41.8694565' lon='-87.6542186' />
+  <node id='-1776' visible='true' lat='41.869459' lon='-87.6541029' />
+  <node id='-1774' visible='true' lat='41.8694786' lon='-87.6532152' />
+  <node id='-1772' visible='true' lat='41.8694859' lon='-87.6523261' />
+  <node id='-1770' visible='true' lat='41.8694875' lon='-87.652221' />
+  <node id='-1768' visible='true' lat='41.8694959' lon='-87.6517019' />
+  <node id='-1766' visible='true' lat='41.8695046' lon='-87.6512623' />
+  <node id='-1764' visible='true' lat='41.8661746' lon='-87.6510195' />
+  <node id='-1762' visible='true' lat='41.866147' lon='-87.6510187' />
+  <node id='-1760' visible='true' lat='41.8634856' lon='-87.6509361' />
+  <node id='-1696' visible='true' lat='41.871987' lon='-87.6459904' />
+  <node id='-1692' visible='true' lat='41.8719763' lon='-87.646957' />
+  <node id='-1690' visible='true' lat='41.8718763' lon='-87.6469539' />
+  <node id='-1682' visible='true' lat='41.8746218' lon='-87.6471815' />
+  <node id='-1680' visible='true' lat='41.8744929' lon='-87.6472706' />
+  <node id='-1678' visible='true' lat='41.8744248' lon='-87.6473919' />
+  <node id='-1676' visible='true' lat='41.8744603' lon='-87.6469464' />
+  <node id='-1674' visible='true' lat='41.8745477' lon='-87.64702' />
+  <node id='-1568' visible='true' lat='41.8762811' lon='-87.6570867' />
+  <node id='-1566' visible='true' lat='41.8754658' lon='-87.6570559' />
+  <node id='-1564' visible='true' lat='41.874676' lon='-87.6567686' />
+  <node id='-1562' visible='true' lat='41.8747542' lon='-87.6567743' />
+  <node id='-1560' visible='true' lat='41.8748157' lon='-87.6567839' />
+  <node id='-1558' visible='true' lat='41.8748835' lon='-87.6567966' />
+  <node id='-1556' visible='true' lat='41.8749377' lon='-87.6568097' />
+  <node id='-1554' visible='true' lat='41.8750735' lon='-87.6568421' />
+  <node id='-1552' visible='true' lat='41.8751319' lon='-87.6568509' />
+  <node id='-1550' visible='true' lat='41.8751882' lon='-87.6568574' />
+  <node id='-1548' visible='true' lat='41.8753478' lon='-87.6568733' />
+  <node id='-1546' visible='true' lat='41.8754629' lon='-87.6568806' />
+  <node id='-1544' visible='true' lat='41.8766192' lon='-87.6570764' />
+  <node id='-1542' visible='true' lat='41.8762797' lon='-87.6568994' />
+  <node id='-1540' visible='true' lat='41.876505' lon='-87.6569149' />
+  <node id='-1538' visible='true' lat='41.8766224' lon='-87.6569222' />
+  <node id='-1536' visible='true' lat='41.8753459' lon='-87.6570439' />
+  <node id='-1534' visible='true' lat='41.8751788' lon='-87.6570235' />
+  <node id='-1532' visible='true' lat='41.8751203' lon='-87.6570143' />
+  <node id='-1530' visible='true' lat='41.8750566' lon='-87.6569993' />
+  <node id='-1528' visible='true' lat='41.8749169' lon='-87.656966' />
+  <node id='-1526' visible='true' lat='41.8748648' lon='-87.6569534' />
+  <node id='-1524' visible='true' lat='41.8748008' lon='-87.6569414' />
+  <node id='-1522' visible='true' lat='41.8747442' lon='-87.6569327' />
+  <node id='-1520' visible='true' lat='41.874672' lon='-87.6569274' />
+  <node id='-1518' visible='true' lat='41.8729691' lon='-87.6568326' />
+  <node id='-1516' visible='true' lat='41.8729849' lon='-87.6559394' />
+  <node id='-1514' visible='true' lat='41.873011' lon='-87.6543302' />
+  <node id='-1512' visible='true' lat='41.8730174' lon='-87.6539391' />
+  <node id='-1510' visible='true' lat='41.8730263' lon='-87.6533784' />
+  <node id='-1508' visible='true' lat='41.87303' lon='-87.6530865' />
+  <node id='-1506' visible='true' lat='41.873035' lon='-87.6528233' />
+  <node id='-1504' visible='true' lat='41.8730522' lon='-87.651926' />
+  <node id='-1502' visible='true' lat='41.8730701' lon='-87.6518195' />
+  <node id='-1500' visible='true' lat='41.8730851' lon='-87.6517627' />
+  <node id='-1498' visible='true' lat='41.8718063' lon='-87.655315' />
+  <node id='-1496' visible='true' lat='41.8721974' lon='-87.6553259' />
+  <node id='-1494' visible='true' lat='41.8724632' lon='-87.6553328' />
+  <node id='-1492' visible='true' lat='41.8725046' lon='-87.6553286' />
+  <node id='-1490' visible='true' lat='41.8717859' lon='-87.6568275' />
+  <node id='-1488' visible='true' lat='41.8717982' lon='-87.6559153' />
+  <node id='-1486' visible='true' lat='41.871805' lon='-87.655411' />
+  <node id='-1484' visible='true' lat='41.8718265' lon='-87.6542301' />
+  <node id='-1482' visible='true' lat='41.871839' lon='-87.6532729' />
+  <node id='-1480' visible='true' lat='41.871858' lon='-87.6522854' />
+  <node id='-1478' visible='true' lat='41.8718762' lon='-87.6517582' />
+  <node id='-1476' visible='true' lat='41.8714219' lon='-87.6542096' />
+  <node id='-1474' visible='true' lat='41.8714229' lon='-87.6541492' />
+  <node id='-1472' visible='true' lat='41.8714384' lon='-87.6532663' />
+  <node id='-1470' visible='true' lat='41.869842' lon='-87.6532256' />
+  <node id='-1468' visible='true' lat='41.8699173' lon='-87.6532277' />
+  <node id='-1466' visible='true' lat='41.8706903' lon='-87.6532497' />
+  <node id='-1464' visible='true' lat='41.8714542' lon='-87.6532666' />
+  <node id='-1462' visible='true' lat='41.8722263' lon='-87.653282' />
+  <node id='-1460' visible='true' lat='41.8726232' lon='-87.6532971' />
+  <node id='-1458' visible='true' lat='41.8726457' lon='-87.6533018' />
+  <node id='-1456' visible='true' lat='41.8726581' lon='-87.6533123' />
+  <node id='-1454' visible='true' lat='41.8726506' lon='-87.6542761' />
+  <node id='-1452' visible='true' lat='41.8726267' lon='-87.6542695' />
+  <node id='-1450' visible='true' lat='41.8726077' lon='-87.6542656' />
+  <node id='-1448' visible='true' lat='41.8722127' lon='-87.6542462' />
+  <node id='-1446' visible='true' lat='41.8706849' lon='-87.6537412' />
+  <node id='-1444' visible='true' lat='41.8706807' lon='-87.6541263' />
+  <node id='-1442' visible='true' lat='41.8706793' lon='-87.6542575' />
+  <node id='-1440' visible='true' lat='41.8703037' lon='-87.6542456' />
+  <node id='-1438' visible='true' lat='41.8699052' lon='-87.6542329' />
+  <node id='-1436' visible='true' lat='41.8695431' lon='-87.6542214' />
+  <node id='-1434' visible='true' lat='41.8698583' lon='-87.6522316' />
+  <node id='-1432' visible='true' lat='41.8714692' lon='-87.652275' />
+  <node id='-1430' visible='true' lat='41.8669942' lon='-87.6479407' />
+  <node id='-1428' visible='true' lat='41.865897' lon='-87.6479085' />
+  <node id='-1426' visible='true' lat='41.8753058' lon='-87.6597882' />
+  <node id='-1424' visible='true' lat='41.8751134' lon='-87.6597796' />
+  <node id='-1358' visible='true' lat='41.8758449' lon='-87.6480499' />
+  <node id='-1324' visible='true' lat='41.877164' lon='-87.6395658' />
+  <node id='-1322' visible='true' lat='41.8769677' lon='-87.6397078' />
+  <node id='-1320' visible='true' lat='41.8768579' lon='-87.6397695' />
+  <node id='-1318' visible='true' lat='41.8767602' lon='-87.6398067' />
+  <node id='-1316' visible='true' lat='41.8711509' lon='-87.6511104' />
+  <node id='-1200' visible='true' lat='41.8672441' lon='-87.6442106' />
+  <node id='-1198' visible='true' lat='41.8672343' lon='-87.6450585' />
+  <node id='-1108' visible='true' lat='41.8660576' lon='-87.644042' />
+  <node id='-1084' visible='true' lat='41.8637369' lon='-87.644909' />
+  <node id='-1082' visible='true' lat='41.8637996' lon='-87.644895' />
+  <node id='-1080' visible='true' lat='41.8638424' lon='-87.6448693' />
+  <node id='-1078' visible='true' lat='41.8638795' lon='-87.6448292' />
+  <node id='-1076' visible='true' lat='41.8639078' lon='-87.644782' />
+  <node id='-1074' visible='true' lat='41.8639399' lon='-87.6447117' />
+  <node id='-1072' visible='true' lat='41.8639764' lon='-87.644592' />
+  <node id='-1070' visible='true' lat='41.8640074' lon='-87.6444803' />
+  <node id='-1068' visible='true' lat='41.8640506' lon='-87.6443233' />
+  <node id='-1066' visible='true' lat='41.864082' lon='-87.6442219' />
+  <node id='-1064' visible='true' lat='41.8641179' lon='-87.6441454' />
+  <node id='-1062' visible='true' lat='41.864151' lon='-87.6440945' />
+  <node id='-1060' visible='true' lat='41.864184' lon='-87.6440531' />
+  <node id='-1058' visible='true' lat='41.8642228' lon='-87.6440165' />
+  <node id='-1056' visible='true' lat='41.8642658' lon='-87.6439866' />
+  <node id='-1054' visible='true' lat='41.8643146' lon='-87.6439646' />
+  <node id='-1052' visible='true' lat='41.8643497' lon='-87.6439517' />
+  <node id='-1050' visible='true' lat='41.8644001' lon='-87.6439426' />
+  <node id='-1048' visible='true' lat='41.8644453' lon='-87.6439396' />
+  <node id='-1036' visible='true' lat='41.8745612' lon='-87.6395683' />
+  <node id='-1034' visible='true' lat='41.874705' lon='-87.6395961' />
+  <node id='-1032' visible='true' lat='41.8654518' lon='-87.6391809' />
+  <node id='-1030' visible='true' lat='41.8773592' lon='-87.641046' />
+  <node id='-1028' visible='true' lat='41.8660356' lon='-87.6406663' />
+  <node id='-1026' visible='true' lat='41.8654179' lon='-87.6406437' />
+  <node id='-1024' visible='true' lat='41.8645106' lon='-87.6406105' />
+  <node id='-1022' visible='true' lat='41.8636535' lon='-87.6405792' />
+  <node id='-1020' visible='true' lat='41.8792586' lon='-87.6440428' />
+  <node id='-1016' visible='true' lat='41.8672511' lon='-87.6436554' />
+  <node id='-1014' visible='true' lat='41.8789327' lon='-87.6594808' />
+  <node id='-1012' visible='true' lat='41.8785593' lon='-87.6594702' />
+  <node id='-1010' visible='true' lat='41.8783753' lon='-87.659465' />
+  <node id='-1008' visible='true' lat='41.8781922' lon='-87.6594598' />
+  <node id='-1006' visible='true' lat='41.8778323' lon='-87.6594496' />
+  <node id='-1004' visible='true' lat='41.8776812' lon='-87.6594453' />
+  <node id='-1002' visible='true' lat='41.8776705' lon='-87.659445' />
+  <node id='-1000' visible='true' lat='41.8774672' lon='-87.6594393' />
+  <node id='-998' visible='true' lat='41.8770862' lon='-87.6594285' />
+  <node id='-984' visible='true' lat='41.8753842' lon='-87.6413412' />
+  <node id='-982' visible='true' lat='41.8753776' lon='-87.6410878' />
+  <node id='-980' visible='true' lat='41.8753802' lon='-87.6408019' />
+  <node id='-904' visible='true' lat='41.8752241' lon='-87.6640974' />
+  <node id='-902' visible='true' lat='41.8752362' lon='-87.6634402' />
+  <node id='-900' visible='true' lat='41.8752491' lon='-87.6627403' />
+  <node id='-898' visible='true' lat='41.8752637' lon='-87.6619517' />
+  <node id='-896' visible='true' lat='41.8752806' lon='-87.6610782' />
+  <node id='-894' visible='true' lat='41.8753093' lon='-87.6595172' />
+  <node id='-892' visible='true' lat='41.8753674' lon='-87.6558057' />
+  <node id='-890' visible='true' lat='41.875367' lon='-87.6556418' />
+  <node id='-888' visible='true' lat='41.8753633' lon='-87.655472' />
+  <node id='-886' visible='true' lat='41.8753294' lon='-87.6544604' />
+  <node id='-884' visible='true' lat='41.8751806' lon='-87.6544689' />
+  <node id='-882' visible='true' lat='41.8751424' lon='-87.6544581' />
+  <node id='-880' visible='true' lat='41.8751047' lon='-87.6544197' />
+  <node id='-878' visible='true' lat='41.8750914' lon='-87.6543908' />
+  <node id='-876' visible='true' lat='41.875086' lon='-87.6543624' />
+  <node id='-874' visible='true' lat='41.8750832' lon='-87.6542846' />
+  <node id='-872' visible='true' lat='41.8750869' lon='-87.6539866' />
+  <node id='-870' visible='true' lat='41.875112' lon='-87.6519523' />
+  <node id='-846' visible='true' lat='41.8651788' lon='-87.659774' />
+  <node id='-844' visible='true' lat='41.8651825' lon='-87.6595366' />
+  <node id='-842' visible='true' lat='41.8652027' lon='-87.6584032' />
+  <node id='-840' visible='true' lat='41.8652473' lon='-87.6554937' />
+  <node id='-838' visible='true' lat='41.8650919' lon='-87.6551123' />
+  <node id='-836' visible='true' lat='41.8650493' lon='-87.6550078' />
+  <node id='-834' visible='true' lat='41.8684317' lon='-87.6468679' />
+  <node id='-832' visible='true' lat='41.8688519' lon='-87.6468606' />
+  <node id='-830' visible='true' lat='41.8700423' lon='-87.6469008' />
+  <node id='-828' visible='true' lat='41.8708522' lon='-87.6469279' />
+  <node id='-826' visible='true' lat='41.8712726' lon='-87.6469357' />
+  <node id='-824' visible='true' lat='41.8726048' lon='-87.6469759' />
+  <node id='-822' visible='true' lat='41.8730142' lon='-87.646992' />
+  <node id='-820' visible='true' lat='41.8731032' lon='-87.6469998' />
+  <node id='-818' visible='true' lat='41.8733601' lon='-87.6470274' />
+  <node id='-816' visible='true' lat='41.8735335' lon='-87.6470376' />
+  <node id='-814' visible='true' lat='41.8739989' lon='-87.6470457' />
+  <node id='-812' visible='true' lat='41.8741644' lon='-87.6470569' />
+  <node id='-810' visible='true' lat='41.8665907' lon='-87.6468999' />
+  <node id='-808' visible='true' lat='41.8663969' lon='-87.6468954' />
+  <node id='-806' visible='true' lat='41.8738861' lon='-87.6394289' />
+  <node id='-804' visible='true' lat='41.8737583' lon='-87.6394181' />
+  <node id='-802' visible='true' lat='41.8719155' lon='-87.6393586' />
+  <node id='-800' visible='true' lat='41.869955' lon='-87.6393044' />
+  <node id='-798' visible='true' lat='41.8698836' lon='-87.6393024' />
+  <node id='-796' visible='true' lat='41.8656498' lon='-87.6639389' />
+  <node id='-794' visible='true' lat='41.8656319' lon='-87.663886' />
+  <node id='-792' visible='true' lat='41.8656285' lon='-87.663828' />
+  <node id='-790' visible='true' lat='41.8656327' lon='-87.6637983' />
+  <node id='-788' visible='true' lat='41.8656516' lon='-87.663746' />
+  <node id='-786' visible='true' lat='41.8656835' lon='-87.6637048' />
+  <node id='-784' visible='true' lat='41.8657232' lon='-87.6636815' />
+  <node id='-782' visible='true' lat='41.8657531' lon='-87.6636768' />
+  <node id='-780' visible='true' lat='41.8658152' lon='-87.6636995' />
+  <node id='-778' visible='true' lat='41.8658573' lon='-87.6637534' />
+  <node id='-776' visible='true' lat='41.8658741' lon='-87.663807' />
+  <node id='-774' visible='true' lat='41.8658741' lon='-87.6638813' />
+  <node id='-772' visible='true' lat='41.8658215' lon='-87.6639836' />
+  <node id='-770' visible='true' lat='41.8657891' lon='-87.6640041' />
+  <node id='-768' visible='true' lat='41.8657462' lon='-87.6640113' />
+  <node id='-766' visible='true' lat='41.8657022' lon='-87.6639972' />
+  <node id='-764' visible='true' lat='41.8656663' lon='-87.6639649' />
+  <node id='-754' visible='true' lat='41.8797381' lon='-87.6546375' />
+  <node id='-752' visible='true' lat='41.8791683' lon='-87.6546167' />
+  <node id='-750' visible='true' lat='41.8790086' lon='-87.6546109' />
+  <node id='-748' visible='true' lat='41.8784495' lon='-87.6545905' />
+  <node id='-746' visible='true' lat='41.877746' lon='-87.6545652' />
+  <node id='-744' visible='true' lat='41.876646' lon='-87.6545293' />
+  <node id='-742' visible='true' lat='41.8765593' lon='-87.6545255' />
+  <node id='-740' visible='true' lat='41.8764863' lon='-87.6545232' />
+  <node id='-738' visible='true' lat='41.8762647' lon='-87.6545161' />
+  <node id='-736' visible='true' lat='41.8677251' lon='-87.6641559' />
+  <node id='-734' visible='true' lat='41.8677335' lon='-87.6641027' />
+  <node id='-732' visible='true' lat='41.8726687' lon='-87.6532873' />
+  <node id='-730' visible='true' lat='41.8726839' lon='-87.6532696' />
+  <node id='-728' visible='true' lat='41.8727044' lon='-87.6532588' />
+  <node id='-726' visible='true' lat='41.8727278' lon='-87.6532589' />
+  <node id='-724' visible='true' lat='41.8727465' lon='-87.6532682' />
+  <node id='-722' visible='true' lat='41.8727615' lon='-87.6532842' />
+  <node id='-720' visible='true' lat='41.8727715' lon='-87.6533044' />
+  <node id='-718' visible='true' lat='41.8727775' lon='-87.6533384' />
+  <node id='-716' visible='true' lat='41.8727745' lon='-87.6533653' />
+  <node id='-714' visible='true' lat='41.8727634' lon='-87.6533924' />
+  <node id='-712' visible='true' lat='41.8727504' lon='-87.6534083' />
+  <node id='-710' visible='true' lat='41.8727313' lon='-87.6534198' />
+  <node id='-708' visible='true' lat='41.8727089' lon='-87.6534218' />
+  <node id='-706' visible='true' lat='41.872691' lon='-87.6534152' />
+  <node id='-704' visible='true' lat='41.8726748' lon='-87.6534011' />
+  <node id='-702' visible='true' lat='41.8726639' lon='-87.6533834' />
+  <node id='-700' visible='true' lat='41.8726555' lon='-87.6533535' />
+  <node id='-698' visible='true' lat='41.8726447' lon='-87.6542998' />
+  <node id='-696' visible='true' lat='41.8726625' lon='-87.6542552' />
+  <node id='-694' visible='true' lat='41.8726885' lon='-87.6542368' />
+  <node id='-692' visible='true' lat='41.8727084' lon='-87.6542354' />
+  <node id='-690' visible='true' lat='41.8727203' lon='-87.6542391' />
+  <node id='-688' visible='true' lat='41.872735' lon='-87.6542494' />
+  <node id='-686' visible='true' lat='41.8727509' lon='-87.654273' />
+  <node id='-684' visible='true' lat='41.872758' lon='-87.6542991' />
+  <node id='-682' visible='true' lat='41.8727564' lon='-87.6543334' />
+  <node id='-680' visible='true' lat='41.8727484' lon='-87.6543559' />
+  <node id='-678' visible='true' lat='41.8727346' lon='-87.6543746' />
+  <node id='-676' visible='true' lat='41.872713' lon='-87.6543872' />
+  <node id='-674' visible='true' lat='41.8726922' lon='-87.6543878' />
+  <node id='-672' visible='true' lat='41.8726667' lon='-87.6543731' />
+  <node id='-670' visible='true' lat='41.8726517' lon='-87.6543502' />
+  <node id='-668' visible='true' lat='41.8726451' lon='-87.6543263' />
+  <node id='-666' visible='true' lat='41.8725034' lon='-87.6553032' />
+  <node id='-664' visible='true' lat='41.8725066' lon='-87.6552855' />
+  <node id='-662' visible='true' lat='41.8725225' lon='-87.6552554' />
+  <node id='-660' visible='true' lat='41.8725468' lon='-87.6552396' />
+  <node id='-658' visible='true' lat='41.8725715' lon='-87.6552406' />
+  <node id='-656' visible='true' lat='41.8725914' lon='-87.655254' />
+  <node id='-654' visible='true' lat='41.8726045' lon='-87.6552741' />
+  <node id='-652' visible='true' lat='41.872612' lon='-87.6553096' />
+  <node id='-650' visible='true' lat='41.8726071' lon='-87.6553418' />
+  <node id='-648' visible='true' lat='41.8725966' lon='-87.6553624' />
+  <node id='-646' visible='true' lat='41.8725821' lon='-87.6553766' />
+  <node id='-644' visible='true' lat='41.8725593' lon='-87.6553845' />
+  <node id='-642' visible='true' lat='41.8725402' lon='-87.6553807' />
+  <node id='-640' visible='true' lat='41.8725235' lon='-87.6553685' />
+  <node id='-638' visible='true' lat='41.8725152' lon='-87.6553574' />
+  <node id='-634' visible='true' lat='41.863435' lon='-87.6536366' />
+  <node id='-632' visible='true' lat='41.8672689' lon='-87.6510557' />
+  <node id='-630' visible='true' lat='41.867511' lon='-87.6510057' />
+  <node id='-628' visible='true' lat='41.8677794' lon='-87.6510115' />
+  <node id='-626' visible='true' lat='41.868305' lon='-87.6510257' />
+  <node id='-624' visible='true' lat='41.8688307' lon='-87.6510411' />
+  <node id='-622' visible='true' lat='41.8692167' lon='-87.6510732' />
+  <node id='-618' visible='true' lat='41.8651293' lon='-87.6456655' />
+  <node id='-616' visible='true' lat='41.8651241' lon='-87.6462396' />
+  <node id='-614' visible='true' lat='41.8651457' lon='-87.6463351' />
+  <node id='-612' visible='true' lat='41.8652112' lon='-87.6463715' />
+  <node id='-610' visible='true' lat='41.8743996' lon='-87.6398637' />
+  <node id='-594' visible='true' lat='41.8772746' lon='-87.6395641' />
+  <node id='-592' visible='true' lat='41.8775213' lon='-87.6395667' />
+  <node id='-586' visible='true' lat='41.8793344' lon='-87.6377058' />
+  <node id='-580' visible='true' lat='41.869876' lon='-87.6510868' />
+  <node id='-578' visible='true' lat='41.8700144' lon='-87.6510741' />
+  <node id='-576' visible='true' lat='41.8705582' lon='-87.6510938' />
+  <node id='-574' visible='true' lat='41.8718736' lon='-87.6511361' />
+  <node id='-572' visible='true' lat='41.8720548' lon='-87.65114' />
+  <node id='-570' visible='true' lat='41.872569' lon='-87.6511511' />
+  <node id='-568' visible='true' lat='41.8726271' lon='-87.6511611' />
+  <node id='-566' visible='true' lat='41.8726879' lon='-87.6511848' />
+  <node id='-564' visible='true' lat='41.8728194' lon='-87.6512488' />
+  <node id='-562' visible='true' lat='41.8728385' lon='-87.6512586' />
+  <node id='-560' visible='true' lat='41.8728556' lon='-87.6512875' />
+  <node id='-558' visible='true' lat='41.8728544' lon='-87.6513238' />
+  <node id='-556' visible='true' lat='41.8728443' lon='-87.6513445' />
+  <node id='-554' visible='true' lat='41.8728239' lon='-87.6513522' />
+  <node id='-552' visible='true' lat='41.8692066' lon='-87.6511575' />
+  <node id='-550' visible='true' lat='41.8688179' lon='-87.6511469' />
+  <node id='-548' visible='true' lat='41.867518' lon='-87.6511154' />
+  <node id='-546' visible='true' lat='41.8788614' lon='-87.6440312' />
+  <node id='-544' visible='true' lat='41.8773546' lon='-87.6439831' />
+  <node id='-540' visible='true' lat='41.8798564' lon='-87.6440583' />
+  <node id='-526' visible='true' lat='41.874707' lon='-87.6471801' />
+  <node id='-516' visible='true' lat='41.8677185' lon='-87.6436677' />
+  <node id='-514' visible='true' lat='41.8743564' lon='-87.6438882' />
+  <node id='-512' visible='true' lat='41.8735424' lon='-87.6438607' />
+  <node id='-510' visible='true' lat='41.8682531' lon='-87.6436891' />
+  <node id='-508' visible='true' lat='41.8678093' lon='-87.6436715' />
+  <node id='-502' visible='true' lat='41.8793064' lon='-87.6396623' />
+  <node id='-500' visible='true' lat='41.8793062' lon='-87.6396904' />
+  <node id='-498' visible='true' lat='41.8792946' lon='-87.640962' />
+  <node id='-482' visible='true' lat='41.8744007' lon='-87.6397256' />
+  <node id='-480' visible='true' lat='41.8743975' lon='-87.6401107' />
+  <node id='-478' visible='true' lat='41.8743942' lon='-87.6404994' />
+  <node id='-476' visible='true' lat='41.8742028' lon='-87.6409316' />
+  <node id='-474' visible='true' lat='41.8736776' lon='-87.640914' />
+  <node id='-472' visible='true' lat='41.8733725' lon='-87.6409042' />
+  <node id='-468' visible='true' lat='41.8765662' lon='-87.6495328' />
+  <node id='-466' visible='true' lat='41.8764794' lon='-87.6495306' />
+  <node id='-464' visible='true' lat='41.8760398' lon='-87.649517' />
+  <node id='-462' visible='true' lat='41.8766471' lon='-87.648959' />
+  <node id='-460' visible='true' lat='41.8766678' lon='-87.6477456' />
+  <node id='-458' visible='true' lat='41.8765159' lon='-87.6564365' />
+  <node id='-456' visible='true' lat='41.8766279' lon='-87.6501131' />
+  <node id='-454' visible='true' lat='41.8765873' lon='-87.6524575' />
+  <node id='-452' visible='true' lat='41.8765683' lon='-87.6539327' />
+  <node id='-450' visible='true' lat='41.8736495' lon='-87.6568348' />
+  <node id='-448' visible='true' lat='41.8698646' lon='-87.6567832' />
+  <node id='-446' visible='true' lat='41.8698064' lon='-87.6567834' />
+  <node id='-444' visible='true' lat='41.8689538' lon='-87.6567499' />
+  <node id='-442' visible='true' lat='41.868177' lon='-87.6567222' />
+  <node id='-440' visible='true' lat='41.8677255' lon='-87.6567147' />
+  <node id='-438' visible='true' lat='41.8674774' lon='-87.6566999' />
+  <node id='-436' visible='true' lat='41.8674358' lon='-87.6566987' />
+  <node id='-430' visible='true' lat='41.8742976' lon='-87.6465328' />
+  <node id='-428' visible='true' lat='41.8743714' lon='-87.6426524' />
+  <node id='-426' visible='true' lat='41.874359' lon='-87.6436472' />
+  <node id='-424' visible='true' lat='41.8743573' lon='-87.6442999' />
+  <node id='-256' visible='true' lat='41.8639226' lon='-87.6559792' />
+  <node id='-254' visible='true' lat='41.8641369' lon='-87.6557939' />
+  <node id='-252' visible='true' lat='41.8663432' lon='-87.6539311' />
+  <node id='-250' visible='true' lat='41.8750035' lon='-87.6409585' />
+  <node id='-248' visible='true' lat='41.8767611' lon='-87.6396519' />
+  <node id='-222' visible='true' lat='41.8703819' lon='-87.6629061' />
+  <node id='-220' visible='true' lat='41.8698971' lon='-87.6628861' />
+  <node id='-218' visible='true' lat='41.8704815' lon='-87.6628381' />
+  <node id='-216' visible='true' lat='41.8709076' lon='-87.6628498' />
+  <node id='-214' visible='true' lat='41.8709129' lon='-87.6629577' />
+  <node id='-212' visible='true' lat='41.870478' lon='-87.6629507' />
+  <node id='-210' visible='true' lat='41.8792631' lon='-87.6437191' />
+  <node id='-208' visible='true' lat='41.8792649' lon='-87.6435943' />
+  <node id='-206' visible='true' lat='41.8792662' lon='-87.6435031' />
+  <node id='-204' visible='true' lat='41.879269' lon='-87.643302' />
+  <node id='-190' visible='true' lat='41.8743534' lon='-87.6445572' />
+  <node id='-188' visible='true' lat='41.8750964' lon='-87.6439066' />
+  <node id='-174' visible='true' lat='41.8780376' lon='-87.6396426' />
+  <node id='-112' visible='true' lat='41.8748392' lon='-87.6396047' />
+  <node id='-30' visible='true' lat='41.8671909' lon='-87.6399819' />
+  <node id='-28' visible='true' lat='41.8672986' lon='-87.6395272' />
+  <node id='-26' visible='true' lat='41.8672917' lon='-87.64012' />
+  <way id='-6226' visible='true'>
+    <nd ref='-4968' />
+    <nd ref='-4966' />
+    <nd ref='-4964' />
+    <nd ref='-4962' />
+    <nd ref='-4960' />
+    <nd ref='-4958' />
+    <nd ref='-4956' />
+    <nd ref='-4954' />
+    <nd ref='-4952' />
+    <nd ref='-4950' />
+    <nd ref='-4948' />
+    <nd ref='-4946' />
+    <nd ref='-4944' />
+    <nd ref='-4942' />
+    <nd ref='-4940' />
+    <nd ref='-4938' />
+    <nd ref='-4936' />
+    <nd ref='-4934' />
+    <nd ref='-4932' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Jackson Boulevard' />
+    <tag k='osm_id' v='4476715' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;buffered_lane&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6224' visible='true'>
+    <nd ref='-4930' />
+    <nd ref='-4928' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Jackson Boulevard' />
+    <tag k='osm_id' v='4476717' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6200' action='modify' visible='true'>
+    <nd ref='-4762' />
+    <nd ref='-4760' />
+    <nd ref='-4758' />
+    <nd ref='-4756' />
+    <nd ref='-4754' />
+    <nd ref='-4932' />
+    <nd ref='-4752' />
+    <nd ref='-4750' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='23646718' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;' />
+  </way>
+  <way id='-6198' visible='true'>
+    <nd ref='-4748' />
+    <nd ref='-4746' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Taylor Street' />
+    <tag k='osm_id' v='23696676' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;layer&quot;=&gt;&quot;1&quot;' />
+  </way>
+  <way id='-6192' visible='true'>
+    <nd ref='-4736' />
+    <nd ref='-4734' />
+    <tag k='highway' v='motorway_link' />
+    <tag k='osm_id' v='23701020' />
+    <tag k='other_tags' v='&quot;destination&quot;=&gt;&quot;Indiana;Wisconsin&quot;,&quot;destination:ref&quot;=&gt;&quot;I 90;I 94&quot;,&quot;destination:street&quot;=&gt;&quot;Kennedy Expressway;Dan Ryan Expressway&quot;,&quot;lanes&quot;=&gt;&quot;3&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6190' action='modify' visible='true'>
+    <nd ref='-4732' />
+    <nd ref='-4730' />
+    <nd ref='-4728' />
+    <nd ref='-4726' />
+    <nd ref='-4724' />
+    <nd ref='-4934' />
+    <nd ref='-4722' />
+    <nd ref='-4720' />
+    <nd ref='-4718' />
+    <nd ref='-4716' />
+    <nd ref='-4714' />
+    <nd ref='-4712' />
+    <nd ref='-4710' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Green Street' />
+    <tag k='osm_id' v='23701595' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Green&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;Yes&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6188' action='modify' visible='true'>
+    <nd ref='-4702' />
+    <nd ref='-4700' />
+    <nd ref='-4698' />
+    <nd ref='-4696' />
+    <nd ref='-4694' />
+    <nd ref='-4692' />
+    <nd ref='-4944' />
+    <nd ref='-4690' />
+    <nd ref='-4688' />
+    <nd ref='-4686' />
+    <nd ref='-4684' />
+    <nd ref='-4682' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Sangamon Street' />
+    <tag k='osm_id' v='23701604' />
+  </way>
+  <way id='-6186' visible='true'>
+    <nd ref='-4672' />
+    <nd ref='-4670' />
+    <nd ref='-4668' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Adams Street' />
+    <tag k='osm_id' v='23754638' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6158' visible='true'>
+    <nd ref='-4512' />
+    <nd ref='-4510' />
+    <nd ref='-4508' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Jefferson Street' />
+    <tag k='osm_id' v='23811281' />
+  </way>
+  <way id='-6150' action='modify' visible='true'>
+    <nd ref='-4734' />
+    <nd ref='-4470' />
+    <nd ref='-4468' />
+    <nd ref='-4466' />
+    <nd ref='-4464' />
+    <nd ref='-4462' />
+    <nd ref='-4460' />
+    <nd ref='-4458' />
+    <nd ref='-4456' />
+    <nd ref='-4454' />
+    <tag k='highway' v='motorway_link' />
+    <tag k='osm_id' v='23825877' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6138' visible='true'>
+    <nd ref='-4326' />
+    <nd ref='-4324' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='23887479' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6132' visible='true'>
+    <nd ref='-4304' />
+    <nd ref='-4302' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='24070793' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Polk&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111827331:1' />
+  </way>
+  <way id='-6126' visible='true'>
+    <nd ref='-4286' />
+    <nd ref='-4284' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Flournoy Street' />
+    <tag k='osm_id' v='24072727' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Flournoy&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;1118027' />
+  </way>
+  <way id='-6124' visible='true'>
+    <nd ref='-4282' />
+    <nd ref='-4280' />
+    <nd ref='-4278' />
+    <nd ref='-4276' />
+    <nd ref='-4274' />
+    <nd ref='-4272' />
+    <nd ref='-4270' />
+    <nd ref='-4268' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Flournoy Street' />
+    <tag k='osm_id' v='24072729' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Flournoy&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6122' visible='true'>
+    <nd ref='-4266' />
+    <nd ref='-4264' />
+    <nd ref='-4262' />
+    <nd ref='-4260' />
+    <nd ref='-4258' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Laflin Street' />
+    <tag k='osm_id' v='24074681' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Laflin&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-6120' action='modify' visible='true'>
+    <nd ref='-4246' />
+    <nd ref='-4244' />
+    <nd ref='-4242' />
+    <nd ref='-4240' />
+    <nd ref='-4238' />
+    <nd ref='-4236' />
+    <nd ref='-4234' />
+    <nd ref='-4232' />
+    <nd ref='-4966' />
+    <nd ref='-4230' />
+    <nd ref='-4228' />
+    <nd ref='-4226' />
+    <nd ref='-4224' />
+    <nd ref='-4222' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Laflin Street' />
+    <tag k='osm_id' v='24074684' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Laflin&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6116' visible='true'>
+    <nd ref='-4216' />
+    <nd ref='-4214' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Quincy Street' />
+    <tag k='osm_id' v='24075633' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Quincy&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111769445' />
+  </way>
+  <way id='-6108' visible='true'>
+    <nd ref='-4188' />
+    <nd ref='-4186' />
+    <nd ref='-4184' />
+    <nd ref='-4182' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West 14th Street' />
+    <tag k='osm_id' v='24076358' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;14th&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-6106' visible='true'>
+    <nd ref='-4180' />
+    <nd ref='-4178' />
+    <nd ref='-4176' />
+    <nd ref='-4174' />
+    <nd ref='-4172' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Arthington Street' />
+    <tag k='osm_id' v='24077554' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Arthington&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6104' visible='true'>
+    <nd ref='-4170' />
+    <nd ref='-4168' />
+    <nd ref='-4166' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Arthington Street' />
+    <tag k='osm_id' v='24077560' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Arthington&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;11182' />
+  </way>
+  <way id='-6102' visible='true'>
+    <nd ref='-4164' />
+    <nd ref='-4162' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Throop Street' />
+    <tag k='osm_id' v='24077597' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Throop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;112383577' />
+  </way>
+  <way id='-6100' visible='true'>
+    <nd ref='-4160' />
+    <nd ref='-4158' />
+    <nd ref='-4156' />
+    <nd ref='-4154' />
+    <nd ref='-4152' />
+    <nd ref='-4150' />
+    <nd ref='-4148' />
+    <nd ref='-4146' />
+    <nd ref='-4144' />
+    <nd ref='-4142' />
+    <nd ref='-4140' />
+    <nd ref='-4138' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Throop Street' />
+    <tag k='osm_id' v='24077600' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Throop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-6098' visible='true'>
+    <nd ref='-4136' />
+    <nd ref='-4134' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Throop Street' />
+    <tag k='osm_id' v='24077602' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Throop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802955' />
+  </way>
+  <way id='-6092' visible='true'>
+    <nd ref='-4510' />
+    <nd ref='-4100' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West 12th Place' />
+    <tag k='osm_id' v='24078409' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;12th&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Pl&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6090' visible='true'>
+    <nd ref='-4098' />
+    <nd ref='-4096' />
+    <nd ref='-4094' />
+    <nd ref='-4092' />
+    <nd ref='-4134' />
+    <nd ref='-4164' />
+    <nd ref='-4090' />
+    <nd ref='-4088' />
+    <nd ref='-4086' />
+    <nd ref='-4084' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Hastings Street' />
+    <tag k='osm_id' v='24079354' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;-1&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Hastings&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-6080' visible='true'>
+    <nd ref='-4058' />
+    <nd ref='-4056' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West DeKoven Street' />
+    <tag k='osm_id' v='24085396' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;DeKoven&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6078' visible='true'>
+    <nd ref='-4054' />
+    <nd ref='-4052' />
+    <nd ref='-4052' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Vernon Park Place' />
+    <tag k='osm_id' v='24086005' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Vernon Park&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Pl&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6076' visible='true'>
+    <nd ref='-4050' />
+    <nd ref='-4048' />
+    <nd ref='-4046' />
+    <nd ref='-4044' />
+    <nd ref='-4042' />
+    <nd ref='-4040' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Grenshaw Street' />
+    <tag k='osm_id' v='24087017' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Grenshaw&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;1118028' />
+  </way>
+  <way id='-6074' visible='true'>
+    <nd ref='-4038' />
+    <nd ref='-4036' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Grenshaw Street' />
+    <tag k='osm_id' v='24087018' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Grenshaw&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;1118275' />
+  </way>
+  <way id='-6070' visible='true'>
+    <nd ref='-4030' />
+    <nd ref='-4028' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West 13th Street' />
+    <tag k='osm_id' v='24088087' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;13th&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-6068' visible='true'>
+    <nd ref='-4026' />
+    <nd ref='-4024' />
+    <nd ref='-4022' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Maxwell Street' />
+    <tag k='osm_id' v='24088510' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;no&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Maxwell&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6066' visible='true'>
+    <nd ref='-4020' />
+    <nd ref='-4512' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Maxwell Street' />
+    <tag k='osm_id' v='24088511' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Maxwell&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111827542&quot;,&quot;tiger:upload_uuid&quot;=' />
+  </way>
+  <way id='-6062' visible='true'>
+    <nd ref='-4014' />
+    <nd ref='-4012' />
+    <nd ref='-4010' />
+    <nd ref='-4008' />
+    <nd ref='-4006' />
+    <nd ref='-4004' />
+    <nd ref='-4002' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Tilden Street' />
+    <tag k='osm_id' v='24089448' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Tilden&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111766391' />
+  </way>
+  <way id='-6058' visible='true'>
+    <nd ref='-3998' />
+    <nd ref='-3996' />
+    <nd ref='-3994' />
+    <nd ref='-3992' />
+    <nd ref='-3990' />
+    <nd ref='-3988' />
+    <nd ref='-3986' />
+    <nd ref='-3984' />
+    <nd ref='-3982' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Lexington Street' />
+    <tag k='osm_id' v='24090545' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Lexington&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802' />
+  </way>
+  <way id='-6056' visible='true'>
+    <nd ref='-3980' />
+    <nd ref='-3978' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Lexington Street' />
+    <tag k='osm_id' v='24090547' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Lexington&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802' />
+  </way>
+  <way id='-6054' visible='true'>
+    <nd ref='-3976' />
+    <nd ref='-3974' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Lexington Street' />
+    <tag k='osm_id' v='24090551' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Lexington&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111827' />
+  </way>
+  <way id='-6044' action='modify' visible='true'>
+    <nd ref='-3874' />
+    <nd ref='-3872' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='24094730' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Racine&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Ave&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-6040' visible='true'>
+    <nd ref='-4156' />
+    <nd ref='-3858' />
+    <nd ref='-3856' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Fillmore Street' />
+    <tag k='osm_id' v='24097573' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Fillmore&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;1118028' />
+  </way>
+  <way id='-6038' visible='true'>
+    <nd ref='-3854' />
+    <nd ref='-3852' />
+    <nd ref='-3850' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Rochford Street' />
+    <tag k='osm_id' v='24099373' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-6036' visible='true'>
+    <nd ref='-3848' />
+    <nd ref='-3846' />
+    <nd ref='-3844' />
+    <nd ref='-3842' />
+    <nd ref='-3840' />
+    <nd ref='-3872' />
+    <nd ref='-3838' />
+    <nd ref='-3836' />
+    <nd ref='-3834' />
+    <nd ref='-3832' />
+    <nd ref='-3830' />
+    <nd ref='-3828' />
+    <nd ref='-3826' />
+    <nd ref='-3824' />
+    <nd ref='-3822' />
+    <nd ref='-3820' />
+    <nd ref='-3818' />
+    <nd ref='-3816' />
+    <nd ref='-4238' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Adams Street' />
+    <tag k='osm_id' v='24102123' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Adams&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60612&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60612&quot;' />
+  </way>
+  <way id='-6030' visible='true'>
+    <nd ref='-3806' />
+    <nd ref='-3804' />
+    <nd ref='-3802' />
+    <nd ref='-4180' />
+    <nd ref='-3800' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Ada Street' />
+    <tag k='osm_id' v='24103205' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Ada&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802801:11' />
+  </way>
+  <way id='-6028' visible='true'>
+    <nd ref='-3994' />
+    <nd ref='-3798' />
+    <nd ref='-3796' />
+    <nd ref='-4274' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Ada Street' />
+    <tag k='osm_id' v='24103206' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Ada&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111847758&quot;,&quot;' />
+  </way>
+  <way id='-6026' visible='true'>
+    <nd ref='-3794' />
+    <nd ref='-3792' />
+    <nd ref='-3790' />
+    <nd ref='-3788' />
+    <nd ref='-3786' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Westgate Terrace' />
+    <tag k='osm_id' v='24103505' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Westgate&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Ter&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111847' />
+  </way>
+  <way id='-6022' action='modify' visible='true'>
+    <nd ref='-3770' />
+    <nd ref='-3768' />
+    <nd ref='-3766' />
+    <nd ref='-3764' />
+    <nd ref='-3762' />
+    <nd ref='-3760' />
+    <nd ref='-3758' />
+    <nd ref='-3756' />
+    <nd ref='-4938' />
+    <nd ref='-3754' />
+    <nd ref='-3752' />
+    <nd ref='-3750' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Peoria Street' />
+    <tag k='osm_id' v='24105258' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;' />
+  </way>
+  <way id='-6016' visible='true'>
+    <nd ref='-3742' />
+    <nd ref='-3740' />
+    <nd ref='-3738' />
+    <nd ref='-3736' />
+    <nd ref='-3734' />
+    <nd ref='-3732' />
+    <nd ref='-3806' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Cabrini Street' />
+    <tag k='osm_id' v='24106209' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Cabrini&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-6014' visible='true'>
+    <nd ref='-3730' />
+    <nd ref='-3728' />
+    <nd ref='-3726' />
+    <nd ref='-3724' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Cabrini Street' />
+    <tag k='osm_id' v='24106210' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Cabrini&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;11182765' />
+  </way>
+  <way id='-6012' visible='true'>
+    <nd ref='-3794' />
+    <nd ref='-4276' />
+    <nd ref='-3722' />
+    <nd ref='-3988' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Lytle Street' />
+    <tag k='osm_id' v='24106369' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Lytle&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802805;' />
+  </way>
+  <way id='-6010' visible='true'>
+    <nd ref='-3720' />
+    <nd ref='-3718' />
+    <nd ref='-3716' />
+    <nd ref='-3714' />
+    <nd ref='-3712' />
+    <nd ref='-3710' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Lytle Street' />
+    <tag k='osm_id' v='24106370' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Lytle&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;112383567&quot;' />
+  </way>
+  <way id='-6000' visible='true'>
+    <nd ref='-3700' />
+    <nd ref='-3698' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Bishop Street' />
+    <tag k='osm_id' v='24115913' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Bishop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5994' action='modify' visible='true'>
+    <nd ref='-3848' />
+    <nd ref='-3690' />
+    <nd ref='-4946' />
+    <nd ref='-3688' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='24181717' />
+  </way>
+  <way id='-5988' action='modify' visible='true'>
+    <nd ref='-3668' />
+    <nd ref='-3666' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='24213605' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Harrison&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60605&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5980' visible='true'>
+    <nd ref='-3640' />
+    <nd ref='-3638' />
+    <nd ref='-3636' />
+    <nd ref='-4098' />
+    <tag k='highway' v='residential' />
+    <tag k='osm_id' v='24229754' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;-1&quot;' />
+  </way>
+  <way id='-5978' visible='true'>
+    <nd ref='-3634' />
+    <nd ref='-3632' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Loomis Street' />
+    <tag k='osm_id' v='24229773' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Loomis&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch' />
+  </way>
+  <way id='-5976' visible='true'>
+    <nd ref='-3630' />
+    <nd ref='-3628' />
+    <nd ref='-3626' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='24229794' />
+    <tag k='other_tags' v='&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;cycleway&quot;=&gt;&quot;buffered_lane&quot;,&quot;layer&quot;=&gt;&quot;1&quot;' />
+  </way>
+  <way id='-5974' visible='true'>
+    <nd ref='-3626' />
+    <nd ref='-3624' />
+    <nd ref='-3622' />
+    <nd ref='-3620' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='24229796' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;buffered_lane&quot;' />
+  </way>
+  <way id='-5934' action='modify' visible='true'>
+    <nd ref='-3450' />
+    <nd ref='-3448' />
+    <tag k='highway' v='motorway' />
+    <tag k='name' v='Eisenhower Expressway' />
+    <tag k='osm_id' v='25373575' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;3&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5928' action='modify' visible='true'>
+    <nd ref='-3400' />
+    <nd ref='-3398' />
+    <nd ref='-3396' />
+    <nd ref='-3394' />
+    <nd ref='-3392' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Jackson Boulevard' />
+    <tag k='osm_id' v='26232400' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5916' action='modify' visible='true'>
+    <nd ref='-4758' />
+    <nd ref='-3310' />
+    <nd ref='-4712' />
+    <nd ref='-3308' />
+    <nd ref='-3306' />
+    <nd ref='-3766' />
+    <nd ref='-3304' />
+    <nd ref='-4684' />
+    <nd ref='-3302' />
+    <nd ref='-3848' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Adams Street' />
+    <tag k='osm_id' v='26233018' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5886' visible='true'>
+    <nd ref='-3212' />
+    <nd ref='-3210' />
+    <nd ref='-3208' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='26252391' />
+    <tag k='other_tags' v='&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;' />
+  </way>
+  <way id='-5884' visible='true'>
+    <nd ref='-3206' />
+    <nd ref='-3204' />
+    <nd ref='-3202' />
+    <nd ref='-3200' />
+    <nd ref='-3198' />
+    <nd ref='-3196' />
+    <nd ref='-3194' />
+    <tag k='highway' v='motorway_link' />
+    <tag k='osm_id' v='26797797' />
+    <tag k='other_tags' v='&quot;destination&quot;=&gt;&quot;Morgan Street (1000 West)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5878' visible='true'>
+    <nd ref='-3146' />
+    <nd ref='-3144' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Maxwell Street' />
+    <tag k='osm_id' v='31232145' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Maxwell&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5874' visible='true'>
+    <nd ref='-3144' />
+    <nd ref='-3138' />
+    <nd ref='-3136' />
+    <nd ref='-3134' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Maxwell Street' />
+    <tag k='osm_id' v='34573263' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Maxwell&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5866' visible='true'>
+    <nd ref='-3632' />
+    <nd ref='-3120' />
+    <nd ref='-3118' />
+    <nd ref='-3116' />
+    <nd ref='-3114' />
+    <nd ref='-3112' />
+    <nd ref='-3110' />
+    <nd ref='-3108' />
+    <nd ref='-4286' />
+    <nd ref='-4268' />
+    <nd ref='-3106' />
+    <nd ref='-3980' />
+    <nd ref='-3998' />
+    <nd ref='-3104' />
+    <nd ref='-3102' />
+    <nd ref='-3100' />
+    <nd ref='-4172' />
+    <nd ref='-3098' />
+    <nd ref='-3096' />
+    <nd ref='-3094' />
+    <nd ref='-3858' />
+    <nd ref='-3092' />
+    <nd ref='-3090' />
+    <nd ref='-3088' />
+    <nd ref='-3086' />
+    <nd ref='-3084' />
+    <nd ref='-3082' />
+    <nd ref='-3080' />
+    <nd ref='-4028' />
+    <nd ref='-3078' />
+    <nd ref='-4084' />
+    <nd ref='-3076' />
+    <nd ref='-3074' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Loomis Street' />
+    <tag k='osm_id' v='36743072' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Loomis&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5864' visible='true'>
+    <nd ref='-3738' />
+    <nd ref='-3072' />
+    <nd ref='-3070' />
+    <nd ref='-3068' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Lytle Street' />
+    <tag k='osm_id' v='36743924' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Lytle&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802805;' />
+  </way>
+  <way id='-5862' visible='true'>
+    <nd ref='-3740' />
+    <nd ref='-3066' />
+    <nd ref='-3064' />
+    <nd ref='-3986' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Lytle Street' />
+    <tag k='osm_id' v='36743926' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Lytle&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802805;' />
+  </way>
+  <way id='-5860' visible='true'>
+    <nd ref='-3072' />
+    <nd ref='-3062' />
+    <nd ref='-3060' />
+    <nd ref='-3058' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Arthington Street' />
+    <tag k='osm_id' v='36743979' />
+  </way>
+  <way id='-5858' visible='true'>
+    <nd ref='-4150' />
+    <nd ref='-3714' />
+    <nd ref='-3056' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Grenshaw Street' />
+    <tag k='osm_id' v='36743991' />
+  </way>
+  <way id='-5856' visible='true'>
+    <nd ref='-3054' />
+    <nd ref='-3052' />
+    <nd ref='-3050' />
+    <nd ref='-3666' />
+    <tag k='highway' v='secondary_link' />
+    <tag k='osm_id' v='36888338' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5852' visible='true'>
+    <nd ref='-3028' />
+    <nd ref='-3026' />
+    <nd ref='-3024' />
+    <nd ref='-3022' />
+    <nd ref='-3020' />
+    <nd ref='-3054' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Congress Parkway' />
+    <tag k='osm_id' v='36888713' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5850' visible='true'>
+    <nd ref='-3018' />
+    <nd ref='-4324' />
+    <nd ref='-3016' />
+    <nd ref='-3014' />
+    <nd ref='-3012' />
+    <nd ref='-3010' />
+    <nd ref='-3008' />
+    <nd ref='-4746' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='36898113' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;' />
+  </way>
+  <way id='-5848' visible='true'>
+    <nd ref='-4930' />
+    <nd ref='-4668' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='36898116' />
+    <tag k='other_tags' v='&quot;busway&quot;=&gt;&quot;lane&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;oneway:bus&quot;=&gt;&quot;no&quot;' />
+  </way>
+  <way id='-5822' action='modify' visible='true'>
+    <nd ref='-4736' />
+    <nd ref='-2848' />
+    <tag k='highway' v='motorway' />
+    <tag k='name' v='Eisenhower Expressway' />
+    <tag k='osm_id' v='49176167' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;3&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5804' action='modify' visible='true'>
+    <nd ref='-2772' />
+    <nd ref='-4326' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='56150132' />
+    <tag k='other_tags' v='&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5796' visible='true'>
+    <nd ref='-2762' />
+    <nd ref='-2760' />
+    <nd ref='-2758' />
+    <nd ref='-4508' />
+    <nd ref='-2756' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='56150142' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5792' visible='true'>
+    <nd ref='-4302' />
+    <nd ref='-2750' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='56150510' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Polk&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111827331:1' />
+  </way>
+  <way id='-5780' visible='true'>
+    <nd ref='-2732' />
+    <nd ref='-2730' />
+    <nd ref='-2728' />
+    <nd ref='-2726' />
+    <nd ref='-2724' />
+    <nd ref='-2722' />
+    <nd ref='-2720' />
+    <nd ref='-3054' />
+    <tag k='highway' v='motorway_link' />
+    <tag k='osm_id' v='56152941' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5776' visible='true'>
+    <nd ref='-2714' />
+    <nd ref='-2712' />
+    <nd ref='-2710' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='56152948' />
+  </way>
+  <way id='-5774' visible='true'>
+    <nd ref='-2708' />
+    <nd ref='-2750' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='56152951' />
+  </way>
+  <way id='-5766' visible='true'>
+    <nd ref='-2690' />
+    <nd ref='-2688' />
+    <nd ref='-2686' />
+    <nd ref='-2684' />
+    <nd ref='-2682' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='56175736' />
+  </way>
+  <way id='-5750' visible='true'>
+    <nd ref='-4508' />
+    <nd ref='-2632' />
+    <nd ref='-2630' />
+    <nd ref='-2628' />
+    <nd ref='-4036' />
+    <nd ref='-2626' />
+    <nd ref='-4056' />
+    <nd ref='-2624' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Jefferson Street' />
+    <tag k='osm_id' v='56460694' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5748' visible='true'>
+    <nd ref='-2622' />
+    <nd ref='-3192' />
+    <nd ref='-2620' />
+    <nd ref='-2618' />
+    <nd ref='-2616' />
+    <nd ref='-2614' />
+    <nd ref='-2612' />
+    <nd ref='-4222' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='56572439' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5734' visible='true'>
+    <nd ref='-3820' />
+    <nd ref='-4962' />
+    <nd ref='-2580' />
+    <nd ref='-2578' />
+    <nd ref='-2614' />
+    <nd ref='-3634' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Loomis Street' />
+    <tag k='osm_id' v='59341827' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Loomis&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5704' visible='true'>
+    <nd ref='-4928' />
+    <nd ref='-2476' />
+    <nd ref='-2474' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Jackson Boulevard' />
+    <tag k='osm_id' v='79654776' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5686' visible='true'>
+    <nd ref='-2412' />
+    <nd ref='-2410' />
+    <nd ref='-2408' />
+    <nd ref='-2406' />
+    <nd ref='-2404' />
+    <nd ref='-2402' />
+    <nd ref='-2400' />
+    <nd ref='-2398' />
+    <nd ref='-2396' />
+    <nd ref='-3622' />
+    <nd ref='-2394' />
+    <nd ref='-2392' />
+    <nd ref='-2390' />
+    <nd ref='-2388' />
+    <nd ref='-2386' />
+    <nd ref='-2384' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='115891574' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5684' visible='true'>
+    <nd ref='-2382' />
+    <nd ref='-2380' />
+    <nd ref='-2378' />
+    <nd ref='-2376' />
+    <nd ref='-2374' />
+    <nd ref='-2372' />
+    <nd ref='-2370' />
+    <nd ref='-2368' />
+    <nd ref='-2366' />
+    <nd ref='-2364' />
+    <nd ref='-2362' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='116017013' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5682' visible='true'>
+    <nd ref='-2360' />
+    <nd ref='-2358' />
+    <nd ref='-2356' />
+    <nd ref='-2354' />
+    <nd ref='-2352' />
+    <nd ref='-2350' />
+    <nd ref='-4140' />
+    <nd ref='-2348' />
+    <nd ref='-2346' />
+    <nd ref='-3080' />
+    <nd ref='-2344' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Washburne Avenue' />
+    <tag k='osm_id' v='116018953' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Washburne&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Ave&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5680' visible='true'>
+    <nd ref='-2342' />
+    <nd ref='-2340' />
+    <nd ref='-2338' />
+    <nd ref='-2624' />
+    <nd ref='-2336' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Taylor Street' />
+    <tag k='osm_id' v='116025901' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5678' visible='true'>
+    <nd ref='-2334' />
+    <nd ref='-2342' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Taylor Street' />
+    <tag k='osm_id' v='116025903' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5674' visible='true'>
+    <nd ref='-2336' />
+    <nd ref='-4058' />
+    <nd ref='-4038' />
+    <nd ref='-2330' />
+    <nd ref='-2328' />
+    <nd ref='-2326' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='116025906' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;' />
+  </way>
+  <way id='-5672' visible='true'>
+    <nd ref='-2324' />
+    <nd ref='-2322' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Liberty Street' />
+    <tag k='osm_id' v='116029801' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;no&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5670' visible='true'>
+    <nd ref='-2320' />
+    <nd ref='-2318' />
+    <nd ref='-2316' />
+    <nd ref='-4050' />
+    <nd ref='-2314' />
+    <nd ref='-3856' />
+    <nd ref='-2312' />
+    <nd ref='-2310' />
+    <nd ref='-2308' />
+    <nd ref='-2306' />
+    <nd ref='-2304' />
+    <nd ref='-2302' />
+    <nd ref='-2300' />
+    <nd ref='-2298' />
+    <nd ref='-3978' />
+    <nd ref='-2296' />
+    <nd ref='-4284' />
+    <nd ref='-2294' />
+    <nd ref='-2292' />
+    <nd ref='-2290' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Laflin Street' />
+    <tag k='osm_id' v='116042804' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Laflin&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5668' visible='true'>
+    <nd ref='-2288' />
+    <nd ref='-2286' />
+    <nd ref='-2284' />
+    <nd ref='-3700' />
+    <nd ref='-2282' />
+    <nd ref='-2300' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='116042806' />
+  </way>
+  <way id='-5666' visible='true'>
+    <nd ref='-3090' />
+    <nd ref='-4150' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Grenshaw Street' />
+    <tag k='osm_id' v='116725118' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Grenshaw&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;1118028' />
+  </way>
+  <way id='-5664' visible='true'>
+    <nd ref='-2710' />
+    <nd ref='-2280' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='116846053' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;no&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5662' visible='true'>
+    <nd ref='-2280' />
+    <nd ref='-2708' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='116846055' />
+  </way>
+  <way id='-5660' action='modify' visible='true'>
+    <nd ref='-2710' />
+    <nd ref='-3976' />
+    <nd ref='-2278' />
+    <nd ref='-4052' />
+    <nd ref='-2276' />
+    <nd ref='-2274' />
+    <nd ref='-2272' />
+    <nd ref='-3022' />
+    <nd ref='-2686' />
+    <nd ref='-2270' />
+    <nd ref='-2268' />
+    <nd ref='-3394' />
+    <nd ref='-4216' />
+    <nd ref='-2266' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Jefferson Street' />
+    <tag k='osm_id' v='116846056' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5658' visible='true'>
+    <nd ref='-2280' />
+    <nd ref='-3728' />
+    <nd ref='-4168' />
+    <nd ref='-2260' />
+    <nd ref='-2258' />
+    <nd ref='-2336' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='116846057' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;3&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5656' visible='true'>
+    <nd ref='-2624' />
+    <nd ref='-4170' />
+    <nd ref='-3726' />
+    <nd ref='-2710' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Jefferson Street' />
+    <tag k='osm_id' v='116846059' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5654' visible='true'>
+    <nd ref='-2384' />
+    <nd ref='-2256' />
+    <nd ref='-2254' />
+    <nd ref='-2252' />
+    <nd ref='-3114' />
+    <nd ref='-2250' />
+    <nd ref='-2248' />
+    <nd ref='-2246' />
+    <nd ref='-2244' />
+    <nd ref='-2242' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='117574771' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5652' visible='true'>
+    <nd ref='-2406' />
+    <nd ref='-2240' />
+    <nd ref='-2238' />
+    <nd ref='-2236' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='117574780' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5650' visible='true'>
+    <nd ref='-2234' />
+    <nd ref='-2232' />
+    <nd ref='-2230' />
+    <nd ref='-2228' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='117575266' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5648' visible='true'>
+    <nd ref='-2334' />
+    <nd ref='-2226' />
+    <nd ref='-2224' />
+    <nd ref='-2222' />
+    <nd ref='-2220' />
+    <nd ref='-2218' />
+    <nd ref='-2216' />
+    <nd ref='-2214' />
+    <nd ref='-2212' />
+    <nd ref='-2210' />
+    <nd ref='-2208' />
+    <nd ref='-2206' />
+    <nd ref='-2204' />
+    <nd ref='-2202' />
+    <nd ref='-2200' />
+    <nd ref='-2198' />
+    <nd ref='-2196' />
+    <nd ref='-2194' />
+    <nd ref='-2230' />
+    <nd ref='-2192' />
+    <nd ref='-2190' />
+    <nd ref='-2188' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='South Union Avenue' />
+    <tag k='osm_id' v='117576016' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Union&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Ave&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60616&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60616&quot;' />
+  </way>
+  <way id='-5646' visible='true'>
+    <nd ref='-2186' />
+    <nd ref='-2184' />
+    <nd ref='-2182' />
+    <nd ref='-2180' />
+    <nd ref='-2178' />
+    <nd ref='-2176' />
+    <nd ref='-2174' />
+    <nd ref='-2172' />
+    <nd ref='-2170' />
+    <nd ref='-2168' />
+    <nd ref='-2166' />
+    <nd ref='-2164' />
+    <nd ref='-2162' />
+    <nd ref='-2160' />
+    <nd ref='-2158' />
+    <nd ref='-2156' />
+    <nd ref='-2154' />
+    <nd ref='-2152' />
+    <nd ref='-2150' />
+    <nd ref='-2148' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='117577298' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;buffered_lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5644' visible='true'>
+    <nd ref='-2146' />
+    <nd ref='-2144' />
+    <nd ref='-2142' />
+    <nd ref='-2140' />
+    <nd ref='-2138' />
+    <nd ref='-3620' />
+    <nd ref='-2136' />
+    <nd ref='-2134' />
+    <nd ref='-2132' />
+    <nd ref='-2130' />
+    <nd ref='-2128' />
+    <nd ref='-2126' />
+    <nd ref='-2124' />
+    <nd ref='-2186' />
+    <nd ref='-2122' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='117577302' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5642' visible='true'>
+    <nd ref='-2384' />
+    <nd ref='-2120' />
+    <nd ref='-2118' />
+    <nd ref='-3786' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='117577623' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5640' visible='true'>
+    <nd ref='-2334' />
+    <nd ref='-2116' />
+    <nd ref='-2114' />
+    <nd ref='-2112' />
+    <nd ref='-2110' />
+    <nd ref='-2156' />
+    <nd ref='-2108' />
+    <nd ref='-2106' />
+    <nd ref='-2104' />
+    <nd ref='-2102' />
+    <nd ref='-2100' />
+    <nd ref='-2098' />
+    <nd ref='-2096' />
+    <nd ref='-2094' />
+    <nd ref='-2092' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Taylor Street' />
+    <tag k='osm_id' v='117578052' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5638' visible='true'>
+    <nd ref='-2090' />
+    <nd ref='-2088' />
+    <nd ref='-2086' />
+    <nd ref='-2356' />
+    <nd ref='-2084' />
+    <nd ref='-2082' />
+    <nd ref='-2080' />
+    <nd ref='-2078' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='117578185' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;' />
+  </way>
+  <way id='-5636' visible='true'>
+    <nd ref='-2076' />
+    <nd ref='-2074' />
+    <nd ref='-2072' />
+    <nd ref='-2070' />
+    <nd ref='-2068' />
+    <nd ref='-2066' />
+    <nd ref='-2064' />
+    <nd ref='-2062' />
+    <nd ref='-2060' />
+    <nd ref='-2058' />
+    <nd ref='-2056' />
+    <nd ref='-2054' />
+    <nd ref='-2052' />
+    <nd ref='-2050' />
+    <nd ref='-2048' />
+    <nd ref='-3710' />
+    <nd ref='-4146' />
+    <nd ref='-3086' />
+    <nd ref='-2046' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='117578470' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5634' visible='true'>
+    <nd ref='-2092' />
+    <nd ref='-2044' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='117579721' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5632' visible='true'>
+    <nd ref='-2092' />
+    <nd ref='-2362' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='117579722' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;' />
+  </way>
+  <way id='-5630' visible='true'>
+    <nd ref='-4266' />
+    <nd ref='-3084' />
+    <nd ref='-4144' />
+    <nd ref='-2042' />
+    <nd ref='-2040' />
+    <nd ref='-2038' />
+    <nd ref='-2090' />
+    <nd ref='-2036' />
+    <nd ref='-2034' />
+    <nd ref='-2032' />
+    <nd ref='-2030' />
+    <nd ref='-2028' />
+    <nd ref='-2026' />
+    <nd ref='-2024' />
+    <nd ref='-2022' />
+    <nd ref='-2234' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='117581807' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5628' visible='true'>
+    <nd ref='-2020' />
+    <nd ref='-2018' />
+    <nd ref='-2016' />
+    <nd ref='-2014' />
+    <nd ref='-2012' />
+    <nd ref='-2010' />
+    <nd ref='-2008' />
+    <nd ref='-3112' />
+    <nd ref='-2006' />
+    <nd ref='-2004' />
+    <nd ref='-2002' />
+    <nd ref='-2000' />
+    <nd ref='-2120' />
+    <nd ref='-2146' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='117586527' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5626' visible='true'>
+    <nd ref='-1998' />
+    <nd ref='-2274' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='118967824' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;' />
+  </way>
+  <way id='-5598' visible='true'>
+    <nd ref='-2058' />
+    <nd ref='-1910' />
+    <nd ref='-1908' />
+    <nd ref='-1906' />
+    <nd ref='-1904' />
+    <nd ref='-1902' />
+    <nd ref='-1900' />
+    <nd ref='-1898' />
+    <nd ref='-1896' />
+    <nd ref='-1894' />
+    <nd ref='-1892' />
+    <nd ref='-1890' />
+    <nd ref='-1888' />
+    <nd ref='-1886' />
+    <nd ref='-1884' />
+    <nd ref='-1882' />
+    <nd ref='-1880' />
+    <nd ref='-1910' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South May Street' />
+    <tag k='osm_id' v='142994804' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;no&quot;' />
+  </way>
+  <way id='-5596' visible='true'>
+    <nd ref='-1878' />
+    <nd ref='-1876' />
+    <nd ref='-1874' />
+    <nd ref='-1872' />
+    <nd ref='-1870' />
+    <nd ref='-1868' />
+    <nd ref='-1866' />
+    <nd ref='-1864' />
+    <nd ref='-1862' />
+    <nd ref='-1860' />
+    <nd ref='-1858' />
+    <nd ref='-1856' />
+    <nd ref='-1854' />
+    <nd ref='-1852' />
+    <nd ref='-1850' />
+    <nd ref='-1848' />
+    <nd ref='-1846' />
+    <nd ref='-1844' />
+    <nd ref='-1842' />
+    <nd ref='-1840' />
+    <nd ref='-1866' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South May Street' />
+    <tag k='osm_id' v='142994809' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;May&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:tlid&quot;=&gt;&quot;111802824:11' />
+  </way>
+  <way id='-5590' visible='true'>
+    <nd ref='-4750' />
+    <nd ref='-1832' />
+    <nd ref='-3212' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='143927256' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;' />
+  </way>
+  <way id='-5588' visible='true'>
+    <nd ref='-1830' />
+    <nd ref='-1828' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='143930065' />
+  </way>
+  <way id='-5584' visible='true'>
+    <nd ref='-2092' />
+    <nd ref='-1820' />
+    <nd ref='-1818' />
+    <nd ref='-1816' />
+    <nd ref='-1814' />
+    <nd ref='-1812' />
+    <nd ref='-2154' />
+    <nd ref='-1810' />
+    <nd ref='-1808' />
+    <nd ref='-2334' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Taylor Street' />
+    <tag k='osm_id' v='143930419' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5580' visible='true'>
+    <nd ref='-3872' />
+    <nd ref='-1804' />
+    <nd ref='-1802' />
+    <nd ref='-1800' />
+    <nd ref='-1798' />
+    <nd ref='-1796' />
+    <nd ref='-4954' />
+    <nd ref='-1794' />
+    <nd ref='-1792' />
+    <nd ref='-1790' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='145815743' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Racine&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Ave&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5578' visible='true'>
+    <nd ref='-1788' />
+    <nd ref='-2310' />
+    <nd ref='-1786' />
+    <nd ref='-1784' />
+    <nd ref='-3094' />
+    <nd ref='-3800' />
+    <nd ref='-4160' />
+    <nd ref='-3068' />
+    <nd ref='-3720' />
+    <nd ref='-1782' />
+    <nd ref='-1874' />
+    <nd ref='-1780' />
+    <nd ref='-1778' />
+    <nd ref='-1776' />
+    <nd ref='-1774' />
+    <nd ref='-1772' />
+    <nd ref='-1770' />
+    <nd ref='-1768' />
+    <nd ref='-1766' />
+    <nd ref='-2092' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Taylor Street' />
+    <tag k='osm_id' v='145815746' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;no&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5576' visible='true'>
+    <nd ref='-2028' />
+    <nd ref='-1764' />
+    <nd ref='-1762' />
+    <nd ref='-3144' />
+    <nd ref='-1760' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='145815748' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;no&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5546' visible='true'>
+    <nd ref='-1682' />
+    <nd ref='-1680' />
+    <nd ref='-1678' />
+    <nd ref='-2402' />
+    <tag k='highway' v='secondary_link' />
+    <tag k='osm_id' v='148902970' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5544' visible='true'>
+    <nd ref='-2408' />
+    <nd ref='-1676' />
+    <nd ref='-1674' />
+    <nd ref='-2240' />
+    <tag k='highway' v='secondary_link' />
+    <tag k='osm_id' v='148902971' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5536' visible='true'>
+    <nd ref='-1568' />
+    <nd ref='-1566' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='151175380' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5534' visible='true'>
+    <nd ref='-3786' />
+    <nd ref='-2146' />
+    <nd ref='-2386' />
+    <nd ref='-1564' />
+    <nd ref='-1562' />
+    <nd ref='-1560' />
+    <nd ref='-1558' />
+    <nd ref='-1556' />
+    <nd ref='-1554' />
+    <nd ref='-1552' />
+    <nd ref='-1550' />
+    <nd ref='-1548' />
+    <nd ref='-1546' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='151175381' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5532' visible='true'>
+    <nd ref='-1790' />
+    <nd ref='-1544' />
+    <nd ref='-2622' />
+    <nd ref='-1568' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='151175382' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5530' visible='true'>
+    <nd ref='-1542' />
+    <nd ref='-1540' />
+    <nd ref='-1538' />
+    <nd ref='-1790' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='151175384' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5528' visible='true'>
+    <nd ref='-1546' />
+    <nd ref='-1542' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='151175385' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5526' visible='true'>
+    <nd ref='-1566' />
+    <nd ref='-1536' />
+    <nd ref='-1534' />
+    <nd ref='-1532' />
+    <nd ref='-1530' />
+    <nd ref='-1528' />
+    <nd ref='-1526' />
+    <nd ref='-1524' />
+    <nd ref='-1522' />
+    <nd ref='-1520' />
+    <nd ref='-2384' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='151175386' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5524' visible='true'>
+    <nd ref='-1518' />
+    <nd ref='-1516' />
+    <nd ref='-1514' />
+    <nd ref='-1512' />
+    <nd ref='-1510' />
+    <nd ref='-1508' />
+    <nd ref='-1506' />
+    <nd ref='-1504' />
+    <nd ref='-1502' />
+    <nd ref='-1500' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Vernon Park Place' />
+    <tag k='osm_id' v='151428224' />
+  </way>
+  <way id='-5522' visible='true'>
+    <nd ref='-1498' />
+    <nd ref='-1496' />
+    <nd ref='-1494' />
+    <nd ref='-1492' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South May Street' />
+    <tag k='osm_id' v='151428231' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;no&quot;' />
+  </way>
+  <way id='-5520' visible='true'>
+    <nd ref='-1490' />
+    <nd ref='-1488' />
+    <nd ref='-1486' />
+    <nd ref='-1498' />
+    <nd ref='-1484' />
+    <nd ref='-1482' />
+    <nd ref='-1480' />
+    <nd ref='-1478' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Polk Street' />
+    <tag k='osm_id' v='151428234' />
+  </way>
+  <way id='-5518' visible='true'>
+    <nd ref='-1476' />
+    <nd ref='-1474' />
+    <nd ref='-1472' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Cabrini Street' />
+    <tag k='osm_id' v='151428237' />
+  </way>
+  <way id='-5516' visible='true'>
+    <nd ref='-1774' />
+    <nd ref='-1470' />
+    <nd ref='-1468' />
+    <nd ref='-1466' />
+    <nd ref='-1472' />
+    <nd ref='-1464' />
+    <nd ref='-1482' />
+    <nd ref='-1462' />
+    <nd ref='-1460' />
+    <nd ref='-1458' />
+    <nd ref='-1456' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Carpenter Street' />
+    <tag k='osm_id' v='151428239' />
+  </way>
+  <way id='-5514' visible='true'>
+    <nd ref='-1454' />
+    <nd ref='-1452' />
+    <nd ref='-1450' />
+    <nd ref='-1448' />
+    <nd ref='-1484' />
+    <nd ref='-1476' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Aberdeen Street' />
+    <tag k='osm_id' v='151428246' />
+  </way>
+  <way id='-5512' visible='true'>
+    <nd ref='-1466' />
+    <nd ref='-1446' />
+    <nd ref='-1444' />
+    <nd ref='-1442' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West Arthington Street' />
+    <tag k='osm_id' v='151428247' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5510' visible='true'>
+    <nd ref='-1442' />
+    <nd ref='-1440' />
+    <nd ref='-1438' />
+    <nd ref='-1436' />
+    <nd ref='-1778' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Aberdeen Street' />
+    <tag k='osm_id' v='151428253' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5508' visible='true'>
+    <nd ref='-1770' />
+    <nd ref='-1434' />
+    <nd ref='-1432' />
+    <nd ref='-1480' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Miller Street' />
+    <tag k='osm_id' v='151428260' />
+  </way>
+  <way id='-5506' visible='true'>
+    <nd ref='-2024' />
+    <nd ref='-1430' />
+    <nd ref='-1428' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Newberry Street' />
+    <tag k='osm_id' v='151570579' />
+  </way>
+  <way id='-5504' visible='true'>
+    <nd ref='-1426' />
+    <nd ref='-1424' />
+    <nd ref='-2254' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Throop Street' />
+    <tag k='osm_id' v='151570580' />
+  </way>
+  <way id='-5498' visible='true'>
+    <nd ref='-1358' />
+    <nd ref='-3448' />
+    <tag k='highway' v='motorway_link' />
+    <tag k='osm_id' v='151937606' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5494' visible='true'>
+    <nd ref='-1324' />
+    <nd ref='-1322' />
+    <nd ref='-1320' />
+    <nd ref='-1318' />
+    <tag k='highway' v='secondary' />
+    <tag k='osm_id' v='151943496' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5492' visible='true'>
+    <nd ref='-1316' />
+    <nd ref='-2370' />
+    <tag k='highway' v='residential' />
+    <tag k='osm_id' v='151960663' />
+  </way>
+  <way id='-5476' visible='true'>
+    <nd ref='-1200' />
+    <nd ref='-1198' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='152760453' />
+    <tag k='other_tags' v='&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5474' visible='true'>
+    <nd ref='-2228' />
+    <nd ref='-2762' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='152760454' />
+    <tag k='other_tags' v='&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5472' visible='true'>
+    <nd ref='-1198' />
+    <nd ref='-2194' />
+    <nd ref='-2076' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='152760456' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5448' visible='true'>
+    <nd ref='-1108' />
+    <nd ref='-4100' />
+    <nd ref='-2760' />
+    <nd ref='-4522' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='South Ruble Street' />
+    <tag k='osm_id' v='152762367' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5446' visible='true'>
+    <nd ref='-4188' />
+    <nd ref='-1084' />
+    <nd ref='-1082' />
+    <nd ref='-1080' />
+    <nd ref='-1078' />
+    <nd ref='-1076' />
+    <nd ref='-1074' />
+    <nd ref='-1072' />
+    <nd ref='-1070' />
+    <nd ref='-1068' />
+    <nd ref='-1066' />
+    <nd ref='-1064' />
+    <nd ref='-1062' />
+    <nd ref='-1060' />
+    <nd ref='-1058' />
+    <nd ref='-1056' />
+    <nd ref='-1054' />
+    <nd ref='-1052' />
+    <nd ref='-1050' />
+    <nd ref='-1048' />
+    <nd ref='-1108' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Ruble Street' />
+    <tag k='osm_id' v='152762464' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5440' visible='true'>
+    <nd ref='-3666' />
+    <nd ref='-1036' />
+    <nd ref='-1034' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='163148283' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5438' visible='true'>
+    <nd ref='-1830' />
+    <nd ref='-1032' />
+    <nd ref='-3018' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='163148284' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;' />
+  </way>
+  <way id='-5436' visible='true'>
+    <nd ref='-3392' />
+    <nd ref='-1030' />
+    <nd ref='-2690' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='163148286' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5434' visible='true'>
+    <nd ref='-2326' />
+    <nd ref='-2756' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='163148287' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;' />
+  </way>
+  <way id='-5432' visible='true'>
+    <nd ref='-2756' />
+    <nd ref='-1028' />
+    <nd ref='-1026' />
+    <nd ref='-4020' />
+    <nd ref='-1024' />
+    <nd ref='-1022' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='163148288' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;' />
+  </way>
+  <way id='-5428' visible='true'>
+    <nd ref='-3018' />
+    <nd ref='-2754' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='163148368' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5426' visible='true'>
+    <nd ref='-2326' />
+    <nd ref='-2632' />
+    <nd ref='-1016' />
+    <nd ref='-4522' />
+    <nd ref='-1200' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='163148369' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5424' visible='true'>
+    <nd ref='-3826' />
+    <nd ref='-1014' />
+    <nd ref='-1012' />
+    <nd ref='-1010' />
+    <nd ref='-1008' />
+    <nd ref='-1006' />
+    <nd ref='-4956' />
+    <nd ref='-1004' />
+    <nd ref='-1002' />
+    <nd ref='-1000' />
+    <nd ref='-998' />
+    <nd ref='-2620' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Throop Street' />
+    <tag k='osm_id' v='178066795' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Throop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5420' visible='true'>
+    <nd ref='-2188' />
+    <nd ref='-3854' />
+    <nd ref='-4026' />
+    <nd ref='-2324' />
+    <nd ref='-4186' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Union Avenue' />
+    <tag k='osm_id' v='178573334' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Union&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Ave&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:separated&quot;=&gt;&quot;no&quot;,&quot;tiger:source&quot;=&gt;&quot;tiger_import_dch_v0.6_20070809&quot;,&quot;tiger:t' />
+  </way>
+  <way id='-5416' action='modify' visible='true'>
+    <nd ref='-984' />
+    <nd ref='-982' />
+    <nd ref='-980' />
+    <nd ref='-2732' />
+    <tag k='highway' v='motorway_link' />
+    <tag k='osm_id' v='178573378' />
+    <tag k='other_tags' v='&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;destination&quot;=&gt;&quot;Harrison Street (600 South)&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5408' visible='true'>
+    <nd ref='-904' />
+    <nd ref='-902' />
+    <nd ref='-900' />
+    <nd ref='-898' />
+    <nd ref='-3118' />
+    <nd ref='-896' />
+    <nd ref='-1426' />
+    <nd ref='-894' />
+    <nd ref='-4328' />
+    <nd ref='-1536' />
+    <nd ref='-1548' />
+    <nd ref='-892' />
+    <nd ref='-890' />
+    <nd ref='-888' />
+    <nd ref='-886' />
+    <nd ref='-884' />
+    <nd ref='-882' />
+    <nd ref='-880' />
+    <nd ref='-878' />
+    <nd ref='-876' />
+    <nd ref='-874' />
+    <nd ref='-872' />
+    <nd ref='-870' />
+    <nd ref='-3624' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Congress Parkway' />
+    <tag k='osm_id' v='183382682' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5396' visible='true'>
+    <nd ref='-4028' />
+    <nd ref='-846' />
+    <nd ref='-844' />
+    <nd ref='-4138' />
+    <nd ref='-4136' />
+    <nd ref='-842' />
+    <nd ref='-2082' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West 13th Street' />
+    <tag k='osm_id' v='194962522' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;-1&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;13th&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5394' visible='true'>
+    <nd ref='-2082' />
+    <nd ref='-840' />
+    <nd ref='-838' />
+    <nd ref='-836' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West 13th Street' />
+    <tag k='osm_id' v='194962523' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;13th&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5392' visible='true'>
+    <nd ref='-2148' />
+    <nd ref='-834' />
+    <nd ref='-832' />
+    <nd ref='-1810' />
+    <nd ref='-2110' />
+    <nd ref='-830' />
+    <nd ref='-828' />
+    <nd ref='-826' />
+    <nd ref='-1690' />
+    <nd ref='-1692' />
+    <nd ref='-824' />
+    <nd ref='-822' />
+    <nd ref='-820' />
+    <nd ref='-818' />
+    <nd ref='-816' />
+    <nd ref='-814' />
+    <nd ref='-812' />
+    <nd ref='-2122' />
+    <nd ref='-2406' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='202375196' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;buffered_lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5390' visible='true'>
+    <nd ref='-2076' />
+    <nd ref='-2148' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='202375197' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;' />
+  </way>
+  <way id='-5388' visible='true'>
+    <nd ref='-2076' />
+    <nd ref='-2234' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='202375198' />
+  </way>
+  <way id='-5386' visible='true'>
+    <nd ref='-2234' />
+    <nd ref='-810' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='202375201' />
+    <tag k='other_tags' v='&quot;cycleway:right&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;' />
+  </way>
+  <way id='-5384' visible='true'>
+    <nd ref='-810' />
+    <nd ref='-808' />
+    <nd ref='-3850' />
+    <nd ref='-4024' />
+    <nd ref='-2322' />
+    <nd ref='-4182' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='202375203' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;' />
+  </way>
+  <way id='-5382' visible='true'>
+    <nd ref='-2080' />
+    <nd ref='-3640' />
+    <nd ref='-4162' />
+    <nd ref='-3074' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West 14th Street' />
+    <tag k='osm_id' v='203205890' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;14th&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5380' visible='true'>
+    <nd ref='-3666' />
+    <nd ref='-806' />
+    <nd ref='-804' />
+    <nd ref='-2750' />
+    <nd ref='-802' />
+    <nd ref='-800' />
+    <nd ref='-798' />
+    <nd ref='-4746' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='203444889' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;layer&quot;=&gt;&quot;1&quot;' />
+  </way>
+  <way id='-5378' visible='true'>
+    <nd ref='-796' />
+    <nd ref='-794' />
+    <nd ref='-792' />
+    <nd ref='-790' />
+    <nd ref='-788' />
+    <nd ref='-786' />
+    <nd ref='-784' />
+    <nd ref='-782' />
+    <nd ref='-780' />
+    <nd ref='-778' />
+    <nd ref='-776' />
+    <nd ref='-774' />
+    <nd ref='-4258' />
+    <nd ref='-772' />
+    <nd ref='-770' />
+    <nd ref='-768' />
+    <nd ref='-766' />
+    <nd ref='-764' />
+    <nd ref='-796' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Laflin Circle' />
+    <tag k='osm_id' v='208613304' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Laflin&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Cir&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5376' action='modify' visible='true'>
+    <nd ref='-754' />
+    <nd ref='-752' />
+    <nd ref='-3844' />
+    <nd ref='-750' />
+    <nd ref='-748' />
+    <nd ref='-4952' />
+    <nd ref='-746' />
+    <nd ref='-744' />
+    <nd ref='-742' />
+    <nd ref='-740' />
+    <nd ref='-738' />
+    <nd ref='-4002' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Aberdeen Street' />
+    <tag k='osm_id' v='208648734' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Aberdeen&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5374' visible='true'>
+    <nd ref='-736' />
+    <nd ref='-734' />
+    <nd ref='-2320' />
+    <tag k='highway' v='residential' />
+    <tag k='osm_id' v='209879616' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;' />
+  </way>
+  <way id='-5372' visible='true'>
+    <nd ref='-1456' />
+    <nd ref='-732' />
+    <nd ref='-730' />
+    <nd ref='-728' />
+    <nd ref='-726' />
+    <nd ref='-724' />
+    <nd ref='-722' />
+    <nd ref='-720' />
+    <nd ref='-718' />
+    <nd ref='-716' />
+    <nd ref='-714' />
+    <nd ref='-712' />
+    <nd ref='-710' />
+    <nd ref='-708' />
+    <nd ref='-706' />
+    <nd ref='-704' />
+    <nd ref='-702' />
+    <nd ref='-700' />
+    <nd ref='-1456' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Carpenter Street' />
+    <tag k='osm_id' v='210291679' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5370' visible='true'>
+    <nd ref='-698' />
+    <nd ref='-1454' />
+    <nd ref='-696' />
+    <nd ref='-694' />
+    <nd ref='-692' />
+    <nd ref='-690' />
+    <nd ref='-688' />
+    <nd ref='-686' />
+    <nd ref='-684' />
+    <nd ref='-682' />
+    <nd ref='-680' />
+    <nd ref='-678' />
+    <nd ref='-676' />
+    <nd ref='-674' />
+    <nd ref='-672' />
+    <nd ref='-670' />
+    <nd ref='-668' />
+    <nd ref='-698' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Aberdeen Street' />
+    <tag k='osm_id' v='210291680' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5368' visible='true'>
+    <nd ref='-1492' />
+    <nd ref='-666' />
+    <nd ref='-664' />
+    <nd ref='-662' />
+    <nd ref='-660' />
+    <nd ref='-658' />
+    <nd ref='-656' />
+    <nd ref='-654' />
+    <nd ref='-652' />
+    <nd ref='-650' />
+    <nd ref='-648' />
+    <nd ref='-646' />
+    <nd ref='-644' />
+    <nd ref='-642' />
+    <nd ref='-640' />
+    <nd ref='-638' />
+    <nd ref='-1492' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South May Street' />
+    <tag k='osm_id' v='210291685' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5364' visible='true'>
+    <nd ref='-1760' />
+    <nd ref='-634' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='West 14th Street' />
+    <tag k='osm_id' v='210649415' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;14th&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5362' visible='true'>
+    <nd ref='-632' />
+    <nd ref='-2064' />
+    <nd ref='-2028' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='210649426' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;no&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5360' visible='true'>
+    <nd ref='-632' />
+    <nd ref='-630' />
+    <nd ref='-628' />
+    <nd ref='-626' />
+    <nd ref='-624' />
+    <nd ref='-622' />
+    <nd ref='-2044' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='210649427' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5356' visible='true'>
+    <nd ref='-618' />
+    <nd ref='-616' />
+    <nd ref='-614' />
+    <nd ref='-612' />
+    <nd ref='-3852' />
+    <tag k='highway' v='residential' />
+    <tag k='osm_id' v='219717588' />
+  </way>
+  <way id='-5354' visible='true'>
+    <nd ref='-3050' />
+    <nd ref='-610' />
+    <tag k='highway' v='secondary_link' />
+    <tag k='osm_id' v='220408374' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5346' visible='true'>
+    <nd ref='-1324' />
+    <nd ref='-594' />
+    <nd ref='-592' />
+    <nd ref='-4930' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='230520026' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;' />
+  </way>
+  <way id='-5342' visible='true'>
+    <nd ref='-586' />
+    <nd ref='-4672' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Adams Street' />
+    <tag k='osm_id' v='230973582' />
+    <tag k='other_tags' v='&quot;bridge&quot;=&gt;&quot;yes&quot;,&quot;layer&quot;=&gt;&quot;1&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5338' visible='true'>
+    <nd ref='-2362' />
+    <nd ref='-580' />
+    <nd ref='-578' />
+    <nd ref='-576' />
+    <nd ref='-1316' />
+    <nd ref='-574' />
+    <nd ref='-572' />
+    <nd ref='-570' />
+    <nd ref='-568' />
+    <nd ref='-566' />
+    <nd ref='-564' />
+    <nd ref='-562' />
+    <nd ref='-560' />
+    <nd ref='-558' />
+    <nd ref='-556' />
+    <nd ref='-554' />
+    <nd ref='-2382' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='231308287' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5336' visible='true'>
+    <nd ref='-2044' />
+    <nd ref='-552' />
+    <nd ref='-550' />
+    <nd ref='-548' />
+    <nd ref='-632' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='231308290' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5334' visible='true'>
+    <nd ref='-4746' />
+    <nd ref='-2336' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Taylor Street' />
+    <tag k='osm_id' v='232145700' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;layer&quot;=&gt;&quot;1&quot;' />
+  </way>
+  <way id='-5332' visible='true'>
+    <nd ref='-1020' />
+    <nd ref='-546' />
+    <nd ref='-4208' />
+    <nd ref='-3400' />
+    <nd ref='-544' />
+    <nd ref='-2682' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Desplaines Street' />
+    <tag k='osm_id' v='233930069' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;maxspeed&quot;=&gt;&quot;30 mph&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5330' action='modify' visible='true'>
+    <nd ref='-540' />
+    <nd ref='-1020' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Desplaines Street' />
+    <tag k='osm_id' v='233930070' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;shared_lane&quot;,&quot;maxspeed&quot;=&gt;&quot;30 mph&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5322' visible='true'>
+    <nd ref='-3208' />
+    <nd ref='-2236' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='243832390' />
+  </way>
+  <way id='-5320' visible='true'>
+    <nd ref='-2236' />
+    <nd ref='-526' />
+    <nd ref='-1682' />
+    <nd ref='-2404' />
+    <nd ref='-2186' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Halsted Street' />
+    <tag k='osm_id' v='243832391' />
+    <tag k='other_tags' v='&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5312' visible='true'>
+    <nd ref='-1016' />
+    <nd ref='-2758' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Desplaines Street' />
+    <tag k='osm_id' v='253737718' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;maxspeed&quot;=&gt;&quot;30 mph&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5310' visible='true'>
+    <nd ref='-516' />
+    <nd ref='-1016' />
+    <nd ref='-2758' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Desplaines Street' />
+    <tag k='osm_id' v='253737719' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;maxspeed&quot;=&gt;&quot;30 mph&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5308' visible='true'>
+    <nd ref='-514' />
+    <nd ref='-512' />
+    <nd ref='-2712' />
+    <nd ref='-3724' />
+    <nd ref='-2340' />
+    <nd ref='-510' />
+    <nd ref='-508' />
+    <nd ref='-516' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Desplaines Street' />
+    <tag k='osm_id' v='253737720' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;maxspeed&quot;=&gt;&quot;30 mph&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5300' visible='true'>
+    <nd ref='-4668' />
+    <nd ref='-502' />
+    <nd ref='-500' />
+    <nd ref='-498' />
+    <nd ref='-2582' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Adams Street' />
+    <tag k='osm_id' v='255368623' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5290' visible='true'>
+    <nd ref='-3666' />
+    <nd ref='-482' />
+    <nd ref='-610' />
+    <nd ref='-480' />
+    <nd ref='-478' />
+    <nd ref='-1998' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='255623936' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Harrison&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;W&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60605&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5288' visible='true'>
+    <nd ref='-1998' />
+    <nd ref='-476' />
+    <nd ref='-474' />
+    <nd ref='-4054' />
+    <nd ref='-472' />
+    <nd ref='-3974' />
+    <nd ref='-2280' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='255623937' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5284' visible='true'>
+    <nd ref='-3750' />
+    <nd ref='-468' />
+    <nd ref='-466' />
+    <nd ref='-464' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Peoria Street' />
+    <tag k='osm_id' v='278403361' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;' />
+  </way>
+  <way id='-5282' visible='true'>
+    <nd ref='-1540' />
+    <nd ref='-2622' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403362' />
+  </way>
+  <way id='-5280' visible='true'>
+    <nd ref='-462' />
+    <nd ref='-3750' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403363' />
+  </way>
+  <way id='-5278' visible='true'>
+    <nd ref='-4698' />
+    <nd ref='-3688' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403364' />
+  </way>
+  <way id='-5276' visible='true'>
+    <nd ref='-4728' />
+    <nd ref='-462' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403365' />
+  </way>
+  <way id='-5274' visible='true'>
+    <nd ref='-4750' />
+    <nd ref='-460' />
+    <nd ref='-4728' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403366' />
+  </way>
+  <way id='-5272' visible='true'>
+    <nd ref='-742' />
+    <nd ref='-458' />
+    <nd ref='-1540' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403367' />
+  </way>
+  <way id='-5270' visible='true'>
+    <nd ref='-3750' />
+    <nd ref='-456' />
+    <nd ref='-4698' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403368' />
+  </way>
+  <way id='-5268' visible='true'>
+    <nd ref='-3688' />
+    <nd ref='-454' />
+    <nd ref='-452' />
+    <nd ref='-742' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='278403369' />
+  </way>
+  <way id='-5266' visible='true'>
+    <nd ref='-3786' />
+    <nd ref='-450' />
+    <nd ref='-4282' />
+    <nd ref='-1518' />
+    <nd ref='-3982' />
+    <nd ref='-1490' />
+    <nd ref='-3742' />
+    <nd ref='-3058' />
+    <nd ref='-448' />
+    <nd ref='-446' />
+    <nd ref='-1782' />
+    <nd ref='-444' />
+    <nd ref='-442' />
+    <nd ref='-3056' />
+    <nd ref='-440' />
+    <nd ref='-438' />
+    <nd ref='-436' />
+    <nd ref='-2050' />
+    <nd ref='-2090' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Racine Avenue' />
+    <tag k='osm_id' v='278497423' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;uic_shuttle_route&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5258' visible='true'>
+    <nd ref='-2122' />
+    <nd ref='-430' />
+    <nd ref='-2412' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='292339725' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5256' visible='true'>
+    <nd ref='-2274' />
+    <nd ref='-428' />
+    <nd ref='-426' />
+    <nd ref='-514' />
+    <nd ref='-424' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='292339728' />
+    <tag k='other_tags' v='&quot;cycleway:left&quot;=&gt;&quot;track&quot;,&quot;cycleway:right&quot;=&gt;&quot;buffered_lane&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;' />
+  </way>
+  <way id='-5174' visible='true'>
+    <nd ref='-2078' />
+    <nd ref='-256' />
+    <nd ref='-254' />
+    <nd ref='-3134' />
+    <nd ref='-836' />
+    <nd ref='-2360' />
+    <nd ref='-252' />
+    <nd ref='-2036' />
+    <nd ref='-2060' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Blue Island Avenue' />
+    <tag k='osm_id' v='316174517' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Blue Island&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;Ave&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60608&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60608&quot;' />
+  </way>
+  <way id='-5172' action='modify' visible='true'>
+    <nd ref='-2690' />
+    <nd ref='-3020' />
+    <nd ref='-250' />
+    <nd ref='-1998' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='316762106' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5170' visible='true'>
+    <nd ref='-2690' />
+    <nd ref='-1318' />
+    <nd ref='-248' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='316762107' />
+  </way>
+  <way id='-5144' visible='true'>
+    <nd ref='-222' />
+    <nd ref='-220' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Bishop Street' />
+    <tag k='osm_id' v='317705316' />
+    <tag k='other_tags' v='&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Bishop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5142' visible='true'>
+    <nd ref='-222' />
+    <nd ref='-218' />
+    <nd ref='-216' />
+    <nd ref='-3698' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Bishop Street' />
+    <tag k='osm_id' v='317705318' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Bishop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5140' visible='true'>
+    <nd ref='-3698' />
+    <nd ref='-214' />
+    <nd ref='-212' />
+    <nd ref='-222' />
+    <tag k='highway' v='residential' />
+    <tag k='name' v='South Bishop Street' />
+    <tag k='osm_id' v='317705319' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;,&quot;tiger:cfcc&quot;=&gt;&quot;A41&quot;,&quot;tiger:county&quot;=&gt;&quot;Cook, IL&quot;,&quot;tiger:name_base&quot;=&gt;&quot;Bishop&quot;,&quot;tiger:name_direction_prefix&quot;=&gt;&quot;S&quot;,&quot;tiger:name_type&quot;=&gt;&quot;St&quot;,&quot;tiger:reviewed&quot;=&gt;&quot;no&quot;,&quot;tiger:zip_left&quot;=&gt;&quot;60607&quot;,&quot;tiger:zip_right&quot;=&gt;&quot;60607&quot;' />
+  </way>
+  <way id='-5138' visible='true'>
+    <nd ref='-1020' />
+    <nd ref='-210' />
+    <nd ref='-208' />
+    <nd ref='-206' />
+    <nd ref='-204' />
+    <nd ref='-2266' />
+    <nd ref='-2582' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Adams Street' />
+    <tag k='osm_id' v='319345470' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;-1&quot;' />
+  </way>
+  <way id='-5130' visible='true'>
+    <nd ref='-424' />
+    <nd ref='-190' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Harrison Street' />
+    <tag k='osm_id' v='319345474' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;' />
+  </way>
+  <way id='-5128' visible='true'>
+    <nd ref='-514' />
+    <nd ref='-188' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Desplaines Street' />
+    <tag k='osm_id' v='319345475' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;maxspeed&quot;=&gt;&quot;30 mph&quot;,&quot;oneway&quot;=&gt;&quot;-1&quot;' />
+  </way>
+  <way id='-5122' visible='true'>
+    <nd ref='-2582' />
+    <nd ref='-4214' />
+    <nd ref='-3392' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Clinton Street' />
+    <tag k='osm_id' v='319352692' />
+    <tag k='other_tags' v='&quot;busway&quot;=&gt;&quot;lane&quot;,&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5116' visible='true'>
+    <nd ref='-3392' />
+    <nd ref='-174' />
+    <nd ref='-4930' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='West Jackson Boulevard' />
+    <tag k='osm_id' v='319352697' />
+    <tag k='other_tags' v='&quot;bicycle&quot;=&gt;&quot;designated&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5110' action='modify' visible='true'>
+    <nd ref='-2682' />
+    <nd ref='-3028' />
+    <nd ref='-188' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Desplaines Street' />
+    <tag k='osm_id' v='319358160' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;track&quot;,&quot;lanes&quot;=&gt;&quot;4&quot;,&quot;maxspeed&quot;=&gt;&quot;30 mph&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5102' visible='true'>
+    <nd ref='-3688' />
+    <nd ref='-4014' />
+    <nd ref='-3194' />
+    <nd ref='-3630' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='South Morgan Street' />
+    <tag k='osm_id' v='325666719' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;buffered_lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;surface&quot;=&gt;&quot;asphalt&quot;' />
+  </way>
+  <way id='-5078' visible='true'>
+    <nd ref='-1034' />
+    <nd ref='-112' />
+    <nd ref='-248' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='363061166' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5076' visible='true'>
+    <nd ref='-1324' />
+    <nd ref='-248' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='South Canal Street' />
+    <tag k='osm_id' v='372671685' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;oneway&quot;=&gt;&quot;-1&quot;' />
+  </way>
+  <way id='-5052' visible='true'>
+    <nd ref='-2756' />
+    <nd ref='-30' />
+    <nd ref='-3018' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='377897003' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5050' visible='true'>
+    <nd ref='-4324' />
+    <nd ref='-28' />
+    <nd ref='-26' />
+    <nd ref='-2326' />
+    <tag k='highway' v='primary' />
+    <tag k='name' v='West Roosevelt Road' />
+    <tag k='osm_id' v='377897004' />
+    <tag k='other_tags' v='&quot;cycleway&quot;=&gt;&quot;lane&quot;,&quot;lanes&quot;=&gt;&quot;2&quot;,&quot;old_ref&quot;=&gt;&quot;US 30 Alternate (old US 330)&quot;,&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+  <way id='-5048' visible='true'>
+    <nd ref='-1318' />
+    <nd ref='-248' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='381270970' />
+  </way>
+  <way id='-5046' visible='true'>
+    <nd ref='-2468' />
+    <nd ref='-248' />
+    <nd ref='-1318' />
+    <tag k='highway' v='tertiary' />
+    <tag k='name' v='West Van Buren Street' />
+    <tag k='osm_id' v='381270971' />
+    <tag k='other_tags' v='&quot;oneway&quot;=&gt;&quot;yes&quot;' />
+  </way>
+</osm>

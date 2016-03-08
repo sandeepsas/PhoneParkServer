@@ -1,0 +1,70 @@
+2016-03-08 12:20:21,720 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jettyTestRun:jettyTestRun:0.0.1-SNAPSHOT @ E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\pom.xml.
+2016-03-08 12:20:21,720 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jettyTestRun:jettyTestRun:0.0.1-SNAPSHOT @ E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\pom.xml.
+2016-03-08 12:20:21,847 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 12:20:21,848 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 12:20:21,849 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 12:20:21,850 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 12:20:22,195 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 12:20:22,196 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 12:20:24,102 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:20:24,103 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\main\resources
+2016-03-08 12:20:24,106 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:20:24,106 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\test\resources
+2016-03-08 12:20:26,001 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jettyTestRun:jettyTestRun:0.0.1-SNAPSHOT @ E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\pom.xml.
+2016-03-08 12:20:26,060 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 12:20:26,060 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 12:20:26,119 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 12:20:26,120 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 12:20:26,310 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:20:26,311 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\main\resources
+2016-03-08 12:20:26,313 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:20:26,314 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\test\resources
+2016-03-08 12:20:26,437 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 12:20:26,437 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 12:20:27,824 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 12:20:27,824 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 12:20:27,848 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:20:27,849 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\main\resources
+2016-03-08 12:20:27,850 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:20:27,850 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\test\resources
+2016-03-08 12:20:40,588 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-03-08 12:20:48,672 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun
+2016-03-08 12:20:48,673 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2016-03-08 12:20:50,183 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-03-08 12:22:34,318 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:22:34,319 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\main\resources
+2016-03-08 12:22:34,320 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:22:34,320 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\test\resources
+2016-03-08 12:22:47,044 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2016-03-08 12:22:47,128 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun
+2016-03-08 12:22:47,128 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2016-03-08 12:42:22,197 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:42:22,201 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\main\resources
+2016-03-08 12:42:22,204 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 12:42:22,205 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\test\resources
+2016-03-08 13:05:28,633 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-03-08 13:05:35,088 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jettyTestRun:jettyTestRun:0.0.1-SNAPSHOT @ E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\pom.xml.
+2016-03-08 13:05:35,088 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jettyTestRun:jettyTestRun:0.0.1-SNAPSHOT @ E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\pom.xml.
+2016-03-08 13:05:36,071 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 13:05:36,071 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 13:05:36,074 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 13:05:36,074 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 13:05:36,267 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 13:05:36,268 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 13:05:40,362 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 13:05:40,362 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\main\resources
+2016-03-08 13:05:40,362 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 13:05:40,362 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\test\resources
+2016-03-08 13:05:53,126 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: jettyTestRun:jettyTestRun:0.0.1-SNAPSHOT @ E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\pom.xml.
+2016-03-08 13:05:53,188 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 13:05:53,188 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 13:05:53,313 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 13:05:53,313 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 13:05:53,917 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 13:05:53,917 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 13:05:54,203 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jgrapht:jgrapht:jar:0.7.3 has been relocated to org.jgrapht:jgrapht-jdk1.5:jar:0.7.3
+2016-03-08 13:05:54,203 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+2016-03-08 13:05:54,378 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 13:05:54,378 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\main\resources
+2016-03-08 13:05:54,394 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-08 13:05:54,394 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Program_Workspaces\Server Programming\GitVersion\PhoneParkServer\jettyTestRun\src\test\resources
