@@ -38,11 +38,6 @@ public class WritePAT {
 			//STEP 4: Execute a query
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
-			/*String sql_sequel =   jsonObj.getString("ReportID") + "',"
-								+"'"+ jsonObj.getString("UserID") + "',"
-								+"'"+ jsonObj.getString("StreetBlockID") + "',"
-								+"'"+ jsonObj.getString("Activity") + "',"
-								+"'"+ jsonObj.getString("TimeStamp");*/
 			
 			String sql_sequel = jsonObj.getString("UserID") + "',"
 					+"'"+ jsonObj.getString("StreetBlockID") + "',"

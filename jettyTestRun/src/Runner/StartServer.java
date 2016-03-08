@@ -12,7 +12,6 @@ import StreetBlock.StreetBlockLoader;
 
 import StreetBlock.KdTree.XYZPoint;
 import spark.*;
-import supportPack.ReportPack;
 
 public class StartServer {
 
@@ -85,11 +84,128 @@ public class StartServer {
 		 * "intl" object is initialized at the beginning (Refer line 20). 
 		 */
 		RoadGraph roadGraph = intl.getRoadGraph();
+		/*Use map matching to locate the nearest node on the road network*/
 		GraphNode closestMapPoint = roadGraph.mapMatch(latitude,longitude);
+		/*Retrieve the GCM route starting from this location
+		 * The route is a set of nodes*/
 		sbr = intl.startRouting(closestMapPoint);
 
 		System.out.println(sbr); //For debug  purpose only
+		/*Send the route nodes to the Android Client*/
 		return sbr;
+	}
+	
+	/*This function is called when the web page /post is accessed
+	 * Sample request:
+	 * http://73.247.220.84:8080/post?UserID=a108eec35f0daf33&Latitude=41.8693826&
+	 * Longitude=-87.6630133&Activity=1&TimeStamp=11255503082016
+	 * 
+	 * */
+
+	private static Object postActivity(Request req) {
+		JSONObject reportJObj = new JSONObject();
+		postString.setLength(0);
+		boolean res =false;
+		try {
+			/*Parse the parameters for identifying the vehicle location and activity
+			 * Activity = 0->Deparking
+			 * Activity = 1->Parked*/
+			double latitude = Double.parseDouble(req.queryParams("Latitude"));
+			double longitude = Double.parseDouble(req.queryParams("Longitude"));
+			int activity = Integer.parseInt(req.queryParams("Activity"));
+			String timeStamp = req.queryParams("TimeStamp");
+
+			/*Identify the street block where the activity happened*/
+			Pair<Integer, String>  Street_pair = findStreetBlock(latitude,longitude).get(0);
+			postString.append(Street_pair.getR());
+			int StreetBlockID = Street_pair.getL();
+			/*Put all data in a JSON object for sending to the database*/
+			reportJObj.put("UserID",req.queryParams("UserID"));
+			reportJObj.put("StreetBlockID",""+StreetBlockID);
+			reportJObj.put("Activity",req.queryParams("Activity"));
+			reportJObj.put("TimeStamp", req.queryParams("TimeStamp"));
+			
+			/*Write the data to Parking Availability Table (PAT)*/
+			res = writePAT(reportJObj);
+
+			/*If updating PAT is successful, then Update Parking Status SnapShot table (PSST)
+			 * updatePSST(...) is invoked to update the PSST. This function will also update
+			 *  the Parking Status Table (PST) within the function
+			 * and retrieve the updated value of availability from
+			 * Parking Status Table (PST)*/
+			if(res){
+				int new_availability = updatePSST(StreetBlockID,activity,timeStamp);
+				postString.append(" ->"+new_availability);
+
+			}
+			/*The returned output will now contain the Street Block, the old value of parking availability,
+			 * the new value of parking availability. This information is returned to the server*/
+			return postString;
+
+		} catch (JSONException e) {
+			// Exception handling
+			e.printStackTrace();
+		}
+		return reportJObj.toString();
+
+	}
+	
+	/*This function will update the Parking Allocation Table (PAT)
+	 * The Class and write function is present in src/Database folder*/
+	private static boolean writePAT(JSONObject jsonObj){
+		WritePAT wPAT = new WritePAT();
+		return (wPAT.write(jsonObj));
+
+	}
+	
+	/*This function updates the PST and PSST databases*/
+	private static int updatePSST(int StreetBlockID,int activity, String timeStamp) {
+		//Query PST to fetch record of Street Block
+		int new_availability = 0;
+		/*Load PST database*/
+		LoadPST pst = new LoadPST();
+		/*Fetch the parking availability values from PST database for the street Block*/
+		Pair<Integer, Integer>  rsPST = pst.fetchRecord(StreetBlockID);
+		if(rsPST!=null){
+			int total_spaces = rsPST.getL();
+			int available_spaces = rsPST.getR();
+			/*Append old value of availability to the output string to
+			 *  send to the client for display purpose*/
+			postString.append(" Availability = "+available_spaces);
+			/*Estimate the real time parking availability*/
+			new_availability = estimateParkingAvailability(total_spaces,available_spaces,activity);
+			/*Restrict the changes between 0 and total number of parking spaces*/
+			if(new_availability>total_spaces){
+				new_availability = total_spaces;
+			}
+			if(new_availability<0){
+				new_availability = 0;
+			}
+			/*Update the new availability value to the Parking Status Table PST*/
+			pst.updateRecord(StreetBlockID,new_availability);
+			/*Update Parking snap shot table PSST*/
+			UpdatePSST uPsst = new UpdatePSST();
+			uPsst.update(StreetBlockID,total_spaces,new_availability,timeStamp);
+		}
+		/*Return the new value of availability after parking/de-parking activity*/
+		return new_availability;
+	}
+	
+	/*This function estimates the real time parking availability*/
+	private static int estimateParkingAvailability(int total_spaces, int available_spaces,int activity) {
+		int new_availability = 0;
+
+		double change_in_availability = (1-ServerConfig.FLASE_POSITIVE)/(ServerConfig.PENETRATION_RATIO*(1-ServerConfig.FLASE_NEGATIVE));
+
+		/*Compute change in Parking availability wrt to activity*/
+		if(activity==ServerConfig.ACTIVITY_PARKED){//Parking
+			new_availability = available_spaces - (int)Math.ceil(change_in_availability);
+			if(new_availability<0)
+				new_availability=0;
+		}else{
+			new_availability = available_spaces + (int)Math.round(change_in_availability);
+		}
+		return new_availability;
 	}
 
 	/*This function is called when the /ping is accessed*/
@@ -97,112 +213,21 @@ public class StartServer {
 		return "Server Listening";
 	}
 
-	private static boolean writePAT(JSONObject jsonObj){
 
-		WritePAT wPAT = new WritePAT();
-		return (wPAT.write(jsonObj));
-
-	}
-
-
-	private static Object postActivity(Request req) {
-		JSONObject reportJObj = new JSONObject();
-		postString.setLength(0);
-		boolean res =false;
-		try {
-
-			double latitude = Double.parseDouble(req.queryParams("Latitude"));
-			double longitude = Double.parseDouble(req.queryParams("Longitude"));
-			int activity = Integer.parseInt(req.queryParams("Activity"));
-			String timeStamp = req.queryParams("TimeStamp");
-
-			Pair<Integer, String>  Street_pair = findStreetBlock(latitude,longitude).get(0);
-			postString.append(Street_pair.getR());
-			
-			int StreetBlockID = Street_pair.getL();
-			long reportID = ReportPack.reportGenerator();
-			//reportJObj.put("ReportID",req.queryParams("ReportID"));
-			reportJObj.put("ReportID",""+reportID);
-			reportJObj.put("UserID",req.queryParams("UserID"));
-			reportJObj.put("StreetBlockID",""+StreetBlockID);
-			reportJObj.put("Activity",req.queryParams("Activity"));
-			reportJObj.put("TimeStamp", req.queryParams("TimeStamp"));
-			
-			res = writePAT(reportJObj);
-
-			if(res){
-				int new_availability = updatePSST(StreetBlockID,activity,timeStamp);
-				postString.append(" ->"+new_availability);
-
-			}
-			return postString;
-
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return reportJObj.toString();
-
-	}
-
-
-	private static int updatePSST(int StreetBlockID,int activity, String timeStamp) {
-		//Query PST to fetch record of Street Block
-		int new_availability = 0;
-		LoadPST pst = new LoadPST();
-		Pair<Integer, Integer>  rsPST = pst.fetchRecord(StreetBlockID);
-		if(rsPST!=null){
-			int total_spaces = rsPST.getL();
-			int available_spaces = rsPST.getR();
-			postString.append(" Availability = "+available_spaces);
-			new_availability = estimateParkingAvailability(total_spaces,available_spaces,activity);
-			if(new_availability>total_spaces){
-				new_availability = total_spaces;
-			}
-			if(new_availability<0){
-				new_availability = 0;
-			}
-			pst.updateRecord(StreetBlockID,new_availability);
-			UpdatePSST uPsst = new UpdatePSST();
-			uPsst.update(StreetBlockID,total_spaces,new_availability,timeStamp);
-		}
-		return new_availability;
-	}
-
-	private static int estimateParkingAvailability(int total_spaces, int available_spaces,int activity) {
-		// TODO Auto-generated method stub
-		int new_availability = 0;
-		double fp = 0.1;
-		double fn = 0.1;
-		double b = 0.05; //penetration ratio
-		double factor = (1-fp)/(b*(1-fn));
-		double change_in_availability = /*available_spaces**/factor;
-
-		if(activity==1){//Parking
-
-			new_availability = available_spaces - (int)Math.ceil(change_in_availability);
-			if(new_availability<0)
-				new_availability=0;
-
-		}else{
-
-			new_availability = available_spaces + (int)Math.round(change_in_availability);
-
-		}
-
-		return new_availability;
-	}
-
+	/*This function will identify the nearest parking block given a location*/
 	private static List<Pair<Integer, String>> findStreetBlock(double latitude, double longitude) {
-		//Max StreetBlockID = '16548'
-		List<Pair<Integer, String>> nearest_blocks = new ArrayList<Pair<Integer, String>>();
 
+		List<Pair<Integer, String>> nearest_blocks = new ArrayList<Pair<Integer, String>>();
+		/*Load the street Block data as a Kd-Tree*/
 		KdTree<XYZPoint> streetTree = sb.loadStreetDataTree();
+		/*Create the search point object*/
 		XYZPoint car_loc = new XYZPoint(null,null,latitude,
 				longitude,0,0,0,0,0);
+		/*Perform KNN Search*/
 		Collection<XYZPoint> near_bys = streetTree.nearestNeighbourSearch(car_loc,0.5);//1 mile radius
 		Iterator<XYZPoint> itr  = near_bys.iterator();
 		int count =1;
+		/*Send 10 nearest Street Blocks*/
 		while(itr.hasNext()){
 			XYZPoint point = itr.next();
 			int streetID = point.streetID;
@@ -215,21 +240,5 @@ public class StartServer {
 		}
 
 		return nearest_blocks;
-	}
-
-	
-
-	private static List<Pair<Integer, Double>> estimateAvailabilityforPBlocks(List<Pair<Integer, String>> nearestParkingBlocks) {
-		List<Pair<Integer, Double>> parkAvailPair = new ArrayList<Pair<Integer, Double>>();
-		for(Pair<Integer, String> stPair:nearestParkingBlocks){
-			double avilParkingPST = LoadPST.fetchAvailabilityFromPST(stPair);
-			double avilParkingHPP = LoadHPP.fetchAvailabilityFromHPP(stPair);
-			double avgAvailParking = (avilParkingPST+avilParkingHPP)/2;
-			parkAvailPair.add(new Pair<Integer, Double>(stPair.getL(),avgAvailParking));
-		}
-		Collections.sort(parkAvailPair, Pair.getAttribute2Comparator());
-		return parkAvailPair;
-
-
 	}
 }
