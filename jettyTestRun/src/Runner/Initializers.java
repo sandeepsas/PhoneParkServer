@@ -28,7 +28,7 @@ public class Initializers {
 		return parseOSM;
 	}
 
-	public static RoadGraph getRoadGraph() {
+	public RoadGraph getRoadGraph() {
 		return roadGraph;
 	}
 	
@@ -36,7 +36,6 @@ public class Initializers {
 		
 		try {
 			System.out.println("Executed Before Spark!!");
-			recalculateHPP();
 			parseOSM = new ParseOSM();
 		} catch (IOException | XmlPullParserException e) {
 			// TODO Auto-generated catch block
@@ -50,11 +49,6 @@ public class Initializers {
 			e.printStackTrace();
 		}
 		gNodeMap = rnLoader.getgNodeMap();
-	}
-	
-	public static void recalculateHPP() {
-		//Get historical mean from 
-		
 	}
 
 	public StringBuilder startRouting(GraphNode closestMapPoint) {

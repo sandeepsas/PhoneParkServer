@@ -15,7 +15,7 @@ import org.json.JSONObject;
 
 import MapDatabase.GraphNode;
 import MapDatabase.Pair;
-import Runner.App;
+import Runner.StartServer;
 import StreetBlock.KdTree.XYZPoint;
 
 public class LoadPST {
@@ -214,7 +214,7 @@ public class LoadPST {
 	
 	public static HashMap<Pair<GraphNode, GraphNode>, Double> fetchAllParkingAvailability(){
 		HashMap<Pair<GraphNode, GraphNode>,Double> edgeAvailabilitySet = new HashMap<Pair<GraphNode, GraphNode>,Double>();
-		Map<Integer, XYZPoint> parkingBlockMap_1= App.getSb().getParkingBlockMap();
+		Map<Integer, XYZPoint> parkingBlockMap_1= StartServer.getSb().getParkingBlockMap();
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
