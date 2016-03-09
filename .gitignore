@@ -14,3 +14,4 @@ local.properties
 # Eclipse Core
 .project
 .class
+target/
