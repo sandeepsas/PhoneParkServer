@@ -1,18 +1,17 @@
 package ParkRouter;
-public class ParkNode
-{
-    private int id;
-    private double latitude;
-    private double longitude;
 
-    public ParkNode(int i, double lat, double lon)
-    {
-        id = i;
-        latitude = lat;
-        longitude = lon;
-    }
+public class ParkNode {
+	private int id;
+	private double latitude;
+	private double longitude;
 
-    @Override
+	public ParkNode(int i, double lat, double lon) {
+		id = i;
+		latitude = lat;
+		longitude = lon;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -28,22 +27,19 @@ public class ParkNode
 		return true;
 	}
 
-	public int getId()
-    {
-        return id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public double getLatitude()
-    {
-        return latitude;
-    }
+	public double getLatitude() {
+		return latitude;
+	}
 
-    public double getLongitude()
-    {
-        return longitude;
-    }
-    
-    @Override
+	public double getLongitude() {
+		return longitude;
+	}
+
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;

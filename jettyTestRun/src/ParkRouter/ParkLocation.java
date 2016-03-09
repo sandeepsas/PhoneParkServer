@@ -1,44 +1,37 @@
 package ParkRouter;
-public class ParkLocation
-{
-    private ParkEdge edge;
-    private int direction;
-    private double offset;
 
-    public ParkLocation(ParkEdge e, int d, double o)
-    {
-        edge = e;
-        direction = d;
-        offset = o;
-    }
+public class ParkLocation {
+	private ParkEdge edge;
+	private int direction;
+	private double offset;
 
-    public ParkEdge getEdge()
-    {
-        return edge;
-    }
+	public ParkLocation(ParkEdge e, int d, double o) {
+		edge = e;
+		direction = d;
+		offset = o;
+	}
 
-    public int getDirection()
-    {
-        return direction;
-    }
+	public ParkEdge getEdge() {
+		return edge;
+	}
 
-    public double getOffset()
-    {
-        return offset;
-    }
+	public int getDirection() {
+		return direction;
+	}
 
-    public void setEdge(ParkEdge e)
-    {
-        edge = e;
-    }
+	public double getOffset() {
+		return offset;
+	}
 
-    public void setDirection(int d)
-    {
-        direction = d;
-    }
+	public void setEdge(ParkEdge e) {
+		edge = e;
+	}
 
-    public void setOffset(double o)
-    {
-        offset = o;
-    }
+	public void setDirection(int d) {
+		direction = d;
+	}
+
+	public void setOffset(double o) {
+		offset = o;
+	}
 }

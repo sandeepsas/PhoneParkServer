@@ -1,11 +1,7 @@
 package ParkRouter;
-// Class that takes data from SFPark about their nodes and edges and creates a graph from it
+//Class that creates a graph
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 
 import MapDatabase.*;
 
@@ -17,41 +13,16 @@ public class ParkStreetNetworkCreator {
 	public static int N_NODES = 2514;
 	public int N_EDGES = 2855;
 	
-/*	public static int N_NODES = 994;
-	public int N_EDGES = 1139;*/
-	
-	
-	// private String nodeFilename = "./data/SFPark_nodes_FishermansWharf.csv";
-	private FileReader node_fr;
-	private BufferedReader node_br;
-	// private String edgeFilename = "./data/SFPark_edges_FishermansWharf2.csv";
-	private FileReader edge_fr;
-	private BufferedReader edge_br;
-
 	private ParkNetwork road = new ParkNetwork(N_NODES);
 	private HashMap<Integer, ParkNode> nodes;
 	private ParkEdge edges[][];
 	private double edgeWeights[][];
 	private ParkEdge edgeList[] = new ParkEdge[N_EDGES];
 
-	private double SP[][] = new double[N_NODES][N_NODES]; // Will contain the
-	// shortest path
-	// distance between
-	// node i and node
-	// j.
-	private int next[][] = new int[N_NODES][N_NODES]; // Used by the
-	// Floyd-Warshall
-	// algorithm to
-	// reconstruct the
-	// shortest paths.
-	private int SP_direction[][] = new int[N_NODES][N_NODES]; // Will contain
-	// the first
-	// node to move
-	// towards in
-	// the shortest
-	// path between
-	// node i and
-	// node j.
+	private double SP[][] = new double[N_NODES][N_NODES]; // Shortest path between i and j
+	private int next[][] = new int[N_NODES][N_NODES]; // Used by the Floyds Algorithm
+
+	private int SP_direction[][] = new int[N_NODES][N_NODES]; // first node to move toward in a shortest path
 
 	private HashMap<Long,Integer> graphNodeMap;
 	
@@ -73,34 +44,6 @@ public class ParkStreetNetworkCreator {
 			e.printStackTrace();
 		}
 		floydWarshall();
-	}
-
-	public int[][] getSP_direction() {
-		return SP_direction;
-	}
-
-	public double[][] getShortestPaths() {
-		return SP;
-	}
-
-	public double[][] getEdgeWeights() {
-		return edgeWeights;
-	}
-
-	public ParkEdge[][] getEdges() {
-		return edges;
-	}
-
-	public ParkNetwork getRoad() {
-		return road;
-	}
-
-	public ParkEdge[] getEdgeList() {
-		return edgeList;
-	}
-
-	public HashMap<Integer, ParkNode> getNodes() {
-		return nodes;
 	}
 
 	public void floydWarshall() {
@@ -137,29 +80,13 @@ public class ParkStreetNetworkCreator {
 			}
 		}
 
-		/*
-		 * ArrayList<Integer> shortestPaths[][] = new
-		 * ArrayList<Integer>[N_NODES][N_NODES]; for ( int i = 0; i < N_NODES;
-		 * i++ ) { for ( int j = 0; j < N_NODES; j++ ) { shortestPaths[i][j] =
-		 * reconstructPath(i,j); } }
-		 */
-
-		// System.out.println("SP value of node 0 and 2 is: " + SP[0][2]);
 		for (int i = 0; i < N_NODES; i++) {
 			for (int j = 0; j < N_NODES; j++) {
 				// System.out.println(i+" "+j);
 				ArrayList<Integer> sp = reconstructPath(i, j);
 				if(sp!=null){
-					SP_direction[i][j] = ((Integer) sp.get(1)).intValue(); // The
-					// second
-					// element
-					// is
-					// the
-					// next
-					// node
-					// to
-					// visit.
-					System.out.println("SP_direction is " + SP_direction[i][j]);
+					SP_direction[i][j] = ((Integer) sp.get(1)).intValue(); 
+					/*The second element is the next node to visit*/
 				}
 			}
 		}
@@ -208,7 +135,6 @@ public class ParkStreetNetworkCreator {
 			ParkEdge e = new ParkEdge(nodes.get(nodeId1),nodes.get(nodeId2),nBlocks,blockId,-1,nTotal,0,tempEdge.isOneway());
 			road.addEdge(e);
 
-			//System.out.println("Added edge <" + nodeId1 +","+ nodeId2 +","+ nBlocks +","+ blockId +","+ nTotal + ">");
 			edgeList[nlines] = e;
 			nlines++;
 		}
@@ -228,8 +154,33 @@ public class ParkStreetNetworkCreator {
 			no_id_ctr++;
 		}
 	}
+	/*Getter and Setters*/
+	public int[][] getSP_direction() {
+		return SP_direction;
+	}
 
-	/*public static void main(String args[]) {
-		SFParkRoadNetworkCreator s = new SFParkRoadNetworkCreator();
-	}*/
+	public double[][] getShortestPaths() {
+		return SP;
+	}
+
+	public double[][] getEdgeWeights() {
+		return edgeWeights;
+	}
+
+	public ParkEdge[][] getEdges() {
+		return edges;
+	}
+
+	public ParkNetwork getRoad() {
+		return road;
+	}
+
+	public ParkEdge[] getEdgeList() {
+		return edgeList;
+	}
+
+	public HashMap<Integer, ParkNode> getNodes() {
+		return nodes;
+	}
+
 }

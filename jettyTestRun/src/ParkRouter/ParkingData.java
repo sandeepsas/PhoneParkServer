@@ -1,4 +1,5 @@
 package ParkRouter;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 
@@ -9,188 +10,165 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.sql.Timestamp;
 
+public class ParkingData {
+	private static String fileName;
 
-public class ParkingData
-{
-    private static String fileName;
+	private ArrayList<Integer> blockList = new ArrayList<Integer>();
+	private ArrayList<Timestamp> timeList = new ArrayList<Timestamp>();
+	private ArrayList<Integer> availabilityList = new ArrayList<Integer>();
 
-    private ArrayList<Integer> blockList = new ArrayList<Integer>();
-    private ArrayList<Timestamp> timeList = new ArrayList<Timestamp>();
-    private ArrayList<Integer> availabilityList = new ArrayList<Integer>();
+	private HashMap<Integer, Integer> parkingMap;
+	private HashMap<Integer, Integer> initialParkingMap;
+	private int lastReportProcessed;
+	private int initialLastReportProcessed;
 
-    private HashMap<Integer,Integer> parkingMap;
-    private HashMap<Integer,Integer> initialParkingMap;
-    private int lastReportProcessed;
-    private int initialLastReportProcessed;
+	BufferedReader readFile;
 
-    BufferedReader readFile;
+	public ParkingData(String fN) {
+		fileName = fN;
+		try {
+			readFile = new BufferedReader(new FileReader(fileName));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		readDataIntoMemory();
+	}
 
-    public ParkingData(String fN)
-    {
-        fileName = fN;
-        try
-	{
-	    readFile = new BufferedReader(new FileReader(fileName));
-        }
-        catch (Exception e)
-	{
-            e.printStackTrace();
-        }
-        readDataIntoMemory();
-    }
+	public int getAvailability(int b) {
+		// Will return the availability for the given block at the time to which
+		// the profile has been updated.
+		if (parkingMap.containsKey(b)) {
+			return parkingMap.get(b).intValue();
+		} else {
+			return 0;
+		}
+	}
 
-    public int getAvailability(int b)
-    {
-        // Will return the availability for the given block at the time to which the profile has been updated.
-        if ( parkingMap.containsKey(b) )
-        {
-            return parkingMap.get(b).intValue();
-        }
-        else
-        {
-            return 0;
-        }
-    }
+	public Timestamp findNextAvailabilityTime(int blockId) {
+		// Will return the next Timestamp in which there is availability for
+		// block blockId
+		int i = lastReportProcessed;
+		int currentBlock = ((Integer) blockList.get(i)).intValue();
+		Timestamp time = (Timestamp) timeList.get(i);
+		int availability = ((Integer) availabilityList.get(i)).intValue();
 
-    public Timestamp findNextAvailabilityTime(int blockId)
-    {
-        // Will return the next Timestamp in which there is availability for block blockId
-        int i = lastReportProcessed;
-        int currentBlock = ((Integer)blockList.get(i)).intValue();
-        Timestamp time = (Timestamp)timeList.get(i);
-        int availability = ((Integer)availabilityList.get(i)).intValue();
+		while (i < blockList.size()) {
+			if ((blockId == currentBlock) && (availability > 0)) {
+				return time;
+			} else {
+				currentBlock = ((Integer) blockList.get(i)).intValue();
+				time = (Timestamp) timeList.get(i);
+				availability = ((Integer) availabilityList.get(i)).intValue();
+				i++;
+			}
+		}
+		return time;
+	}
 
-        while (i < blockList.size())
-	{
-            if ( (blockId == currentBlock) && (availability > 0) )
-	    {
-                return time;
-            }
-            else
-	    {
-                currentBlock = ((Integer)blockList.get(i)).intValue();
-                time = (Timestamp)timeList.get(i);
-                availability = ((Integer)availabilityList.get(i)).intValue();                
-                i++;
-            }
-        }
-        return time;
-    }
-    
-    public void advanceToTime(Timestamp t)
-    {
-        // This function assumes that the function will be called with progressively larger timestamps...
+	public void advanceToTime(Timestamp t) {
+		// This function assumes that the function will be called with
+		// progressively larger timestamps...
 
-        int i = lastReportProcessed;
-        int blockId = ((Integer)blockList.get(i)).intValue();
-        Timestamp time = (Timestamp)timeList.get(i);
-        int availability = ((Integer)availabilityList.get(i)).intValue();
-        
-        while ( !time.after(t) )
-	{
-            parkingMap.put(blockId,availability);
+		int i = lastReportProcessed;
+		int blockId = ((Integer) blockList.get(i)).intValue();
+		Timestamp time = (Timestamp) timeList.get(i);
+		int availability = ((Integer) availabilityList.get(i)).intValue();
 
-            i = i+1;
+		while (!time.after(t)) {
+			parkingMap.put(blockId, availability);
 
-            if ( i >= blockList.size() )
-	    {
-                break;
-            }
+			i = i + 1;
 
-            blockId = ((Integer)blockList.get(i)).intValue();
-            time = (Timestamp)timeList.get(i);
-            availability = ((Integer)availabilityList.get(i)).intValue();
-        }
+			if (i >= blockList.size()) {
+				break;
+			}
 
-        lastReportProcessed = i-1;
-    }
+			blockId = ((Integer) blockList.get(i)).intValue();
+			time = (Timestamp) timeList.get(i);
+			availability = ((Integer) availabilityList.get(i)).intValue();
+		}
 
-    public void initiateTheParkingMap(Timestamp t)
-    {
-        // It will scan the data and give the availability according to the last report for each block.
+		lastReportProcessed = i - 1;
+	}
 
-        parkingMap = new HashMap<Integer,Integer>();
-        initialParkingMap = new HashMap<Integer,Integer>();
+	public void initiateTheParkingMap(Timestamp t) {
+		// It will scan the data and give the availability according to the last
+		// report for each block.
 
-        int i = 0;        
-        int blockId = ((Integer)blockList.get(i)).intValue();
-        Timestamp time = (Timestamp)timeList.get(i);
-        int availability = ((Integer)availabilityList.get(i)).intValue();
-        
-        while ( !time.after(t) )
-	{
-            parkingMap.put(blockId,availability);
-            initialParkingMap.put(blockId,availability);
+		parkingMap = new HashMap<Integer, Integer>();
+		initialParkingMap = new HashMap<Integer, Integer>();
 
-            i = i+1;
+		int i = 0;
+		int blockId = ((Integer) blockList.get(i)).intValue();
+		Timestamp time = (Timestamp) timeList.get(i);
+		int availability = ((Integer) availabilityList.get(i)).intValue();
 
-            if ( i >= blockList.size() )
-	    {
-                break;
-            }
+		while (!time.after(t)) {
+			parkingMap.put(blockId, availability);
+			initialParkingMap.put(blockId, availability);
 
-            blockId = ((Integer)blockList.get(i)).intValue();
-            time = (Timestamp)timeList.get(i);
-            availability = ((Integer)availabilityList.get(i)).intValue();
-        }
+			i = i + 1;
 
-        lastReportProcessed = i-1;
-        initialLastReportProcessed = lastReportProcessed;
-    }
+			if (i >= blockList.size()) {
+				break;
+			}
 
-    public void restartTheParkingMap()
-    {
-        // This function will restore to the initialParkingMap so that when testing another algorithm the same conditions will apply.
+			blockId = ((Integer) blockList.get(i)).intValue();
+			time = (Timestamp) timeList.get(i);
+			availability = ((Integer) availabilityList.get(i)).intValue();
+		}
 
-        lastReportProcessed = initialLastReportProcessed;
+		lastReportProcessed = i - 1;
+		initialLastReportProcessed = lastReportProcessed;
+	}
 
-        parkingMap = new HashMap<Integer,Integer>();
+	public void restartTheParkingMap() {
+		// This function will restore to the initialParkingMap so that when
+		// testing another algorithm the same conditions will apply.
 
-        Object keys[] = initialParkingMap.keySet().toArray();
-        for (int k = 0; k < keys.length; k++ )
-	{
-            int currentKey = ((Integer)keys[k]).intValue();
-            int availability = ((Integer)initialParkingMap.get(currentKey)).intValue();
-            parkingMap.put(currentKey,availability);
-        }
-    }
+		lastReportProcessed = initialLastReportProcessed;
 
-    private void readDataIntoMemory()
-    {
-        int blockId = 0;
-        String text = "";
-        int availability = -1;
+		parkingMap = new HashMap<Integer, Integer>();
 
-        try 
-        {
-            String line = readFile.readLine();
+		Object keys[] = initialParkingMap.keySet().toArray();
+		for (int k = 0; k < keys.length; k++) {
+			int currentKey = ((Integer) keys[k]).intValue();
+			int availability = ((Integer) initialParkingMap.get(currentKey)).intValue();
+			parkingMap.put(currentKey, availability);
+		}
+	}
 
-	   // line = readFile.readLine();// read the line after the header
-	    while (line != null) 
-            {
-                String fileData[] = line.split(",");
-                blockId = Integer.parseInt(fileData[0]);
-                text = fileData[5].substring(0, fileData[5].indexOf(".")).replace(" ", ":");
-                DateFormat df = new SimpleDateFormat("yyyy:MM:dd:HH:mm:ss");
-                Timestamp timestamp = new Timestamp(df.parse(text.replace("-", ":")).getTime());
-                availability = Integer.parseInt(fileData[4]);
+	private void readDataIntoMemory() {
+		int blockId = 0;
+		String text = "";
+		int availability = -1;
 
-                blockList.add(blockId);
-                availabilityList.add(availability);
-                timeList.add(timestamp);
-                line = readFile.readLine();
-	    }
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
+		try {
+			String line = readFile.readLine();
 
-   public static void main(String args[])
-    {
-       // ParkingData pd = new ParkingData("/Users/dayala/Desktop/vehicularParkingGame/penetrationRatioTests/dbProjection_4_6_12.csv"); 
-	   ParkingData pd = new ParkingData("data/avail.csv");
-    }
+			// line = readFile.readLine();// read the line after the header
+			while (line != null) {
+				String fileData[] = line.split(",");
+				blockId = Integer.parseInt(fileData[0]);
+				text = fileData[5].substring(0, fileData[5].indexOf(".")).replace(" ", ":");
+				DateFormat df = new SimpleDateFormat("yyyy:MM:dd:HH:mm:ss");
+				Timestamp timestamp = new Timestamp(df.parse(text.replace("-", ":")).getTime());
+				availability = Integer.parseInt(fileData[4]);
+
+				blockList.add(blockId);
+				availabilityList.add(availability);
+				timeList.add(timestamp);
+				line = readFile.readLine();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String args[]) {
+		// ParkingData pd = new
+		// ParkingData("/Users/dayala/Desktop/vehicularParkingGame/penetrationRatioTests/dbProjection_4_6_12.csv");
+		ParkingData pd = new ParkingData("data/avail.csv");
+	}
 
 }
