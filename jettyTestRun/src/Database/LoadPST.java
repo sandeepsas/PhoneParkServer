@@ -1,5 +1,9 @@
 package Database;
-
+/*
+ * Loads the Parking Status Table
+ * 
+ * 
+ * */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -86,7 +90,11 @@ public class LoadPST {
 		System.out.println("Goodbye!");
 		return rsPair;
 	}
-	
+	/*
+	 * Update the Parking Status Table
+	 * 
+	 * 
+	 * */
 	public void updateRecord(int StreetBlockID, int availability) {
 		// TODO Auto-generated method stub
 		//boolean res =false;
@@ -144,7 +152,11 @@ public class LoadPST {
 		}//end try
 		System.out.println("Goodbye!");
 	}
-	
+	/*
+	 * Fetch availability from the Parking Status Table
+	 * 
+	 * 
+	 * */
 	public static int fetchAvailabilityFromPST(Pair<Integer, String> streetPair){
 		int streetBlockID = streetPair.getL();
 		int available_spaces = 0;

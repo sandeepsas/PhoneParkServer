@@ -1,5 +1,9 @@
 package Database;
-
+/*
+ * Write to Parking Allocation Table (PAT)
+ * 
+ * 
+ * */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
