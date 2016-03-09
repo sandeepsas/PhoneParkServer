@@ -15,7 +15,6 @@ public class GraphWay {
 	private long id;
     private String type;
     private String name;
-    private String other_tags;
     private int speedMax;
     private boolean isOneway;
     /*
@@ -28,7 +27,6 @@ public class GraphWay {
 		this.name = null;
 	    this.speedMax = -1;
 	    this.isOneway = false;
-	    this.other_tags = null;
 	}
 /*
  * Constructor 
@@ -94,7 +92,6 @@ public class GraphWay {
     }
     
     public void setOtherTags(String other_tags) {
-		this.other_tags = other_tags;
 	}
 
 	public String getName() {

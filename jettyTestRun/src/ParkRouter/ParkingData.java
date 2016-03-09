@@ -37,21 +37,6 @@ public class ParkingData
             e.printStackTrace();
         }
         readDataIntoMemory();
-
-        //initiateTheParkingMap(new Timestamp(112,3,6,17,45,24,0));
-        //System.out.println(getAvailability(847032));
-        //System.out.println(findNextAvailabilityTime(847032));
-        //advanceToTime(new Timestamp(112,3,6,19,50,0,0));
-        //System.out.println(getAvailability(847032));
-        //advanceToTime(new Timestamp(112,3,6,23,30,0,0));
-        //System.out.println(getAvailability(847032));
-        //restartTheParkingMap();
-        //System.out.println(getAvailability(847032));
-        //advanceToTime(new Timestamp(112,3,6,19,50,0,0));
-        //System.out.println(getAvailability(847032));
-        //System.out.println(findNextAvailabilityTime(847032));
-        //advanceToTime(new Timestamp(112,3,6,23,30,0,0));
-        //System.out.println(getAvailability(847032));
     }
 
     public int getAvailability(int b)

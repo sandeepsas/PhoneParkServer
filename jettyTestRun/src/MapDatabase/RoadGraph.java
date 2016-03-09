@@ -69,7 +69,6 @@ public class RoadGraph {
 			case XmlPullParser.START_DOCUMENT:
 				break;
 			case XmlPullParser.START_TAG:
-				String xrp_name = xrp.getName();
 				/*Checking the format*/
 				if(xrp.getName().equals("osm")){
 					isOsmData = true;

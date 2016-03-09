@@ -11,5 +11,11 @@ public class ServerConfig {
 	
 	/*GCM parameters*/
 	public static int k_m = 17; // Maximum number of edges to be displayed
+	
+	
+	public static double velocity = 8.9408/4.0; 
+	public static double velocityWalking = Double.POSITIVE_INFINITY;
+	public static int beta = 60*60;
+	public static int tau = 120;
 
 }

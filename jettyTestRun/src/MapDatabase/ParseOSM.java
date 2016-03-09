@@ -11,7 +11,6 @@ package MapDatabase;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.LinkedList;
 
 import org.xmlpull.v1.XmlPullParser;
