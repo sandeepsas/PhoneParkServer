@@ -2,27 +2,9 @@ package MapDatabase;
 
 public class OsmConstants {
 
-	/*LatLong for LaG airport*/
-	public static double LaG_lat = 40.776927;
-	public static double LaG_lng = -73.873966;
-	public static String API_KEY = "AIzaSyAkBR5OFsUz1Np0Rg1bJSyb4ObuXYF4to4";
+	public static String GOOGLE_MAP_API_KEY = "AIzaSyAkBR5OFsUz1Np0Rg1bJSyb4ObuXYF4to4";
 
-	
-	/*	"highway" = "primary" OR
-			"highway" = "secondary" OR
-			"highway" = "teritiary" OR
-			"highway" = "primary_link" OR
-			"highway" = "secondary_link" OR
-			"highway" = "teritiary_link" OR
-			"highway" = "residential" OR
-			"highway" = "unclassified" OR
-			"highway" = "road" OR
-			"highway" = "living street" OR
-			"highway" = "motorway" OR
-			"highway" = "motorway_link" OR
-			"highway" = "trunk" OR
-			"highway" = "trunk_link" */
-
+	/*Road type to MaxSpeed mapping */
 	public static int roadTypeToSpeed(String type)
 	{
 		int speed=0;

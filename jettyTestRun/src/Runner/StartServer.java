@@ -1,3 +1,10 @@
+/*
+ * StartServer.java
+ * 
+ * @Author: Sandeep Sasidharan
+ * 
+ * Starts the server
+ * */
 package Runner;
 import java.util.*;
 
@@ -199,7 +206,7 @@ public class StartServer {
 
 		/*Compute change in Parking availability wrt to activity*/
 		if(activity==ServerConfig.ACTIVITY_PARKED){//Parking
-			new_availability = available_spaces - (int)Math.ceil(change_in_availability);
+			new_availability = available_spaces - (int)Math.round(change_in_availability);
 			if(new_availability<0)
 				new_availability=0;
 		}else{

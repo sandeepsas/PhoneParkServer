@@ -1,12 +1,8 @@
 package MapDatabase;
 
 import java.io.Serializable;
-import java.util.Set;
-
 
 /**
- * 
- * 
  *   Modified Class at : https://github.com/COMSYS/FootPath
  *  
  * @author Sandeep Sasidharan
@@ -31,9 +27,6 @@ public class GraphNode implements Serializable{
 		this.lat = 0.0;
 		this.id = 0;
 	}
-/*	public KdTree.XYZPoint toXYZPoint(){
-		return new KdTree.XYZPoint(""+this.id,this.lat,this.lon,0);
-	}*/
 	
 	public GraphNode(double lat, double lon, long id) {
 		this.lon = lon;
@@ -41,7 +34,7 @@ public class GraphNode implements Serializable{
 		this.id = id;
 	}
 	
-
+	/*Getters and Setters*/
 	public double getLon() {
 		return lon;
 	}

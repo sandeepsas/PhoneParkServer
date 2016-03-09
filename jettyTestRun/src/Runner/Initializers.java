@@ -1,83 +1,75 @@
 package Runner;
+
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map.Entry;
-import java.util.Objects;
+import java.util.*;
 
 import org.xmlpull.v1.XmlPullParserException;
 
-import MapDatabase.GraphNode;
-import MapDatabase.ParseOSM;
-import MapDatabase.RoadGraph;
-import ParkRouter.Router;
-import ParkRouter.ParkNode;
+import MapDatabase.*;
+
+import ParkRouter.*;
 
 
+/**
+ * @author Sandeep
+ * 
+ * This class initializes the road network and 
+ * performs necessary precomputations
+ *
+ */
 public class Initializers {
 	
+	/*Class members*/
 	static ParseOSM parseOSM;
 	static RoadGraph roadGraph;
-	static Router rnLoader;
+	static Router routeLoader;
 	HashMap<Long,Integer> gNodeMap;
 	
-	public ParseOSM getParseOSM() {
-		return parseOSM;
-	}
-
-	public RoadGraph getRoadGraph() {
-		return roadGraph;
-	}
-	
+	/*Class constructor*/
 	public Initializers(){
 		
 		try {
-			System.out.println("Executed Before Spark!!");
+			/*Parse openStreetMaps and store as class member*/
 			parseOSM = new ParseOSM();
 		} catch (IOException | XmlPullParserException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		/*Get the Road Network*/
 		roadGraph = parseOSM.getRoadGraph();
 		try {
-			rnLoader = new Router(roadGraph.nodes,roadGraph.edges);
+			/*Initialize and run the GCM algorithm for all the nodes*/
+			routeLoader = new Router(roadGraph.nodes,roadGraph.edges);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		gNodeMap = rnLoader.getgNodeMap();
+		/*Get a mapping for node IDs and LatLong values*/
+		gNodeMap = routeLoader.getgNodeMap();
 	}
-
+	/*This function retrieves the GCM path for a specific node*/
 	public StringBuilder startRouting(GraphNode closestMapPoint) {
-		// Get Current SFPark Location
-		// Get the node set
+		/*Get the key corresponding to the closest intersection point 
+		 * stored in the precomputed GCM paths*/
 		int  myKey = 0;
 		ParkNode current_node = new ParkNode(0, closestMapPoint.getLat(), closestMapPoint.getLon());
-		HashMap<Integer,ParkNode> sfNwNodes = rnLoader.getRoad().getNodes();
-		
+		HashMap<Integer,ParkNode> sfNwNodes = routeLoader.getRoad().getNodes();
+		/*Searching for the key*/
 		for(Entry<Integer, ParkNode> entry : sfNwNodes.entrySet()){
 			if (Objects.equals(current_node, entry.getValue())) {
 				 myKey = entry.getKey();
 	        }
 			
 		}
+		/*Get the node correspoding to the key*/
 		ParkNode new_current_node = sfNwNodes.get(myKey);
+		/*Get the GCM path corresponding to the node*/
+		ArrayList<Integer> path = routeLoader.getOPTPath(new_current_node.getId());
+		System.out.println(path); //For debug purpose
 		
-		final String DATE_FORMAT_NOW = "hhmmss";
-		Calendar now = Calendar.getInstance();
-		Timestamp startTime = new Timestamp(now.getTimeInMillis());
-	 
-		Timestamp initialTime = generateRandomTime(startTime,10);
+		/*The path returned by the function is a sequence of nodes. Extract lat longs
+		 * from these nodes as strings and return*/
 		
-		//rnLoader.startRouting(new_current_node.getId(), new_current_node.getId(), initialTime);
-		/*double timeToParkOptTO = 0.0;
-		timeToParkOptTO = timeToParkOptTO += rnLoader.runSim(new_current_node.getId(), new_current_node.getId(), 
-				initialTime);*/
-		ArrayList<Integer> path = rnLoader.getOPTPath(new_current_node.getId());
-		System.out.println(path);
 		Iterator<Integer> path_itr = path.iterator();
 		StringBuilder sbr = new StringBuilder();
 		String e1 = new_current_node.getLatitude()+","+new_current_node.getLongitude();
@@ -89,35 +81,17 @@ public class Initializers {
 			ParkNode sfNode1 = sfNwNodes.get(p_x);
 			e1 = sfNode1.getLatitude()+","+sfNode1.getLongitude();
 			sbr.append(e1+",");
-/*			if(path_itr.hasNext()){
-				int p_y = path_itr.next();
-				if(p_y<0)
-					break;
-				SFParkNode sfNode2 = sfNwNodes.get(p_y);
-				String e1 = sfNode1.getLatitude()+","+sfNode1.getLongitude()+","+sfNode2.getLatitude()+","+sfNode2.getLongitude();
-				sbr.append(e1+",");
-			}*/
 		}
 		return sbr;
-		
-		
-		
-/*		//Convert path to node sequence
-		
-		for(int i=0;i<path.size()-1;i++){
-			SFParkNode sfNode1 = sfNwNodes.get(i);
-			SFParkNode sfNode2 = sfNwNodes.get(i+1);
-			String e1 = sfNode1.getLatitude()+","+sfNode1.getLongitude()+","+sfNode2.getLatitude()+","+sfNode2.getLongitude();
-			sbr.append(e1+",");
-		}
-		return sbr;*/
 	}
-	public Timestamp generateRandomTime(Timestamp startingTimeInterval, long timeDurationInMin)
-	{
-		long startInMilli = startingTimeInterval.getTime();
-		long durationInMilli = timeDurationInMin * 60 * 1000;
-		long randomTimeInMilli = startInMilli + (long)(Math.random() * (durationInMilli + 1));
-		return new Timestamp(randomTimeInMilli);
+	
+	/*Getter functions*/
+	public ParseOSM getParseOSM() {
+		return parseOSM;
+	}
+
+	public RoadGraph getRoadGraph() {
+		return roadGraph;
 	}
 	
 

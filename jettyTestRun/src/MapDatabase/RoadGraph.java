@@ -1,8 +1,14 @@
 package MapDatabase;
 /**
  * @author Sandeep Sasidharan
+ * 
+ * Parse the OSM format to Graph Data Structure. Note that only
+ * Graph elements nodes and edges are stored by this class. The actual
+ * Graph has to be constructed by using these elements.
+ * 
  * Reference: https://github.com/COMSYS/FootPath
  */
+
 import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -15,22 +21,33 @@ import StreetBlock.KdTree;
 
 public class RoadGraph {
 
+	/*Class memebers*/
 	public LinkedList<GraphNode> nodes;
 	public LinkedList<DirectedEdge> edges;
-	public GraphNode LGA_NODE; 
-	//For kDTree
+
+	//For kDTree construction and storage for fast search
 	public static KdTree<KdTree.XYZPoint> kdtree;
 	public static List<KdTree.XYZPoint> graphNodeList;
 
 	public RoadGraph(){
+		/*Initialize nodes and edges as linkedlists of class type GraphNode and DirectedEdge
+		 * The functionalities of these classes can be found in MapDatabase folder*/
 		nodes = new LinkedList<GraphNode>();
 		edges = new LinkedList<DirectedEdge>();
+		/*Initialize empty KDTree*/
 		kdtree = new KdTree<KdTree.XYZPoint>();
 		graphNodeList = new ArrayList<KdTree.XYZPoint>();
 	}
-
+	/*Parser function
+	 * 
+	 * This function converts OSM in XML format to Graph elements nodes and edges. It fills
+	 * the class members as linkedlist of all edges and nodes.
+	 * 
+	 * Refer OSM documentation for more details on OSM data specifications
+	 * 
+	 * */
 	public boolean osmGraphParser(XmlPullParser xrp) throws XmlPullParserException, IOException{
-		double hub_dist = Double.MAX_VALUE;
+		/*Initialization of temporary variables */
 		boolean ret = false;
 		boolean isOsmData = false;	
 		GraphNode tempNode = new GraphNode();					
@@ -46,17 +63,21 @@ public class RoadGraph {
 
 		xrp.next();
 		int eventType = xrp.getEventType();
+		/*Parsing xml based on Tags*/
 		while (eventType != XmlPullParser.END_DOCUMENT) {
 			switch(eventType){
 			case XmlPullParser.START_DOCUMENT:
 				break;
 			case XmlPullParser.START_TAG:
 				String xrp_name = xrp.getName();
+				/*Checking the format*/
 				if(xrp.getName().equals("osm")){
 					isOsmData = true;
 				}else {
 					int attributeCount = xrp.getAttributeCount();
+					/*Extracting the nodes and values*/
 					if(xrp.getName().equals("node")){
+						/*The node values are temporarily stored in tempNode*/
 						tempNode = new GraphNode();
 						for(int i = 0; i < attributeCount; i++){
 							if(xrp.getAttributeName(i).equals("id")){
@@ -69,6 +90,7 @@ public class RoadGraph {
 						}
 
 					}
+					/*Extracting road attributes*/
 					else if(xrp.getName().equals("tag")){
 						if(tempNode == NULL_NODE)	{
 							for(int i = 0; i < attributeCount; i++){
@@ -93,6 +115,7 @@ public class RoadGraph {
 								}
 							}
 						}
+						/*Extracting roadways */
 					}else if(xrp.getName().equals("way")){							
 						tempWay = new GraphWay();
 						for(int i = 0; i < attributeCount; i++){
@@ -117,15 +140,6 @@ public class RoadGraph {
 						ret = true;
 					} else if(xrp.getName().equals("node")){						
 						allNodes.add(tempNode);
-
-						double latti = tempNode.getLat();
-						double longi = tempNode.getLon();
-						double disti = distanceInMilesBetweenPoints(OsmConstants.LaG_lat, OsmConstants.LaG_lng, latti, longi);
-						if(disti< hub_dist)
-						{
-							LGA_NODE = tempNode;
-							hub_dist = disti;
-						}
 						tempNode = NULL_NODE;		
 					} else if(xrp.getName().equals("tag")){							
 
@@ -140,6 +154,7 @@ public class RoadGraph {
 			}
 			eventType = xrp.next();
 		}
+		/*Extracting the Node - Edge relations*/
 		LinkedList<GraphWay> remainingWays = new LinkedList<GraphWay>();
 		for(GraphWay way : allWays){	
 			LinkedList<Long> refs = way.getRefs();
@@ -149,7 +164,6 @@ public class RoadGraph {
 					if(node.getId() == ref){
 						remainingWays.add(way);
 						stop = true;							
-
 					}
 					if(stop)
 						break;
@@ -189,10 +203,17 @@ public class RoadGraph {
 			}
 
 		}
+		
+		/*This function returns true if parsing is successful.
+		 * 
+		 * The extracted nodes and edges are stored within this class as memebers*/
 
 		return ret;
 	}
-
+	/*Inner class defined for specifically extracting the maximum speed attribute 
+	 * and road traffic direction (oneWay or not) of the edges
+	 * Refer OSM documentation for more details on OSM data specs
+	 * */
 	private OtherTags parseOtherTags(String v) {
 		String[] other_tags = v.split(",");
 		OtherTags output = new OtherTags();
@@ -204,7 +225,6 @@ public class RoadGraph {
 			while (m.find()) {
 				if(m.group(1).equals("oneway")){
 					flag = 1;
-
 				}
 				else if(m.group(1).equals("maxspeed")){
 					flag = 2;
@@ -241,7 +261,7 @@ public class RoadGraph {
 		return null;
 	}
 	/**
-	 * Returns the distance between two points given in latitude/longitude
+	 * Returns the distance between two points in Kilometers given in latitude/longitude
 	 * @param lat_1 latitude of first point
 	 * @param lon_1 longitude of first point
 	 * @param lat_2 latitude of second point
@@ -266,7 +286,14 @@ public class RoadGraph {
 		double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 		return c*r;
 	}
-
+	/**
+	 * Returns the distance between two points in miles given in latitude/longitude
+	 * @param lat_1 latitude of first point
+	 * @param lon_1 longitude of first point
+	 * @param lat_2 latitude of second point
+	 * @param lon_2 longitude of second point
+	 * @return the distance in meters
+	 */
 	public static double distanceInMilesBetweenPoints(double source_lat,
 			double source_lng, double dest_lat, double dest_lng) {
 		double earthRadius = 3958.75;
@@ -282,7 +309,7 @@ public class RoadGraph {
 
 		return dist;
 	}
-
+	/*Inner class defined to store the road attributes temporarily*/
 	class OtherTags
 	{
 		private boolean isOneWay;
@@ -300,118 +327,18 @@ public class RoadGraph {
 		}
 	}
 
-	public LinkedList<GraphNode> osmIntersectionParser(XmlPullParser xrp) throws XmlPullParserException, IOException {
-
-		boolean isOsmData = false;	
-		GraphNode tempNode = new GraphNode();					
-		GraphNode NULL_NODE = new GraphNode();					
-		GraphWay tempWay = new GraphWay();						
-		GraphWay NULL_WAY = new GraphWay();						
-		LinkedList<GraphNode> allNodes = new LinkedList<GraphNode>();	
-		LinkedList<GraphWay> allWays = new LinkedList<GraphWay>();		
-
-		if(xrp == null){
-			return null;
-		}
-
-		xrp.next();
-		int eventType = xrp.getEventType();
-		while (eventType != XmlPullParser.END_DOCUMENT) {
-			switch(eventType){
-			case XmlPullParser.START_DOCUMENT:
-				break;
-			case XmlPullParser.START_TAG:
-				String xrp_name = xrp.getName();
-				if(xrp.getName().equals("osm")){
-					isOsmData = true;
-				}else {
-					int attributeCount = xrp.getAttributeCount();
-					if(xrp.getName().equals("node")){
-						tempNode = new GraphNode();
-						for(int i = 0; i < attributeCount; i++){
-							if(xrp.getAttributeName(i).equals("id")){
-								tempNode.setId(Long.parseLong(xrp.getAttributeValue(i)));			
-							} if(xrp.getAttributeName(i).equals("lat")){
-								tempNode.setLat(Double.parseDouble(xrp.getAttributeValue(i)));	
-							} if(xrp.getAttributeName(i).equals("lon")){
-								tempNode.setLon(Double.parseDouble(xrp.getAttributeValue(i)));	
-							}
-						}
-
-					}
-					else if(xrp.getName().equals("tag")){
-						if(tempNode == NULL_NODE)	{
-							for(int i = 0; i < attributeCount; i++){
-								if(xrp.getAttributeName(i).equals("k")
-										&& xrp.getAttributeValue(i).equals("highway")){		
-									String v = xrp.getAttributeValue(i + 1);
-									tempWay.setType(v);
-									tempWay.setSpeedMax(OsmConstants.roadTypeToSpeed(v));
-								} else if(xrp.getAttributeName(i).equals("k")
-										&& xrp.getAttributeValue(i).equals("name")){	
-									String v = xrp.getAttributeValue(i + 1);
-									tempWay.setName(v);
-								} else if(xrp.getAttributeName(i).equals("k")
-										&& xrp.getAttributeValue(i).equals("other_tags")){	
-									String v = xrp.getAttributeValue(i + 1);
-									OtherTags ot = parseOtherTags(v);
-									tempWay.setOtherTags(v);
-									tempWay.setOneway(ot.isOneWay);
-									if(ot.maxspeed != -1){
-										tempWay.setSpeedMax(ot.maxspeed);
-									}
-								}
-							}
-						}
-					}else if(xrp.getName().equals("way")){							
-						tempWay = new GraphWay();
-						for(int i = 0; i < attributeCount; i++){
-							if(xrp.getAttributeName(i).equals("id")){
-								tempWay.setId(Long.parseLong(xrp.getAttributeValue(i)));
-							}
-						}	
-					} else if(xrp.getName().equals("nd")){										
-						for(int i = 0; i < attributeCount; i++){
-							if(xrp.getAttributeName(i).equals("ref")){							
-								String v = xrp.getAttributeValue(i);
-								long ref = Long.parseLong(v);
-								tempWay.addRef(ref);
-							}
-						}
-					}
-				}
-				break;
-			case XmlPullParser.END_TAG:
-				if(isOsmData){
-					if(xrp.getName().equals("osm")){
-					} else if(xrp.getName().equals("node")){						
-						allNodes.add(tempNode);
-						tempNode = NULL_NODE;		
-					} else if(xrp.getName().equals("tag")){							
-
-					} else if(xrp.getName().equals("way")){							
-						allWays.add(tempWay);
-						tempWay = NULL_WAY;
-					} else if(xrp.getName().equals("nd")){							
-
-					}
-				}
-				break;
-			}
-			eventType = xrp.next();
-		}
-		return allNodes;
-
-	}
-
+	/*Map Match function. This function will map match any location to the
+	 * nearest intersection point on the map*/
 	public GraphNode mapMatch(double latitude, double longitude) {
+		/*Loads KDTree and perform a Knn search*/
 		loadKdTree();
-		
 		KdTree.XYZPoint nearestNode = getNNNode(new KdTree.XYZPoint("", "address" ,
 				latitude, longitude,0,0,0,0,0));
+		/*Intersection of type GraphNode is returned*/
 		return new GraphNode(nearestNode.x,nearestNode.y,nearestNode.streetID);
 	}
 
+	/*Load all the nodes to a KdTree to facilitate knn search*/
 	private void loadKdTree() {
 		
 		Iterator <GraphNode> node_itr = nodes.iterator();
@@ -424,6 +351,7 @@ public class RoadGraph {
 		kdtree = new KdTree<KdTree.XYZPoint>(graphNodeList);
 		
 	}
+	/*Returns a nearest node*/
 	public KdTree.XYZPoint getNNNode(KdTree.XYZPoint node){
 
 		//Search for nearest vertex

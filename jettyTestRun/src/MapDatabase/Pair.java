@@ -1,5 +1,10 @@
 package MapDatabase;
-
+/**
+ * @author Sandeep
+ * 
+ * Template Class to Store a pair of values
+ *
+ */
 import java.io.Serializable;
 import java.util.Comparator;
 import java.util.Objects;
@@ -7,7 +12,7 @@ import java.util.Objects;
 
 public class Pair<L,R> implements Serializable{
     /**
-	 * 
+	 * Template Class to Store a pair of values
 	 */
 	private static final long serialVersionUID = 2088625713495844100L;
 	private L l;

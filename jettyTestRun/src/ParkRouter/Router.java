@@ -13,11 +13,12 @@ import java.util.Random;
 
 import MapDatabase.DirectedEdge;
 import MapDatabase.GraphNode;
+import Runner.ServerConfig;
 
 public class Router {
 
 	private boolean testOptTravelCost = true;
-	private int k_m = 17; // Maximum number of edges to be displayed
+	
 	private int k_tau; // = 4; // length of history in recovery function.
 	private long timeDurationInMin;
 	private int probDurationInMin;
@@ -161,7 +162,7 @@ public class Router {
 				timeDurationInMin);
 
 
-		System.out.println("\r" + 0 + "  " + probDurationInMin + "  " + k_m
+		System.out.println("\r" + 0 + "  " + probDurationInMin + "  " + ServerConfig.k_m
 				+ "  " + 1 + "  " + 
 				+ timeToParkOptTO );
 
@@ -399,7 +400,7 @@ public class Router {
 			}
 		}
 		
-		for (int k = 1; k <= k_m; k++ )
+		for (int k = 1; k <= ServerConfig.k_m; k++ )
 		{
 			C.add(new ArrayList<HashMap<ArrayList<Integer>,Double>>());
 			NEXT.add(new ArrayList<HashMap<ArrayList<Integer>,Integer>>());
@@ -463,17 +464,17 @@ public class Router {
 		
 		for ( int i = 0; i < n; i++ )
 		{
-			ArrayList<Integer> finalPath = new ArrayList<Integer>(k_m);
+			ArrayList<Integer> finalPath = new ArrayList<Integer>(ServerConfig.k_m);
 			ArrayList<Integer> runningHistory = new ArrayList<Integer>();
 			finalPath.add(0, i);
 			runningHistory.add(0, i);
-			for (int k = 1; k <= k_m; k++)
+			for (int k = 1; k <= ServerConfig.k_m; k++)
 			{
 				int currentNode = finalPath.get(k-1);
 				if (k > k_tau)
 				{
 					new ArrayList<Integer>(runningHistory);
-					int nextNode = NEXT.get(k_m-k).get(currentNode).get(runningHistory.subList(0,(int)runningHistory.size()-1));
+					int nextNode = NEXT.get(ServerConfig.k_m-k).get(currentNode).get(runningHistory.subList(0,(int)runningHistory.size()-1));
 					finalPath.add(nextNode);
 					runningHistory.add(nextNode);
 				
@@ -495,7 +496,7 @@ public class Router {
 						}
 					}
 					// System.out.println(runningHistory);
-					int nextNode = NEXT.get(k_m-k).get(currentNode).get(runningHistoryArg);
+					int nextNode = NEXT.get(ServerConfig.k_m-k).get(currentNode).get(runningHistoryArg);
 					finalPath.add(nextNode);
 					runningHistory.add(nextNode);
 				}

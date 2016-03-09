@@ -2,7 +2,7 @@ package MapDatabase;
 import java.util.LinkedList;
 
 /**
- * Used for OSM parsing
+ * Used for OSM parsing. Temporarily stores the OSM Ways
  * 
  * Modified Class at : https://github.com/COMSYS/FootPath
  * 
@@ -18,7 +18,9 @@ public class GraphWay {
     private String other_tags;
     private int speedMax;
     private boolean isOneway;
-
+    /*
+     * Constructor Default
+     * */
 	public GraphWay() {
 		this.refs = new LinkedList<Long>();
 		this.id = 0;
@@ -28,7 +30,9 @@ public class GraphWay {
 	    this.isOneway = false;
 	    this.other_tags = null;
 	}
-
+/*
+ * Constructor 
+ * */
 	public GraphWay(LinkedList<Long> refs, long id,boolean isOneway,int speedMax, String type, String name) {
 		this.refs = refs;
 		this.id = id;
@@ -38,7 +42,7 @@ public class GraphWay {
 	    this.type=type;
 
 	}
-	
+	/*Getter and Setters*/
 	public LinkedList<Long> getRefs() {
 		return refs;
 	}

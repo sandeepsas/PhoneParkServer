@@ -24,20 +24,19 @@ public class DirectedEdge implements Serializable{
 	 */
 	private static final long serialVersionUID = -9074416579376692922L;
 
-	private final GraphNode startNode;
-    private final GraphNode endNode;
-    private double length;
-    private final int speedMax;
-    private boolean isOneway;
-    private String type;
-    private String name;
-    private String other_tags;
+	private final GraphNode startNode; // Edge source node
+    private final GraphNode endNode; //Edge target node
+    private double length; //Edge length
+    private final int speedMax; //Edge maximum speed
+    private boolean isOneway; //Edge traffic flow direction
+    private String type; // Edge road type
+    private String name; // Street name
     
-    private float weight;
-    private long way_id; 
+    private float weight; //Edge weight
+    private long way_id;  //Edge ID
 
     /**
-     * Constructor
+     * Constructor 1
      */
     public DirectedEdge(GraphNode startNode, GraphNode endNode,
     		double length, int speedMax, boolean isOneway, 
@@ -53,7 +52,9 @@ public class DirectedEdge implements Serializable{
         this.weight = weight;
         this.way_id = way_id;
     }
-    
+    /**
+     * Constructor 2
+     */
     public DirectedEdge(GraphNode startNode, GraphNode endNode,
     		long way_id, float weight, String name,  boolean isOneway ) {
         
@@ -61,13 +62,14 @@ public class DirectedEdge implements Serializable{
         this.endNode = endNode;
         this.speedMax = -1;
         this.isOneway = isOneway;
-        this.length = length;
         this.type = null;
         this.name = name;
         this.weight = weight;
         this.way_id = way_id;
     }
-    
+    /**
+     * Default Constructor
+     */
 	public DirectedEdge() {
 		
         this.startNode = null;
@@ -80,16 +82,14 @@ public class DirectedEdge implements Serializable{
         this.weight = 0;
         this.way_id = 0;
 	}
-	
+	/*Getter and Setter*/
     public GraphNode from() {
         return startNode;
     }
 
-
     public GraphNode to() {
         return endNode;
     }
-
 
     public int speedMax() {
         return speedMax;
@@ -121,10 +121,7 @@ public class DirectedEdge implements Serializable{
 		this.name = name;
 	}
     
-    public void setOtherTags(String other_tags) {
-		this.other_tags = other_tags;
-	}
-    
+  
     public double getWeight(){
     	//return (this.weight*60);
     	return (this.length);
@@ -135,7 +132,6 @@ public class DirectedEdge implements Serializable{
     }
 
 	public String getName() {
-		// TODO Auto-generated method stub
 		return name;
 	}
 	public float getWalkWeight(){
