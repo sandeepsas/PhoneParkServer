@@ -143,11 +143,4 @@ public class ParkingDataProb {
 		}
 	}
 
-	/*
-	 * public static void main(String args[]) //Sandeep Commented {
-	 * ParkingDataProb pd = new ParkingDataProb(
-	 * "/Users/dayala/Desktop/vehicularParkingGame/penetrationRatioTests/dbProjection_4_6_12.csv"
-	 * ); }
-	 */
-
 }

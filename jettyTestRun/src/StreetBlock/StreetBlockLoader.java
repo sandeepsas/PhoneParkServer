@@ -1,5 +1,11 @@
 package StreetBlock;
-
+/*
+ * Loads the Street Block Table
+ * 
+ * (May be discontinued in the future)
+ * 
+ * 
+ * */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
