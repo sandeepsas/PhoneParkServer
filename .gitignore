@@ -21,6 +21,8 @@ local.properties
 .project
 .class
 target/
+target/**/*
+target/**
 
 # Maven
 log/
