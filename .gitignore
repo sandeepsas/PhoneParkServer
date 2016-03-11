@@ -2,6 +2,9 @@
 .metadata
 bin/
 tmp/
+bin/**
+tmp/**
+tmp/**/*
 *.tmp
 *.bak
 *.swp
@@ -10,6 +13,9 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+.classpath
+*.pydevproject
+.loadpath
 
 # Eclipse Core
 .project
@@ -19,3 +25,9 @@ target/
 # Maven
 log/
 target/
+
+
+
+
+
+
