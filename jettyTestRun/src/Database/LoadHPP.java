@@ -168,7 +168,6 @@ public class LoadHPP {
 		
 		//Get the Street Entry in HPP
 
-
 		String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
 
 		String USER = "root";
@@ -194,7 +193,6 @@ public class LoadHPP {
 				int new_sampleSize = sampleSize+1;
 				double changed_availability = ((availability*sampleSize)+new_availability)/new_sampleSize;
 						
-<<<<<<< HEAD
 				String updateSQL = "UPDATE phonepark01.HPP SET "
 						+ "AvgEstParkAvail='"+changed_availability+"' , SampleSize='"+new_sampleSize+"' "
 								+ "WHERE StreetBlockID = '"+streetBlockID+"' AND StartTime = '"+startTime+"' AND"
@@ -212,13 +210,6 @@ public class LoadHPP {
 						+ "VALUES ('"+sql_sequel_write+");";
 				System.out.println(writeSQL);
 				stmt.executeUpdate(writeSQL);
-=======
-				String updateSQL = "UPDATE phonepark01.HPP SET AvgEstParkAvail='"+changed_availability+"' , SampleSize='"+new_sampleSize+"' WHERE StreetBlockID = '"+streetBlockID+"' AND StartTime = '"+startTime+"' AND EndTime = '"+endTime+"' AND Day = '"+day+"';";
-				System.out.println(updateSQL);
-				stmt.executeUpdate(updateSQL);
-			}else{
-				System.out.println("NOTHING");
->>>>>>> branch 'master' of https://github.com/sandeepsas/PhoneParkServer
 			}
 
 			rs.close();
