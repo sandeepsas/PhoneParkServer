@@ -5,7 +5,6 @@ import java.io.FileReader;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.sql.Timestamp;
@@ -168,7 +167,7 @@ public class ParkingData {
 	public static void main(String args[]) {
 		// ParkingData pd = new
 		// ParkingData("/Users/dayala/Desktop/vehicularParkingGame/penetrationRatioTests/dbProjection_4_6_12.csv");
-		ParkingData pd = new ParkingData("data/avail.csv");
+		//ParkingData pd = new ParkingData("data/avail.csv");
 	}
 
 }

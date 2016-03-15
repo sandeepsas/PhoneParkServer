@@ -29,8 +29,8 @@ public class LoadPST {
 
 	static final String USER = "root";
 	static final String PASS = "";
-	
-	
+
+
 
 	public Pair<Integer, Integer>  fetchRecord(int StreetBlockID) {
 		// TODO Auto-generated method stub
@@ -51,13 +51,13 @@ public class LoadPST {
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql_sequel =  ""+StreetBlockID;
-			
+
 			String sql;
 			sql = "SELECT * FROM phonepark01.PST WHERE StreetBlockID = '"+sql_sequel+"';";
 			System.out.println(sql);
 			//int rs = stmt.executeUpdate(sql);
 			rs = stmt.executeQuery(sql);
-			
+
 			if(rs.next()){
 				int total_spaces = Integer.parseInt(rs.getString(2));
 				int available_spaces = Integer.parseInt(rs.getString(3));
@@ -96,9 +96,6 @@ public class LoadPST {
 	 * 
 	 * */
 	public void updateRecord(int StreetBlockID, int availability) {
-		// TODO Auto-generated method stub
-		//boolean res =false;
-		int rs = 0;
 		Connection conn = null;
 		Statement stmt = null;
 		try{
@@ -114,17 +111,14 @@ public class LoadPST {
 			stmt = conn.createStatement();
 			String sql_sequel1 =  ""+availability;
 			String sql_sequel2 =  ""+StreetBlockID;
-			
+
 			String sql;
 			/*UPDATE phonepark01.psst
 			SET AvailableSpaces='20'
 			WHERE StreetBlockID='4';*/
 			sql = "UPDATE phonepark01.PST SET AvailableSpaces='"+sql_sequel1+"' WHERE StreetBlockID = '"+sql_sequel2+"';";
 			System.out.println(sql);
-			//int rs = stmt.executeUpdate(sql);
-			rs = stmt.executeUpdate(sql);
-/*			if(rs>0)
-				res= true;*/
+			stmt.executeUpdate(sql);
 
 			//STEP 6: Clean-up environment
 			//rs.close();
@@ -161,7 +155,6 @@ public class LoadPST {
 		int streetBlockID = streetPair.getL();
 		int available_spaces = 0;
 
-		String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 		String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
 
 		String USER = "root";
@@ -169,7 +162,7 @@ public class LoadPST {
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
-		Pair<Integer, Integer> rsPair = new Pair<Integer, Integer> ();
+		new Pair<Integer, Integer> ();
 		try{
 			//STEP 2: Register JDBC driver
 			Class.forName("com.mysql.jdbc.Driver");
@@ -182,13 +175,13 @@ public class LoadPST {
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql_sequel =  ""+streetBlockID;
-			
+
 			String sql;
 			sql = "SELECT * FROM phonepark01.PST WHERE StreetBlockID = '"+sql_sequel+"';";
 			System.out.println(sql);
 			//int rs = stmt.executeUpdate(sql);
 			rs = stmt.executeQuery(sql);
-			
+
 			if(rs.next()){
 				available_spaces = Integer.parseInt(rs.getString(3));
 			}
@@ -219,7 +212,7 @@ public class LoadPST {
 		System.out.println("Goodbye!");
 		return available_spaces;
 	}
-	
+
 	public static HashMap<Pair<GraphNode, GraphNode>, Double> fetchAllParkingAvailability(){
 		HashMap<Pair<GraphNode, GraphNode>,Double> edgeAvailabilitySet = new HashMap<Pair<GraphNode, GraphNode>,Double>();
 		Map<Integer, XYZPoint> parkingBlockMap_1= StartServer.getSb().getParkingBlockMap();
@@ -232,24 +225,24 @@ public class LoadPST {
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
-			
+
 			String sql;
 			sql = "SELECT * FROM phonepark01.PST;";
 			System.out.println(sql);
 			//int rs = stmt.executeUpdate(sql);
 			rs = stmt.executeQuery(sql);
-			
+
 			if(rs.next()){
 				int streetID = Integer.parseInt(rs.getString(1));
-				int total_spaces = Integer.parseInt(rs.getString(2));
+				Integer.parseInt(rs.getString(2));
 				int available_spaces = Integer.parseInt(rs.getString(3));
-				
+
 				XYZPoint parking_block = parkingBlockMap_1.get(streetID);
 				GraphNode startNode = new GraphNode(parking_block.start_lat,parking_block.start_long,streetID);
 				GraphNode endNode = new GraphNode(parking_block.end_lat,parking_block.end_long,streetID);
-				
+
 				edgeAvailabilitySet.put(new Pair<GraphNode, GraphNode>(startNode,endNode), (double) available_spaces);
-				
+
 			}
 
 			rs.close();
@@ -277,6 +270,59 @@ public class LoadPST {
 		}//end try
 		System.out.println("Goodbye!");
 		return edgeAvailabilitySet;
+	}
+
+	public void writePST(int StreetBlockID, int totalSpaces, int availability) {
+		Connection conn = null;
+		Statement stmt = null;
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName("com.mysql.jdbc.Driver");
+
+			//STEP 3: Open a connection
+			System.out.println("Connecting to database...");
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			System.out.println("Creating statement...");
+			stmt = conn.createStatement();
+			String sql_sequel1 =  ""+availability;
+			String sql_sequel2 =  ""+StreetBlockID;
+			String sql_sequel3 =  ""+totalSpaces;
+
+			String sql;
+			/*UPDATE phonepark01.psst
+			SET AvailableSpaces='20'
+			WHERE StreetBlockID='4';*/
+			sql = "UPDATE phonepark01.PST SET AvailableSpaces='"+sql_sequel1+"', TotalSpaces='"+sql_sequel3+"' WHERE StreetBlockID = '"+sql_sequel2+"';";
+			System.out.println(sql);
+			stmt.executeUpdate(sql);
+
+			//STEP 6: Clean-up environment
+			//rs.close();
+			stmt.close();
+			conn.close();
+		}catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}finally{
+			//finally block used to close resources
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se2){
+			}// nothing we can do
+			try{
+				if(conn!=null)
+					conn.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}//end finally try
+		}//end try
+		System.out.println("Goodbye!");
 	}
 
 }
