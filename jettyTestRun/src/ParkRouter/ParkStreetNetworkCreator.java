@@ -8,21 +8,20 @@ import MapDatabase.*;
 import java.util.ArrayList;
 
 public class ParkStreetNetworkCreator {
-	// public static final int N_NODES = 40;
-	// public int N_EDGES = 63;
-	public static int N_NODES = 2514;
-	public int N_EDGES = 2855;
-	
-	private ParkNetwork road = new ParkNetwork(N_NODES);
+
+	public static int N_NODES;
+	public int N_EDGES;
+	/*Initialize empty graph*/
+	private ParkNetwork road;
 	private HashMap<Integer, ParkNode> nodes;
 	private ParkEdge edges[][];
 	private double edgeWeights[][];
-	private ParkEdge edgeList[] = new ParkEdge[N_EDGES];
+	private ParkEdge edgeList[];
 
-	private double SP[][] = new double[N_NODES][N_NODES]; // Shortest path between i and j
-	private int next[][] = new int[N_NODES][N_NODES]; // Used by the Floyds Algorithm
+	private double SP[][]; // Shortest path between i and j
+	private int next[][]; // Used by the Floyds Algorithm
 
-	private int SP_direction[][] = new int[N_NODES][N_NODES]; // first node to move toward in a shortest path
+	private int SP_direction[][]; // first node to move toward in a shortest path
 
 	private HashMap<Long,Integer> graphNodeMap;
 	
@@ -35,11 +34,18 @@ public class ParkStreetNetworkCreator {
 			N_NODES = nodes2.size();
 			N_EDGES = edges2.size();
 			road = new ParkNetwork(N_NODES);
+			edgeList = new ParkEdge[N_EDGES];
+			SP_direction = new int[N_NODES][N_NODES];
+			next = new int[N_NODES][N_NODES];
+			SP = new double[N_NODES][N_NODES];
 			readNodes(nodes2);
 			nodes = road.getNodes();
 			readEdges(edges2);
 			edges = road.getEdges();
 			edgeWeights = road.getEdgeWeights();
+			
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -143,6 +143,7 @@ public class StartServer {
 			if(res){
 				int new_availability = updatePSST(StreetBlockID,activity,timeStamp);
 				postString.append(" ->"+new_availability);
+				
 
 			}
 			/*The returned output will now contain the Street Block, the old value of parking availability,
@@ -193,6 +194,8 @@ public class StartServer {
 			/*Update Parking snap shot table PSST*/
 			UpdatePSST uPsst = new UpdatePSST();
 			uPsst.update(StreetBlockID,total_spaces,new_availability,timeStamp);
+			//Update Historic Parking Profile
+			LoadHPP.writeHPP(StreetBlockID,new_availability);
 		}
 		/*Return the new value of availability after parking/de-parking activity*/
 		return new_availability;

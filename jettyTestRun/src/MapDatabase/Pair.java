@@ -31,18 +31,37 @@ public class Pair<L,R> implements Serializable{
     public void setL(L l){ this.l = l; }
     public void setR(R r){ this.r = r; }
     
-    
-	@Override 
-	public int hashCode() { 
-		return Objects.hash(l, r);
-	  }
-	@Override 
-	public boolean equals(Object node) {
-		if(node == null)
+
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((l == null) ? 0 : l.hashCode());
+		result = prime * result + ((r == null) ? 0 : r.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
 			return false;
-		Pair<L, R> node_x = (Pair<L, R>) node;
-        return ((node_x.l == this.l) && (node_x.r == this.r));
-    }
+		if (getClass() != obj.getClass())
+			return false;
+		Pair<?, ?> other = (Pair<?, ?>) obj;
+		if (l == null) {
+			if (other.l != null)
+				return false;
+		} else if (!l.equals(other.l))
+			return false;
+		if (r == null) {
+			if (other.r != null)
+				return false;
+		} else if (!r.equals(other.r))
+			return false;
+		return true;
+	}
 	public String toString(){
 		return Objects.toString(this.l)+"-"+Objects.toString(this.r);
 	}   
@@ -58,6 +77,20 @@ public class Pair<L,R> implements Serializable{
             // compare using attribute 1
         };
     }
+    
+/*    @Override 
+	public boolean equals(Object node) {
+		if(node == null)
+			return false;
+		Pair<L, R> node_x = (Pair<L, R>) node;
+        return ((node_x.l == this.l) && (node_x.r == this.r));
+    }
+	
+	    
+	@Override 
+	public int hashCode() { 
+		return Objects.hash(l, r);
+	  }*/
     
 /* ANONYMOUS CLASS IMPLEMENTATION
  * ------------------------------   
