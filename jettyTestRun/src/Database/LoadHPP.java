@@ -11,10 +11,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import MapDatabase.Pair;
@@ -85,8 +81,14 @@ public class LoadHPP {
 		return avg_available_spaces;
 	}
 	
-	public static String pullDataFromHPP(int streetBlockID,int day){
-		int available_spaces = 0;
+	public static double pullDataFromHPP(int streetBlockID){
+		
+		Calendar now = Calendar.getInstance();
+		int startTime = now.get(Calendar.HOUR_OF_DAY);
+		now.add(Calendar.HOUR, 1);
+		int endTime = now.get(Calendar.HOUR_OF_DAY);
+		int day = now.get(Calendar.DAY_OF_WEEK);
+
 		double avg_available_spaces = 0.0;
 
 		String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
@@ -96,7 +98,6 @@ public class LoadHPP {
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
-		StringBuilder out = new StringBuilder();
 		try{
 			
 			//STEP 2: Register JDBC driver
@@ -112,24 +113,16 @@ public class LoadHPP {
 			String sql_sequel =  ""+streetBlockID;
 			
 			String sql;
-			sql = "SELECT * FROM phonepark01.HPP WHERE StreetBlockID = '"+sql_sequel+"' AND Day = '"+day+"';";
+			sql = "SELECT * FROM phonepark01.HPP WHERE StreetBlockID = '"+sql_sequel+"' AND "
+					+ "Day = '"+day+"' AND StartTime = '"+startTime+"' AND"
+							+ " EndTime = '"+endTime+"' AND Day = '"+day+"';";
+
 			System.out.println(sql);
-			//int rs = stmt.executeUpdate(sql);
 			rs = stmt.executeQuery(sql);
-			int count = 1;
+
 			if(rs.next()){
-				
-				String str = rs.getTime("startTime").toString(); 
-				out.append(str);
-				
-				/*out.append(rs.getString(1)+","+rs.getInt(2)+","+rs.getInt(3)+","+
-						rs.getInt(4)+","+rs.getString(5)+","+rs.getInt(6));*/
-				
-				//out.append(rs.getString(1)+","+rs.getInt(4)+","+rs.getInt(6));
-				//available_spaces += Integer.parseInt(rs.getString(5));
-				//count++;
+				avg_available_spaces = rs.getDouble(5);
 			}
-			avg_available_spaces = available_spaces/count;
 
 			rs.close();
 			stmt.close();
@@ -155,15 +148,15 @@ public class LoadHPP {
 			}//end finally try
 		}//end try
 		System.out.println("Goodbye!");
-		return out.toString();
+		return avg_available_spaces;
 	}
 
 	public static void writeHPP(int streetBlockID, int new_availability) {
 		//Get the time stamp
 		Calendar now = Calendar.getInstance();
-		int startTime = 12;/*now.get(Calendar.HOUR_OF_DAY)*/;
+		int startTime = now.get(Calendar.HOUR_OF_DAY);
 		now.add(Calendar.HOUR, 1);
-		int endTime = 1/*now.get(Calendar.HOUR_OF_DAY)*/;
+		int endTime = now.get(Calendar.HOUR_OF_DAY);
 		int day = now.get(Calendar.DAY_OF_WEEK);
 		
 		//Get the Street Entry in HPP
@@ -235,8 +228,6 @@ public class LoadHPP {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		System.out.println("Goodbye!");
-		
 		
 	}
 
