@@ -13,7 +13,7 @@ import org.json.JSONObject;
 import Database.*;
 
 import MapDatabase.*;
-
+import ParkRouter.ParkNode;
 import StreetBlock.KdTree;
 import StreetBlock.StreetBlockLoader;
 
@@ -73,6 +73,8 @@ public class StartServer {
 		Spark.get("/post", (req, res) ->postActivity(req));
 		/*Check if Server is online/listening*/
 		Spark.get("/ping", (req, res) ->pingServer(req));
+		/*Returns nearest parking blocks*/
+		Spark.get("/nn", (req, res) ->nearestBlocks(req));
 	}
 	
 	/*This function is called when the web page /hello is accessed
@@ -80,6 +82,36 @@ public class StartServer {
 	 * http://73.247.220.84:8080/hello?UserID=a108eec35f0daf33&Latitude=41.8693826&Longitude=-87.6630133
 	 * */
 	
+	private static Object nearestBlocks(Request req) {
+		/*Parse the parameters for identifying the vehicle location*/
+		double latitude = Double.parseDouble(req.queryParams("Latitude"));
+		double longitude = Double.parseDouble(req.queryParams("Longitude"));
+		
+		/*KdTree<XYZPoint> streetBlockTree = sb.loadStreetDataTree();
+		Collection<XYZPoint> neigbors = streetBlockTree
+				.nearestNeighbourSearch(new KdTree.XYZPoint("", "address" ,
+						latitude, longitude,
+						0,0,0,0,0), 0.5);*/
+		
+		KdTree<XYZPoint> streetBlockTree = intl.pbTree;
+		Collection<XYZPoint> neigbors = streetBlockTree
+				.nearestNeighbourSearch(new KdTree.XYZPoint("", "address" ,
+						latitude, longitude,
+						0,0,0,0,0), 0.3);
+		
+		Iterator<XYZPoint> path_itr = neigbors.iterator();
+		StringBuilder sbr = new StringBuilder();
+		
+		while(path_itr.hasNext()){
+			XYZPoint block = path_itr.next();
+			String e1 = block.start_lat+","+block.start_long;
+			sbr.append(e1+",");
+			e1 = block.end_lat+","+block.end_long;
+			sbr.append(e1+",");
+			sbr.append(block.linearID+",");
+		}
+		return sbr;
+	}
 	public static StringBuilder searchParking(Request req){
 		StringBuilder sbr = new StringBuilder();
 
@@ -240,7 +272,7 @@ public class StartServer {
 		/*Send 10 nearest Street Blocks*/
 		while(itr.hasNext()){
 			XYZPoint point = itr.next();
-			int streetID = point.streetID;
+			int streetID = Integer.parseInt(point.linearID);
 			String streetName = point.address;
 			Pair<Integer, String> street_pair = new Pair<Integer, String>(streetID,streetName);
 			nearest_blocks.add(street_pair);

@@ -4,8 +4,8 @@ package ParkRouter;
 import java.util.*;
 
 import MapDatabase.*;
-
-import java.util.ArrayList;
+import StreetBlock.KdTree;
+import StreetBlock.KdTree.XYZPoint;
 
 public class ParkStreetNetworkCreator {
 
@@ -122,12 +122,14 @@ public class ParkStreetNetworkCreator {
 			return leftSP;
 		}
 	}
-
+	List<XYZPoint> parkingBlockList = new ArrayList<XYZPoint>(); 
+	KdTree<XYZPoint> kdtreePB = new KdTree<XYZPoint> () ;
 	public void readEdges(LinkedList<DirectedEdge> edges2)
 	{
 
 		Iterator<DirectedEdge> edge_itr = edges2.iterator();
 		int nlines = 0;
+		int streetID = 1;
 		while(edge_itr.hasNext()){
 			DirectedEdge tempEdge = edge_itr.next();
 
@@ -137,15 +139,42 @@ public class ParkStreetNetworkCreator {
 			int blockId = (int) tempEdge.getWayId();
 			int nBlocks = 1;
 			int nTotal = 20;
+			double probability = 0.5;
+			double length = RoadGraph.distanceInMilesBetweenPoints(tempEdge.from().getLat(),
+					tempEdge.from().getLon(), tempEdge.to().getLat(), tempEdge.to().getLon());
+			if(length<0.01){
+				probability = 0.0;
+			}
+			int totalSpaces = 0;
+			if(length>=0.015){
+				totalSpaces = (int)(150*length);
+			}
 
-			ParkEdge e = new ParkEdge(nodes.get(nodeId1),nodes.get(nodeId2),nBlocks,blockId,-1,nTotal,0,tempEdge.isOneway());
+			ParkEdge e = new ParkEdge(streetID,nodes.get(nodeId1),
+					nodes.get(nodeId2),nBlocks,blockId,-1,nTotal,0,
+					tempEdge.isOneway(),probability,length,totalSpaces);
+			//Build KD-Tree here
+			Pair<Double,Double>mid_LATLONG = OsmConstants.midPoint(tempEdge.from().getLat(),
+					tempEdge.from().getLon(), tempEdge.to().getLat(), tempEdge.to().getLon());
+			
+			parkingBlockList.add(new XYZPoint(""+probability,"",mid_LATLONG.getR(),mid_LATLONG.getL(),
+					tempEdge.from().getLat(),
+					tempEdge.from().getLon(), tempEdge.to().getLat(), 
+					tempEdge.to().getLon(),streetID));
+			
+			
 			road.addEdge(e);
 
 			edgeList[nlines] = e;
 			nlines++;
+			streetID++;
 		}
+		kdtreePB = new KdTree<XYZPoint>(parkingBlockList);
 
+	}
 
+	public KdTree<XYZPoint> getParkingBlockList() {
+		return kdtreePB;
 	}
 
 	public void readNodes(LinkedList<GraphNode> nodes2)

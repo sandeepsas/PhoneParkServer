@@ -9,6 +9,8 @@ import org.xmlpull.v1.XmlPullParserException;
 import MapDatabase.*;
 
 import ParkRouter.*;
+import StreetBlock.KdTree;
+import StreetBlock.KdTree.XYZPoint;
 
 
 /**
@@ -25,6 +27,7 @@ public class Initializers {
 	static RoadGraph roadGraph;
 	static Router routeLoader;
 	HashMap<Long,Integer> gNodeMap;
+	KdTree<XYZPoint> pbTree = new KdTree<XYZPoint>();
 	
 	/*Class constructor*/
 	public Initializers(){
@@ -40,12 +43,16 @@ public class Initializers {
 		try {
 			/*Initialize and run the GCM algorithm for all the nodes*/
 			routeLoader = new Router(roadGraph.nodes,roadGraph.edges);
+			pbTree = routeLoader.getParkingBlockTree();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		/*Get a mapping for node IDs and LatLong values*/
 		gNodeMap = routeLoader.getgNodeMap();
+	}
+	public KdTree<XYZPoint> getPbTree() {
+		return pbTree;
 	}
 	/*This function retrieves the GCM path for a specific node*/
 	public StringBuilder startRouting(GraphNode closestMapPoint) {

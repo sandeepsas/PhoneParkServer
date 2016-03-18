@@ -57,13 +57,13 @@ public class StreetBlockLoader {
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql;
-			sql = "SELECT * FROM phonepark01.uicstatemid;";
+			sql = "SELECT * FROM phonepark01.parkblocks;";
 			ResultSet parkingDB_cursor = stmt.executeQuery(sql);
 
 			//STEP 5: Extract data from result set
 			while(parkingDB_cursor.next()){
 				
-				String linearid = parkingDB_cursor.getString(1);
+				String street_id = parkingDB_cursor.getString(1);
 				String roadName = parkingDB_cursor.getString(2);
 
 				double start_long = Double.parseDouble(parkingDB_cursor.getString(4));
@@ -72,12 +72,12 @@ public class StreetBlockLoader {
 				double end_lat = Double.parseDouble(parkingDB_cursor.getString(7));
 				double mid_long = Double.parseDouble(parkingDB_cursor.getString(8));
 				double mid_lat = Double.parseDouble(parkingDB_cursor.getString(9));
-				int street_id = Integer.parseInt(parkingDB_cursor.getString(10));
+				int osm_id = Integer.parseInt(parkingDB_cursor.getString(10));
 
-				parkingBlockList.add(new XYZPoint(linearid,roadName,mid_lat,mid_long,
-						start_lat,start_long,end_lat,end_long,street_id));
-				parkingBlockMap.put(street_id, new XYZPoint(linearid,roadName,mid_lat,mid_long,
-						start_lat,start_long,end_lat,end_long,street_id));
+				parkingBlockList.add(new XYZPoint(street_id,roadName,mid_lat,mid_long,
+						start_lat,start_long,end_lat,end_long,osm_id));
+				parkingBlockMap.put(Integer.parseInt(street_id), new XYZPoint(street_id,roadName,mid_lat,mid_long,
+						start_lat,start_long,end_lat,end_long,osm_id));
 
 			}
 			

@@ -6,11 +6,19 @@ public class ParkEdge {
 	private int blockId1, blockId2;
 	private int total1, total2;
 	private boolean oneWay;
+	private int streetID;
+	private double probability;
+	private int totalAvailability;
 
-	public ParkEdge(ParkNode n1, ParkNode n2, int nB, int bId1, int bId2, int tot1, int tot2, boolean oneWay) {
+	public ParkEdge(int streetID,ParkNode n1, ParkNode n2, int nB, int bId1,
+			int bId2, int tot1, int tot2, boolean oneWay, double probability,
+			double length, int totalAvailability) {
 		this.oneWay = oneWay;
 		node1 = n1;
 		node2 = n2;
+		this.streetID = streetID;
+		this.totalAvailability = totalAvailability;
+		this.probability = probability;
 
 		if (nB == 0) {
 			nBlocks = nB;
@@ -53,6 +61,18 @@ public class ParkEdge {
 		}
 	}
 
+	public double getProbability() {
+		return probability;
+	}
+
+	public void setProbability(double probability) {
+		this.probability = probability;
+	}
+
+	public void setStreetID(int streetID) {
+		this.streetID = streetID;
+	}
+
 	public ParkNode getNode1() {
 		// System.out.println("Hey guys 1!!");
 		return node1;
@@ -70,6 +90,12 @@ public class ParkEdge {
 	public int getNBlocks() {
 		return nBlocks;
 	}
+	
+	public int getStreetID(){
+		
+		return this.streetID;
+		
+	}
 
 	public int getBlockId1() {
 		return blockId1;
@@ -85,5 +111,9 @@ public class ParkEdge {
 
 	public int getTotal2() {
 		return total2;
+	}
+	
+	public int getTotalAvailability() {
+		return totalAvailability;
 	}
 }

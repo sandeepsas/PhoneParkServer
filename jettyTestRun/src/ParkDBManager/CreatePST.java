@@ -1,6 +1,6 @@
-//DO NOT RUN THIS FILE
+/*//DO NOT RUN THIS FILE
 
-/*package ParkDBManager;
+package ParkDBManager;
 
 
 import java.io.IOException;
@@ -12,7 +12,6 @@ import org.xmlpull.v1.XmlPullParserException;
 import Database.LoadPST;
 import MapDatabase.DirectedEdge;
 import MapDatabase.GraphNode;
-import MapDatabase.Pair;
 import MapDatabase.ParseOSM;
 import MapDatabase.RoadGraph;
 
@@ -21,7 +20,7 @@ public class CreatePST {
 	public static void main (String[] args0){
 
 		LoadPST pst = new LoadPST();
-		Fetch the parking availability values from PST database for the street Block
+		//Fetch the parking availability values from PST database for the street Block
 
 		ParseOSM parseOSM = null;
 		try {
@@ -46,7 +45,7 @@ public class CreatePST {
 			
 			int totalSpaces;
 			
-			if(length<0.1){
+			if(length<0.015){
 				totalSpaces = 0;
 			}else{
 				totalSpaces = (int)(150*length);

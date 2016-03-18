@@ -1,4 +1,5 @@
 package ParkRouter;
+
 /*
  * Router.java
  * 
@@ -11,80 +12,97 @@ import java.io.*;
 
 import java.util.*;
 
+import Database.LoadHPP;
 import MapDatabase.DirectedEdge;
 import MapDatabase.GraphNode;
 import Runner.ServerConfig;
+import StreetBlock.KdTree;
+import StreetBlock.KdTree.XYZPoint;
 import parkAttribs.StatisticMatrices;
 
 public class Router {
 
-	/*Class member declarations*/
-	
-	/*Recovery function variables*/
+	/* Class member declarations */
+
+	/* Recovery function variables */
 	private int k_tau;
 	private int h;
 
-	/*Road network variables*/
+	/* Road network variables */
 	ParkStreetNetworkCreator creator;
 	private int n;
-	private int nBlocks; 
+	private int nBlocks;
 	private ArrayList<ArrayList<Integer>> adjNodes = new ArrayList<ArrayList<Integer>>();
 	private ParkNetwork road = new ParkNetwork(n);
 	private ParkEdge edges[][];
 	private double edgeWeights[][];
-	private double [][] edgeCosts;
+	private double[][] edgeCosts;
 	private double[][] SP;
 	private ParkEdge edgeList[];
-	private HashMap<Integer,int[]> blockIdMap = new HashMap<Integer,int[]>();
+	private HashMap<Integer, int[]> blockIdMap = new HashMap<Integer, int[]>();
 	private int blockIds[] = new int[nBlocks];
-	HashMap<Long,Integer> gNodeMap;
+	HashMap<Long, Integer> gNodeMap;
 	private HashMap<Integer, ParkNode> nodes = new HashMap<Integer, ParkNode>();
-	
-	/*GCM variables*/
+
+	/* GCM variables */
 
 	private ArrayList<Integer> runningOptTOPath = new ArrayList<Integer>();
 	private ArrayList<ArrayList<Integer>> optimalPaths = new ArrayList<ArrayList<Integer>>();
-	
-	
-	/*Statistical Matrices*/
-	private double [][] probability;
-	private double [][] avail;
-	
-	/*Node and Edge variable from OSM*/
+
+	/* Statistical Matrices */
+	private double[][] probability;
+	private double[][] avail;
+	private double[][] var; // variance
+	private double[][] probByExp; // estimated probabilities from mean and
+	// variance.
+
+	/* Node and Edge variable from OSM */
 	LinkedList<GraphNode> ll_nodes;
 	LinkedList<DirectedEdge> ll_edges;
 
 	private final int EndOfSearch = -2;
+	
+	KdTree<XYZPoint> parkingBlockTree = new KdTree<XYZPoint>();
 
-	/*Route constructor
+	public KdTree<XYZPoint> getParkingBlockTree() {
+		return parkingBlockTree;
+	}
+
+	/*
+	 * Route constructor
 	 * 
 	 * This takes nodes and edges of the road network as input
 	 * 
-	 * */
+	 */
 	public Router(LinkedList<GraphNode> nodes2, LinkedList<DirectedEdge> edges2) throws IOException {
-		/*Store the nodes and edges in the class*/
+		/* Store the nodes and edges in the class */
 		ll_nodes = nodes2;
 		ll_edges = edges2;
-		nBlocks = edges2.size(); //Total number of blocks
+		nBlocks = edges2.size(); // Total number of blocks
 		this.setBlockIds(new int[nBlocks]);
-		
-		creator = new ParkStreetNetworkCreator(nodes2,edges2); //Create the road network graph
+
+		creator = new ParkStreetNetworkCreator(nodes2, edges2); // Create the
+		// road network
+		// graph
 		n = ParkStreetNetworkCreator.N_NODES;
 		edgeCosts = new double[n][n];
 		gNodeMap = creator.getGraphNodeMap();
 
 		road = creator.getRoad(); // Retrieve roads
-		nodes = creator.getNodes(); //Retrieve nodes
-		edges = creator.getEdges(); //Retrieve edges
+		nodes = creator.getNodes(); // Retrieve nodes
+		edges = creator.getEdges(); // Retrieve edges
+		parkingBlockTree = creator.getParkingBlockList();
 		edgeWeights = creator.getEdgeWeights(); // Edge length
 		SP = creator.getShortestPaths(); // All pair shortest paths
-		creator.getSP_direction();// Will contain the first node to move towards in the shortest path between node i and node j.
+		creator.getSP_direction();// Will contain the first node to move towards
+		// in the shortest path between node i and
+		// node j.
 
 		edgeList = creator.getEdgeList(); // Indexed list of edges
-		/*Compute the adjacency list*/
+		/* Compute the adjacency list */
 		computeAdjList();
 
-		/*Compute the cost of the edges in terms of travel time*/
+		/* Compute the cost of the edges in terms of travel time */
 		for (int i = 0; i < n; i++) {
 			ArrayList<Integer> adjNodesForI = new ArrayList<Integer>();
 			for (int j = 0; j < n; j++) {
@@ -95,50 +113,119 @@ public class Router {
 			}
 			adjNodes.add(i, adjNodesForI);
 		}
-		/*creates the HashMap that given a blockId will give its connecting nodes*/
+		/*
+		 * creates the HashMap that given a blockId will give its connecting
+		 * nodes
+		 */
 		createBlockIdMap();
-		
-		/*Set recovery function length based on no of blocks or time*/
-		h = (int) Math.ceil(ServerConfig.tau / 21.0); // min cost = 21 sec. avg // cost = 59 sec.
+
+		/* Set recovery function length based on no of blocks or time */
+		h = (int) Math.ceil(ServerConfig.tau / 21.0); // min cost = 21 sec. avg
+		// // cost = 59 sec.
 		if (h < 6) {
 			h = 6;
 		}
 		k_tau = h;
-		System.out.println("initiateHistoryPaths"); //For debug purpose
+		System.out.println("initiateHistoryPaths"); // For debug purpose
 
-		/*Compute the paths with respect to the recovery function for individual nodes*/
+		/*
+		 * Compute the paths with respect to the recovery function for
+		 * individual nodes
+		 */
 		initiateHistoryPaths();
 
-		/*Initialize the probability matrix with 0.5*/
+		/* Initialize the probability matrix with 0.5 */
 		StatisticMatrices statisticMatrices = new StatisticMatrices(n);
 		probability = statisticMatrices.getProbabilityMatrix();
-		
-		/*Initialize availability for all blocks a random value between 0 and 20*/
-		//@TODO - This need to be changed as per discussion on 07 Mar 2016
+
+		/*
+		 * Initialize availability for all blocks a random value between 0 and
+		 * 20
+		 */
+		// @TODO - This need to be changed as per discussion on 07 Mar 2016
 		avail = statisticMatrices.getAvailMatrix();
-		
+
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (edges[i][j] != null) {
-					probability[i][j] = 0.5;
-					int avail1 = (int) (Math.random() * (20 - 0)) + 0;
-					avail[i][j] = avail1;
+					probability[i][j] = edges[i][j].getProbability();
+					avail[i][j] = edges[i][j].getTotalAvailability();
 				}
 			}
 		}
-		/*Compute the optimal paths using GCM function*/
+		/* New Probability Calculation */
+		var = new double[n][n]; // Variance need to be re-initialized every
+		// time.
+		probByExp = new double[n][n]; // Prob need to be re-initialized every
+		// time.
+		//computeProbAvail();
+
+		/* Compute the optimal paths using GCM function */
 		optimalPaths = optAlgrorithmFinite();
-		/*Clear the runningOptTOPath member for Route request */
+		/* Clear the runningOptTOPath member for Route request */
 		runningOptTOPath.clear();
 	}
+
+	private void computeProbAvail() {
+		accumulatedAvail();
+		accumulatedVar();
+		int numberOfAtoms = 15;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (edges[i][j] != null) {
+					var[i][j] = var[i][j] / (numberOfAtoms - 1);
+					probByExp[i][j] = 1 - StatisticMatrices.Phi(0.5, avail[i][j], Math.sqrt(var[i][j]));
+				}
+			}
+		}
+
+	}
+
+	private void accumulatedAvail() {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (edges[i][j] != null) {
+					int nBlocks = edges[i][j].getNBlocks();
+					if (nBlocks == 0) {
+						avail[i][j] += 0;
+					} else if (nBlocks == 1) {
+						int streetID = edges[i][j].getStreetID();
+						avail[i][j] = LoadHPP.pullDataFromHPP(streetID);
+					}
+				} else {
+					avail[i][j] += 0;
+				}
+			}
+		}
+
+	}
+
+	private void accumulatedVar() {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (edges[i][j] != null) {
+					int nBlocks = edges[i][j].getNBlocks();
+					if (nBlocks == 0) {
+						var[i][j] += 0;
+					} else if (nBlocks == 1) {
+						int streetID = edges[i][j].getStreetID();
+						double number = LoadHPP.pullDataFromHPP(streetID);
+						var[i][j] += (avail[i][j] - number) * (avail[i][j] - number);
+					}
+				} else {
+					var[i][j] += 0;
+				}
+			}
+		}
+
+	}
+
 
 	/* GCM ALGORITHM */
 	public ArrayList<ArrayList<Integer>> optAlgrorithmFinite() {
 		/* Initializations */
-		ArrayList<ArrayList<HashMap<ArrayList<Integer>, Double>>> C = 
-				new ArrayList<ArrayList<HashMap<ArrayList<Integer>, Double>>>();
-		ArrayList<ArrayList<HashMap<ArrayList<Integer>, Integer>>> NEXT = 
-				new ArrayList<ArrayList<HashMap<ArrayList<Integer>, Integer>>>();
+		ArrayList<ArrayList<HashMap<ArrayList<Integer>, Double>>> C = new ArrayList<ArrayList<HashMap<ArrayList<Integer>, Double>>>();
+		ArrayList<ArrayList<HashMap<ArrayList<Integer>, Integer>>> NEXT = new ArrayList<ArrayList<HashMap<ArrayList<Integer>, Integer>>>();
 
 		// Create possible history paths for each node:
 
@@ -178,19 +265,23 @@ public class Router {
 							double accumulatedTime = 0;
 							for (int pathIdx = 1; pathIdx < path.size(); pathIdx++) {
 								if (ServerConfig.tau == 0) {
-									//Break if recovery fn time is set to Zero
+									// Break if recovery fn time is set to Zero
 									break;
 								}
-								/*Compute the time accumulated from the edge travel times*/
+								/*
+								 * Compute the time accumulated from the edge
+								 * travel times
+								 */
 								accumulatedTime = accumulatedTime
 										+ edgeCosts[(int) path.get(pathIdx)][(int) path.get(pathIdx - 1)];
 								if ((((Integer) path.get(pathIdx)).intValue() == i && path.get(pathIdx - 1) == j)
 										|| (path.get(pathIdx) == j
-												&& ((Integer) path.get(pathIdx - 1)).intValue() == i)) {
+										&& ((Integer) path.get(pathIdx - 1)).intValue() == i)) {
 									recentlyTraversed = true;
 								}
 								if (accumulatedTime >= ServerConfig.tau) {
-									// Break if accumulated time is more than 2mins
+									// Break if accumulated time is more than
+									// 2mins
 									break;
 								}
 							}
@@ -245,7 +336,7 @@ public class Router {
 		}
 		return finalPaths;
 	}
-	
+
 	public void DFSforHistoryPaths(ArrayList<ArrayList<Integer>> historyPathsForI, ArrayList<Integer> currentPath,
 			int root, int depth) {
 
@@ -266,10 +357,12 @@ public class Router {
 			historyPathsForI.add(finalPath);
 		}
 	}
-	
-	/*Compute the paths with respect to the recovery function*/
+
+	/* Compute the paths with respect to the recovery function */
 	private ArrayList<ArrayList<ArrayList<Integer>>> historyPathslist = new ArrayList<ArrayList<ArrayList<Integer>>>();
-	void initiateHistoryPaths() { // Create possible history paths for each node:
+
+	void initiateHistoryPaths() { // Create possible history paths for each
+		// node:
 		for (int i = 0; i < n; i++) {
 			ArrayList<ArrayList<Integer>> historyPathsForI = new ArrayList<ArrayList<Integer>>();
 			ArrayList<Integer> currentPath = new ArrayList<Integer>();
@@ -284,12 +377,14 @@ public class Router {
 		}
 	}
 
-	/*This function creates the HashMap that given a blockId will give its connecting nodes. Also
-	 will create a function of the blockId's in the array blockIds.*/
+	/*
+	 * This function creates the HashMap that given a blockId will give its
+	 * connecting nodes. Also will create a function of the blockId's in the
+	 * array blockIds.
+	 */
 
-	public void createBlockIdMap()
-	{
-		for(int i=0;i<edgeList.length;i++){
+	public void createBlockIdMap() {
+		for (int i = 0; i < edgeList.length; i++) {
 			ParkEdge tempEdge = edgeList[i];
 			int blockId = tempEdge.getBlockId1();
 			int nodeId1 = tempEdge.getNode1().getId();
@@ -298,14 +393,14 @@ public class Router {
 			connectingNodes[0] = nodeId1;
 			connectingNodes[1] = nodeId2;
 			blockIds[i] = blockId;
-			blockIdMap.put(blockId,connectingNodes);
+			blockIdMap.put(blockId, connectingNodes);
 		}
 	}
 
-	/*Compute the adjacency list*/
-	private ArrayList<ArrayList<Integer>> adjList= new ArrayList<ArrayList<Integer>>(n);
-	public void computeAdjList()
-	{
+	/* Compute the adjacency list */
+	private ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>(n);
+
+	public void computeAdjList() {
 		for (int i = 0; i < n; i++) {
 			ArrayList<Integer> adjNodesForI = new ArrayList<Integer>();
 			for (int j = 0; j < n; j++) {
@@ -317,26 +412,23 @@ public class Router {
 		}
 	}
 
-	
-	/*Getters and Setters */
+	/* Getters and Setters */
 
 	public ParkNetwork getRoad() {
 		return road;
 	}
-	
+
 	public HashMap<Long, Integer> getgNodeMap() {
 		return gNodeMap;
 	}
-	
+
 	public void setBlockIds(int[] blockIds) {
 		this.blockIds = blockIds;
 	}
-	
-	public ArrayList<Integer> getOPTPath(int initialLocation){
-		runningOptTOPath = new ArrayList<Integer>(
-				optimalPaths.get(initialLocation));
+
+	public ArrayList<Integer> getOPTPath(int initialLocation) {
+		runningOptTOPath = new ArrayList<Integer>(optimalPaths.get(initialLocation));
 		return runningOptTOPath;
 	}
-	
 
 }

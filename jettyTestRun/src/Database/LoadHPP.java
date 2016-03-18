@@ -122,6 +122,8 @@ public class LoadHPP {
 
 			if(rs.next()){
 				avg_available_spaces = rs.getDouble(5);
+			}else{
+				avg_available_spaces=0.0;
 			}
 
 			rs.close();
@@ -172,10 +174,10 @@ public class LoadHPP {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 			stmt = conn.createStatement();
-			String sql_sequel =  ""+streetBlockID;
-			
 			String sql;
-			sql = "SELECT * FROM phonepark01.HPP WHERE StreetBlockID = '"+streetBlockID+"' AND StartTime = '"+startTime+"' AND EndTime = '"+endTime+"' AND Day = '"+day+"';";
+			sql = "SELECT * FROM phonepark01.HPP WHERE StreetBlockID = '"+streetBlockID+"' AND "
+					+ "StartTime = '"+startTime+"' AND EndTime = '"+endTime+"' "
+							+ "AND Day = '"+day+"';";
 			System.out.println(sql);
 			rs = stmt.executeQuery(sql);
 			if(rs.next()){
@@ -188,7 +190,8 @@ public class LoadHPP {
 						
 				String updateSQL = "UPDATE phonepark01.HPP SET "
 						+ "AvgEstParkAvail='"+changed_availability+"' , SampleSize='"+new_sampleSize+"' "
-								+ "WHERE StreetBlockID = '"+streetBlockID+"' AND StartTime = '"+startTime+"' AND"
+								+ "WHERE StreetBlockID = '"+streetBlockID+"' "
+										+ "AND StartTime = '"+startTime+"' AND"
 										+ " EndTime = '"+endTime+"' AND Day = '"+day+"';";
 				System.out.println(updateSQL);
 				stmt.executeUpdate(updateSQL);
@@ -199,7 +202,8 @@ public class LoadHPP {
 						+"'"+ day + "',"
 						+"'"+ new_availability + "',"
 						+"'"+ 1 + "'";
-				String writeSQL = "INSERT INTO phonepark01.HPP (StreetBlockID,StartTime,EndTime,Day,AvgEstParkAvail,SampleSize) "
+				String writeSQL = "INSERT INTO phonepark01.HPP (StreetBlockID,StartTime,"
+						+ "EndTime,Day,AvgEstParkAvail,SampleSize) "
 						+ "VALUES ('"+sql_sequel_write+");";
 				System.out.println(writeSQL);
 				stmt.executeUpdate(writeSQL);
