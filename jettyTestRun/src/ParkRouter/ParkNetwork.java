@@ -41,7 +41,7 @@ public class ParkNetwork {
 		edges[nodeId2][nodeId1] = edge;
 		edgeWeights[nodeId1][nodeId2] = Spatial.distance(node1, node2);
 		edgeWeights[nodeId2][nodeId1] = Spatial.distance(node1, node2);
-		System.out.println(nodeId1 + " -> " + nodeId2 + " " + edgeWeights[nodeId1][nodeId2]);
+		//System.out.println(nodeId1 + " -> " + nodeId2 + " " + edgeWeights[nodeId1][nodeId2]);
 	}
 
 	public HashMap<Integer, ParkNode> getNodes() {

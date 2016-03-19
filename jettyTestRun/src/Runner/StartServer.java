@@ -129,7 +129,7 @@ public class StartServer {
 		 * The route is a set of nodes*/
 		sbr = intl.startRouting(closestMapPoint);
 
-		System.out.println(sbr); //For debug  purpose only
+		//System.out.println(sbr); //For debug  purpose only
 		/*Send the route nodes to the Android Client*/
 		return sbr;
 	}

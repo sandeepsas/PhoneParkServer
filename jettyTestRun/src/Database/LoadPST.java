@@ -44,11 +44,9 @@ public class LoadPST {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			//STEP 3: Open a connection
-			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 
 			//STEP 4: Execute a query
-			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql_sequel =  ""+StreetBlockID;
 
@@ -87,7 +85,6 @@ public class LoadPST {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		System.out.println("Goodbye!");
 		return rsPair;
 	}
 	/*
@@ -103,11 +100,9 @@ public class LoadPST {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			//STEP 3: Open a connection
-			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 
 			//STEP 4: Execute a query
-			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql_sequel1 =  ""+availability;
 			String sql_sequel2 =  ""+StreetBlockID;
@@ -144,7 +139,6 @@ public class LoadPST {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		System.out.println("Goodbye!");
 	}
 	/*
 	 * Fetch availability from the Parking Status Table
@@ -168,11 +162,9 @@ public class LoadPST {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			//STEP 3: Open a connection
-			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 
 			//STEP 4: Execute a query
-			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql_sequel =  ""+streetBlockID;
 
@@ -209,7 +201,6 @@ public class LoadPST {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		System.out.println("Goodbye!");
 		return available_spaces;
 	}
 
@@ -221,9 +212,7 @@ public class LoadPST {
 		Statement stmt = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
-			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 
 			String sql;
@@ -268,7 +257,6 @@ public class LoadPST {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		System.out.println("Goodbye!");
 		return edgeAvailabilitySet;
 	}
 
@@ -280,11 +268,9 @@ public class LoadPST {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			//STEP 3: Open a connection
-			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 
 			//STEP 4: Execute a query
-			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql_sequel1 =  ""+availability;
 			String sql_sequel2 =  ""+StreetBlockID;
@@ -322,7 +308,6 @@ public class LoadPST {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		System.out.println("Goodbye!");
 	}
 
 }

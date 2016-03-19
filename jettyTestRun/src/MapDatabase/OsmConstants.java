@@ -74,7 +74,6 @@ public class OsmConstants {
 	    double lon3 = lon1 + Math.atan2(By, Math.cos(lat1) + Bx);
 
 	    //print out in degrees
-	    System.out.println(Math.toDegrees(lat3) + " " + Math.toDegrees(lon3));
 		return new Pair<Double,Double>(Math.toDegrees(lon3),Math.toDegrees(lat3));
 	}
 }

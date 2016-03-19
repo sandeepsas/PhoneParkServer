@@ -32,11 +32,9 @@ public class WritePAT {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			//STEP 3: Open a connection
-			System.out.println("Connecting to database...");
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
 
 			//STEP 4: Execute a query
-			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			
 			String sql_sequel = jsonObj.getString("UserID") + "',"
@@ -79,7 +77,6 @@ public class WritePAT {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		System.out.println("Goodbye!");
 		return res;
 	}
 
