@@ -15,6 +15,7 @@ import java.util.Map;
 
 import MapDatabase.GraphNode;
 import MapDatabase.Pair;
+import Runner.ServerConfig;
 import Runner.StartServer;
 import StreetBlock.KdTree.XYZPoint;
 
@@ -22,13 +23,13 @@ public class LoadPST {
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+	static final String DB_URL = ServerConfig.DB_URL;
 	//static final String DB_NAME = "phonepark01.uicstatemid";
 
 	//  Database credentials
 
-	static final String USER = "root";
-	static final String PASS = "";
+	static final String USER = ServerConfig.USER;
+	static final String PASS = ServerConfig.PASS;
 
 
 
@@ -149,10 +150,10 @@ public class LoadPST {
 		int streetBlockID = streetPair.getL();
 		int available_spaces = 0;
 
-		String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+		String DB_URL= ServerConfig.DB_URL;
 
-		String USER = "root";
-		String PASS = "";
+		String USER = ServerConfig.USER;
+		String PASS = ServerConfig.PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;

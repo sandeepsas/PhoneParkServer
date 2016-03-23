@@ -9,16 +9,18 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import Runner.ServerConfig;
+
 public class UpdatePSST {
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+	static final String DB_URL = ServerConfig.DB_URL;
 
 	//  Database credentials
 
-	static final String USER = "root";
-	static final String PASS = "";
+	static final String USER = ServerConfig.USER;
+	static final String PASS = ServerConfig.PASS;
 
 	public boolean update(int StreetBlockID,int total_spaces,int new_availability,String timeStamp) {
 		// TODO Auto-generated method stub

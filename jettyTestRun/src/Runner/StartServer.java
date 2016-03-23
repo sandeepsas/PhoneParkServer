@@ -6,21 +6,24 @@
  * Starts the server
  * */
 package Runner;
+
+import spark.*;
+
 import java.util.*;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import Database.*;
-
 import MapDatabase.*;
-import ParkRouter.ParkNode;
-import StreetBlock.KdTree;
-import StreetBlock.StreetBlockLoader;
-
+import StreetBlock.*;
 import StreetBlock.KdTree.XYZPoint;
-import spark.*;
+
 
 public class StartServer {
+	
+	/*Load Server Configuration*/
+	ServerConfig serverConfig = new ServerConfig();
 
 	/*Initialize the road network and computes the GCM Paths*/
 	private static Initializers intl = new Initializers();
@@ -40,7 +43,7 @@ public class StartServer {
 
 		System.out.println("Initializations Ended. Server Listening!!!");//For debug  purpose only
 		postString = new StringBuilder();
-		
+
 		/*               Web pages mapped with the web service
 		 * ******************************************************************************
 		 * 
@@ -65,8 +68,8 @@ public class StartServer {
 		 * 
 		 * where, http://73.247.220.84 is the public IP of the web server and 8080 is the port number
 		 * *******************************************************************************/
-		
-		
+
+
 		/*Facilitates parking search*/
 		Spark.get("/hello", (req, res) -> searchParking(req)); 
 		/*Monitor parking de-parking activity*/
@@ -76,32 +79,32 @@ public class StartServer {
 		/*Returns nearest parking blocks*/
 		Spark.get("/nn", (req, res) ->nearestBlocks(req));
 	}
-	
+
 	/*This function is called when the web page /hello is accessed
 	 * Sample request:
 	 * http://73.247.220.84:8080/hello?UserID=a108eec35f0daf33&Latitude=41.8693826&Longitude=-87.6630133
 	 * */
-	
+
 	private static Object nearestBlocks(Request req) {
 		/*Parse the parameters for identifying the vehicle location*/
 		double latitude = Double.parseDouble(req.queryParams("Latitude"));
 		double longitude = Double.parseDouble(req.queryParams("Longitude"));
-		
+
 		/*KdTree<XYZPoint> streetBlockTree = sb.loadStreetDataTree();
 		Collection<XYZPoint> neigbors = streetBlockTree
 				.nearestNeighbourSearch(new KdTree.XYZPoint("", "address" ,
 						latitude, longitude,
 						0,0,0,0,0), 0.5);*/
-		
+
 		KdTree<XYZPoint> streetBlockTree = intl.pbTree;
 		Collection<XYZPoint> neigbors = streetBlockTree
 				.nearestNeighbourSearch(new KdTree.XYZPoint("", "address" ,
 						latitude, longitude,
 						0,0,0,0,0), 0.3);
-		
+
 		Iterator<XYZPoint> path_itr = neigbors.iterator();
 		StringBuilder sbr = new StringBuilder();
-		
+
 		while(path_itr.hasNext()){
 			XYZPoint block = path_itr.next();
 			String e1 = block.start_lat+","+block.start_long;
@@ -133,7 +136,7 @@ public class StartServer {
 		/*Send the route nodes to the Android Client*/
 		return sbr;
 	}
-	
+
 	/*This function is called when the web page /post is accessed
 	 * Sample request:
 	 * http://73.247.220.84:8080/post?UserID=a108eec35f0daf33&Latitude=41.8693826&
@@ -163,7 +166,7 @@ public class StartServer {
 			reportJObj.put("StreetBlockID",""+StreetBlockID);
 			reportJObj.put("Activity",req.queryParams("Activity"));
 			reportJObj.put("TimeStamp", req.queryParams("TimeStamp"));
-			
+
 			/*Write the data to Parking Availability Table (PAT)*/
 			res = writePAT(reportJObj);
 
@@ -175,7 +178,7 @@ public class StartServer {
 			if(res){
 				int new_availability = updatePSST(StreetBlockID,activity,timeStamp);
 				postString.append(" ->"+new_availability);
-				
+
 
 			}
 			/*The returned output will now contain the Street Block, the old value of parking availability,
@@ -189,7 +192,7 @@ public class StartServer {
 		return reportJObj.toString();
 
 	}
-	
+
 	/*This function will update the Parking Allocation Table (PAT)
 	 * The Class and write function is present in src/Database folder*/
 	private static boolean writePAT(JSONObject jsonObj){
@@ -197,7 +200,7 @@ public class StartServer {
 		return (wPAT.write(jsonObj));
 
 	}
-	
+
 	/*This function updates the PST and PSST databases*/
 	private static int updatePSST(int StreetBlockID,int activity, String timeStamp) {
 		//Query PST to fetch record of Street Block
@@ -232,7 +235,7 @@ public class StartServer {
 		/*Return the new value of availability after parking/de-parking activity*/
 		return new_availability;
 	}
-	
+
 	/*This function estimates the real time parking availability*/
 	private static int estimateParkingAvailability(int total_spaces, int available_spaces,int activity) {
 		int new_availability = 0;
@@ -283,4 +286,6 @@ public class StartServer {
 
 		return nearest_blocks;
 	}
+
+
 }

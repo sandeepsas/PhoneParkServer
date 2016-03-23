@@ -14,6 +14,7 @@ import java.sql.Statement;
 import java.util.Calendar;
 
 import MapDatabase.Pair;
+import Runner.ServerConfig;
 
 public class LoadHPP {
 	
@@ -22,10 +23,10 @@ public class LoadHPP {
 		int available_spaces = 0;
 		double avg_available_spaces = 0.0;
 
-		String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+		String DB_URL = ServerConfig.DB_URL;
 
-		String USER = "root";
-		String PASS = "";
+		String USER = ServerConfig.USER;
+		String PASS = ServerConfig.PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
@@ -78,7 +79,9 @@ public class LoadHPP {
 		return avg_available_spaces;
 	}
 	
-	public static double pullDataFromHPP(int streetBlockID){
+	public static ParkHistory pullDataFromHPP(int streetBlockID){
+		
+		ParkHistory pH =  new ParkHistory();
 		
 		Calendar now = Calendar.getInstance();
 		int startTime = now.get(Calendar.HOUR_OF_DAY);
@@ -88,10 +91,10 @@ public class LoadHPP {
 
 		double avg_available_spaces = 0.0;
 
-		String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+		String DB_URL = ServerConfig.DB_URL;
 
-		String USER = "root";
-		String PASS = "";
+		String USER = ServerConfig.USER;
+		String PASS = ServerConfig.PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
@@ -117,9 +120,25 @@ public class LoadHPP {
 
 			if(rs.next()){
 				avg_available_spaces = rs.getDouble(5);
+				pH.setTotalSamplesForDateTime(rs.getInt(7));
 			}else{
 				avg_available_spaces=0.0;
 			}
+			pH.setAvgParkEstForDateTime(avg_available_spaces);
+			
+			String avgSQL = sql = "SELECT * FROM phonepark01.HPP WHERE StreetBlockID = '"+sql_sequel+"';";
+			System.out.println(avgSQL);
+			rs = stmt.executeQuery(avgSQL);
+			
+			double sum_of_all_availability = 0.0;
+			int sum_of_all_samples = 0;
+			while(rs.next()){
+				sum_of_all_availability += rs.getDouble(5);
+				sum_of_all_samples += rs.getInt(7);
+			}
+			pH.setAvgParkEstForStreet(sum_of_all_availability);
+			pH.setStreetID(streetBlockID);
+			pH.setTotalSamplesForStreet(sum_of_all_samples);
 
 			rs.close();
 			stmt.close();
@@ -144,7 +163,7 @@ public class LoadHPP {
 				se.printStackTrace();
 			}//end finally try
 		}//end try
-		return avg_available_spaces;
+		return pH;
 	}
 
 	public static void writeHPP(int streetBlockID, int new_availability) {
@@ -157,10 +176,10 @@ public class LoadHPP {
 		
 		//Get the Street Entry in HPP
 
-		String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+		String DB_URL = ServerConfig.DB_URL;;
 
-		String USER = "root";
-		String PASS = "";
+		String USER = ServerConfig.USER;
+		String PASS = ServerConfig.PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;

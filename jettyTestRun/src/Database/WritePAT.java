@@ -10,17 +10,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import org.json.JSONObject;
 
+import Runner.ServerConfig;
+
 public class WritePAT {
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
-	static final String DB_NAME = "phonepark01.uicstatemid";
+	static final String DB_URL = ServerConfig.DB_URL;
 
 	//  Database credentials
 
-	static final String USER = "root";
-	static final String PASS = "";
+	static final String USER = ServerConfig.USER;
+	static final String PASS = ServerConfig.PASS;
 
 	public boolean write(JSONObject jsonObj) {
 		// TODO Auto-generated method stub
