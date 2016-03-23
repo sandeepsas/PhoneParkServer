@@ -36,11 +36,24 @@ public class ParkNetwork {
 
 		int nodeId1 = node1.getId() - nodeIdStart;
 		int nodeId2 = node2.getId() - nodeIdStart;
+		
+		if(edge.isOneWay()){
+			//Handle OneWay
+			edges[nodeId1][nodeId2] = edge;
+			edges[nodeId2][nodeId1] = edge;
+			edgeWeights[nodeId1][nodeId2] = Spatial.distance(node1, node2);
+			edgeWeights[nodeId2][nodeId1] = Spatial.distance(node1, node2);
+			
+		}else{
+			edges[nodeId1][nodeId2] = edge;
+			edges[nodeId2][nodeId1] = edge;
+			edgeWeights[nodeId1][nodeId2] = Spatial.distance(node1, node2);
+			edgeWeights[nodeId2][nodeId1] = Spatial.distance(node1, node2);
+		}
 
-		edges[nodeId1][nodeId2] = edge;
-		edges[nodeId2][nodeId1] = edge;
-		edgeWeights[nodeId1][nodeId2] = Spatial.distance(node1, node2);
-		edgeWeights[nodeId2][nodeId1] = Spatial.distance(node1, node2);
+		
+		
+		
 		//System.out.println(nodeId1 + " -> " + nodeId2 + " " + edgeWeights[nodeId1][nodeId2]);
 	}
 

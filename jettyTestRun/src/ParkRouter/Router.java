@@ -80,7 +80,7 @@ public class Router {
 		ll_edges = edges2;
 		nBlocks = edges2.size(); // Total number of blocks
 		this.setBlockIds(new int[nBlocks]);
-
+		System.out.println("Started Filling Road Graph");
 		creator = new ParkStreetNetworkCreator(nodes2, edges2); // Create the
 		// road network
 		// graph
@@ -126,7 +126,7 @@ public class Router {
 			h = 6;
 		}
 		k_tau = h;
-		System.out.println("initiateHistoryPaths"); // For debug purpose
+		System.out.println("History Path Computation"); // For debug purpose
 
 		/*
 		 * Compute the paths with respect to the recovery function for
@@ -161,19 +161,22 @@ public class Router {
 		//computeProbAvail();
 
 		/* Compute the optimal paths using GCM function */
+		System.out.println("GCM Path Calculation");
 		optimalPaths = optAlgrorithmFinite();
 		/* Clear the runningOptTOPath member for Route request */
 		runningOptTOPath.clear();
+		System.out.println("Process Finished");
 	}
 
 	private void computeProbAvail() {
 		accumulatedAvail();
 		accumulatedVar();
-		int numberOfAtoms = 15;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (edges[i][j] != null) {
-					var[i][j] = var[i][j] / (numberOfAtoms - 1);
+					int streetID = edges[i][j].getStreetID();
+					int no_samples = LoadHPP.pullDataFromHPP(streetID).getTotalSamplesForStreet();
+					var[i][j] = var[i][j] / (no_samples - 1);
 					probByExp[i][j] = 1 - StatisticMatrices.Phi(0.5, avail[i][j], Math.sqrt(var[i][j]));
 				}
 			}
@@ -190,7 +193,7 @@ public class Router {
 						avail[i][j] += 0;
 					} else if (nBlocks == 1) {
 						int streetID = edges[i][j].getStreetID();
-						avail[i][j] = LoadHPP.pullDataFromHPP(streetID);
+						avail[i][j] = LoadHPP.pullDataFromHPP(streetID).getAvgParkEstForDateTime();
 					}
 				} else {
 					avail[i][j] += 0;
@@ -209,7 +212,7 @@ public class Router {
 						var[i][j] += 0;
 					} else if (nBlocks == 1) {
 						int streetID = edges[i][j].getStreetID();
-						double number = LoadHPP.pullDataFromHPP(streetID);
+						double number = LoadHPP.pullDataFromHPP(streetID).getAvgParkEstForDateTime();
 						var[i][j] += (avail[i][j] - number) * (avail[i][j] - number);
 					}
 				} else {

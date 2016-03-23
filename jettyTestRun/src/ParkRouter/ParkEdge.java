@@ -10,6 +10,9 @@ public class ParkEdge {
 	private double probability;
 	private int totalAvailability;
 
+	public ParkEdge(){
+		
+	}
 	public ParkEdge(int streetID,ParkNode n1, ParkNode n2, int nB, int bId1,
 			int bId2, int tot1, int tot2, boolean oneWay, double probability,
 			double length, int totalAvailability) {
@@ -74,12 +77,10 @@ public class ParkEdge {
 	}
 
 	public ParkNode getNode1() {
-		// System.out.println("Hey guys 1!!");
 		return node1;
 	}
 
 	public ParkNode getNode2() {
-		// System.out.println("Hey guys 2!!");
 		return node2;
 	}
 

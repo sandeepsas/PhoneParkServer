@@ -35,6 +35,7 @@ public class ParseOSM {
 		factory.setNamespaceAware(true);
 		XmlPullParser xpp = factory.newPullParser();
 		/*Read the raw OSM file located in the folder jettyTestRun/data/osm/*/
+		System.out.println("Started Parsing OSM");
 		xpp.setInput ( new FileReader ("data/osm/UICCampus.osm"));
 
 		/*Start the parser*/
