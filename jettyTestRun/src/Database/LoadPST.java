@@ -23,13 +23,13 @@ public class LoadPST {
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = ServerConfig.DB_URL;
+	static final String DB_URL = StartServer.getServerconfig().DB_URL;
 	//static final String DB_NAME = "phonepark01.uicstatemid";
 
 	//  Database credentials
 
-	static final String USER = ServerConfig.USER;
-	static final String PASS = ServerConfig.PASS;
+	static final String USER = StartServer.getServerconfig().USER;
+	static final String PASS = StartServer.getServerconfig().PASS;
 
 
 
@@ -150,10 +150,10 @@ public class LoadPST {
 		int streetBlockID = streetPair.getL();
 		int available_spaces = 0;
 
-		String DB_URL= ServerConfig.DB_URL;
+		String DB_URL= StartServer.getServerconfig().DB_URL;
 
-		String USER = ServerConfig.USER;
-		String PASS = ServerConfig.PASS;
+		String USER = StartServer.getServerconfig().USER;
+		String PASS = StartServer.getServerconfig().PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
@@ -281,7 +281,8 @@ public class LoadPST {
 			/*UPDATE phonepark01.psst
 			SET AvailableSpaces='20'
 			WHERE StreetBlockID='4';*/
-			sql = "UPDATE phonepark01.PST SET AvailableSpaces='"+sql_sequel1+"', TotalSpaces='"+sql_sequel3+"' WHERE StreetBlockID = '"+sql_sequel2+"';";
+			sql = "UPDATE phonepark01.PST SET AvailableSpaces='"+sql_sequel1+"',"
+					+ " TotalSpaces='"+sql_sequel3+"' WHERE StreetBlockID = '"+sql_sequel2+"';";
 			System.out.println(sql);
 			stmt.executeUpdate(sql);
 

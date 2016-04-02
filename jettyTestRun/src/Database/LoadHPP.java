@@ -15,6 +15,7 @@ import java.util.Calendar;
 
 import MapDatabase.Pair;
 import Runner.ServerConfig;
+import Runner.StartServer;
 
 public class LoadHPP {
 	
@@ -23,10 +24,10 @@ public class LoadHPP {
 		int available_spaces = 0;
 		double avg_available_spaces = 0.0;
 
-		String DB_URL = ServerConfig.DB_URL;
+		String DB_URL = StartServer.getServerconfig().DB_URL;
 
-		String USER = ServerConfig.USER;
-		String PASS = ServerConfig.PASS;
+		String USER = StartServer.getServerconfig().USER;
+		String PASS = StartServer.getServerconfig().PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
@@ -91,10 +92,10 @@ public class LoadHPP {
 
 		double avg_available_spaces = 0.0;
 
-		String DB_URL = ServerConfig.DB_URL;
+		String DB_URL = StartServer.getServerconfig().DB_URL;
 
-		String USER = ServerConfig.USER;
-		String PASS = ServerConfig.PASS;
+		String USER = StartServer.getServerconfig().USER;
+		String PASS = StartServer.getServerconfig().PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;
@@ -176,10 +177,10 @@ public class LoadHPP {
 		
 		//Get the Street Entry in HPP
 
-		String DB_URL = ServerConfig.DB_URL;;
+		String DB_URL = StartServer.getServerconfig().DB_URL;;
 
-		String USER = ServerConfig.USER;
-		String PASS = ServerConfig.PASS;
+		String USER = StartServer.getServerconfig().USER;
+		String PASS = StartServer.getServerconfig().PASS;
 		ResultSet rs = null;
 		Connection conn = null;
 		Statement stmt = null;

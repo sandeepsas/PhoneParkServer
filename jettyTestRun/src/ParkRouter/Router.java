@@ -16,6 +16,7 @@ import Database.LoadHPP;
 import MapDatabase.DirectedEdge;
 import MapDatabase.GraphNode;
 import Runner.ServerConfig;
+import Runner.StartServer;
 import StreetBlock.KdTree;
 import StreetBlock.KdTree.XYZPoint;
 import parkAttribs.StatisticMatrices;
@@ -61,7 +62,7 @@ public class Router {
 	LinkedList<DirectedEdge> ll_edges;
 
 	private final int EndOfSearch = -2;
-	
+
 	KdTree<XYZPoint> parkingBlockTree = new KdTree<XYZPoint>();
 
 	public KdTree<XYZPoint> getParkingBlockTree() {
@@ -108,7 +109,7 @@ public class Router {
 			for (int j = 0; j < n; j++) {
 				if (edges[i][j] != null) {
 					adjNodesForI.add(j);
-					edgeCosts[i][j] = edgeWeights[i][j] / ServerConfig.velocity;
+					edgeCosts[i][j] = edgeWeights[i][j] / StartServer.getServerconfig().velocity;
 				}
 			}
 			adjNodes.add(i, adjNodesForI);
@@ -120,7 +121,7 @@ public class Router {
 		createBlockIdMap();
 
 		/* Set recovery function length based on no of blocks or time */
-		h = (int) Math.ceil(ServerConfig.tau / 21.0); // min cost = 21 sec. avg
+		h = (int) Math.ceil(StartServer.getServerconfig().tau / 21.0); // min cost = 21 sec. avg
 		// // cost = 59 sec.
 		if (h < 6) {
 			h = 6;
@@ -143,28 +144,35 @@ public class Router {
 		 * 20
 		 */
 		// @TODO - This need to be changed as per discussion on 07 Mar 2016
-		avail = statisticMatrices.getAvailMatrix();
+		ArrayList<ArrayList<ArrayList<Integer>>> finalPathsList = new ArrayList<ArrayList<ArrayList<Integer>>>();
+		
+		for(int hh=0;hh<1;hh++){
+			avail = statisticMatrices.getAvailMatrix();
 
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				if (edges[i][j] != null) {
-					probability[i][j] = edges[i][j].getProbability();
-					avail[i][j] = edges[i][j].getTotalAvailability();
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < n; j++) {
+					if (edges[i][j] != null) {
+						probability[i][j] = edges[i][j].getProbability();
+						avail[i][j] = edges[i][j].getTotalAvailability();
+					}
 				}
 			}
-		}
-		/* New Probability Calculation */
-		var = new double[n][n]; // Variance need to be re-initialized every
-		// time.
-		probByExp = new double[n][n]; // Prob need to be re-initialized every
-		// time.
-		//computeProbAvail();
+			/* New Probability Calculation */
+			var = new double[n][n]; // Variance need to be re-initialized every
+			// time.
+			probByExp = new double[n][n]; // Prob need to be re-initialized every
+			// time.
+			//computeProbAvail();
 
-		/* Compute the optimal paths using GCM function */
-		System.out.println("GCM Path Calculation");
-		optimalPaths = optAlgrorithmFinite();
-		/* Clear the runningOptTOPath member for Route request */
-		runningOptTOPath.clear();
+			/* Compute the optimal paths using GCM function */
+			System.out.println("GCM Path Calculation");
+			optimalPaths = optAlgrorithmFinite();
+			System.out.println(optimalPaths.get(0).toString());
+			finalPathsList.add(optimalPaths);
+			/* Clear the runningOptTOPath member for Route request */
+			runningOptTOPath.clear();
+			
+		}
 		System.out.println("Process Finished");
 	}
 
@@ -240,12 +248,12 @@ public class Router {
 			for (ArrayList<Integer> path : historyPathslist.get(i)) {
 				C.get(0).add(new HashMap<ArrayList<Integer>, Double>());
 				NEXT.get(0).add(new HashMap<ArrayList<Integer>, Integer>());
-				C.get(0).get(i).put(path, (double) ServerConfig.beta);
+				C.get(0).get(i).put(path, (double) StartServer.getServerconfig().beta);
 				NEXT.get(0).get(i).put(path, EndOfSearch);
 			}
 		}
 		/* Iterate for k_m number of nodes */
-		for (int k = 1; k <= ServerConfig.k_m; k++) {
+		for (int k = 1; k <= StartServer.getServerconfig().k_m; k++) {
 			C.add(new ArrayList<HashMap<ArrayList<Integer>, Double>>());
 			NEXT.add(new ArrayList<HashMap<ArrayList<Integer>, Integer>>());
 			for (int i = 0; i < n; i++) {
@@ -267,7 +275,7 @@ public class Router {
 							boolean recentlyTraversed = false;
 							double accumulatedTime = 0;
 							for (int pathIdx = 1; pathIdx < path.size(); pathIdx++) {
-								if (ServerConfig.tau == 0) {
+								if (StartServer.getServerconfig().tau == 0) {
 									// Break if recovery fn time is set to Zero
 									break;
 								}
@@ -282,7 +290,7 @@ public class Router {
 										&& ((Integer) path.get(pathIdx - 1)).intValue() == i)) {
 									recentlyTraversed = true;
 								}
-								if (accumulatedTime >= ServerConfig.tau) {
+								if (accumulatedTime >= StartServer.getServerconfig().tau) {
 									// Break if accumulated time is more than
 									// 2mins
 									break;
@@ -305,15 +313,15 @@ public class Router {
 		ArrayList<ArrayList<Integer>> finalPaths = new ArrayList<ArrayList<Integer>>();
 
 		for (int i = 0; i < n; i++) {
-			ArrayList<Integer> finalPath = new ArrayList<Integer>(ServerConfig.k_m);
+			ArrayList<Integer> finalPath = new ArrayList<Integer>(StartServer.getServerconfig().k_m);
 			ArrayList<Integer> runningHistory = new ArrayList<Integer>();
 			finalPath.add(0, i);
 			runningHistory.add(0, i);
-			for (int k = 1; k <= ServerConfig.k_m; k++) {
+			for (int k = 1; k <= StartServer.getServerconfig().k_m; k++) {
 				int currentNode = finalPath.get(k - 1);
 				if (k > k_tau) {
 					new ArrayList<Integer>(runningHistory);
-					int nextNode = NEXT.get(ServerConfig.k_m - k).get(currentNode)
+					int nextNode = NEXT.get(StartServer.getServerconfig().k_m - k).get(currentNode)
 							.get(runningHistory.subList(0, (int) runningHistory.size() - 1));
 					finalPath.add(nextNode);
 					runningHistory.add(nextNode);
@@ -329,7 +337,7 @@ public class Router {
 							break;
 						}
 					}
-					int nextNode = NEXT.get(ServerConfig.k_m - k).get(currentNode).get(runningHistoryArg);
+					int nextNode = NEXT.get(StartServer.getServerconfig().k_m - k).get(currentNode).get(runningHistoryArg);
 					finalPath.add(nextNode);
 					runningHistory.add(nextNode);
 				}

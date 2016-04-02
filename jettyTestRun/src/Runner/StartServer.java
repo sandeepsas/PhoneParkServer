@@ -23,7 +23,11 @@ import StreetBlock.KdTree.XYZPoint;
 public class StartServer {
 	
 	/*Load Server Configuration*/
-	ServerConfig serverConfig = new ServerConfig();
+	public static final ServerConfig serverConfig = ServerConfig.getInstance();
+	
+	public static ServerConfig getServerconfig() {
+		return serverConfig;
+	}
 
 	/*Initialize the road network and computes the GCM Paths*/
 	private static Initializers intl = new Initializers();
@@ -240,10 +244,12 @@ public class StartServer {
 	private static int estimateParkingAvailability(int total_spaces, int available_spaces,int activity) {
 		int new_availability = 0;
 
-		double change_in_availability = (1-ServerConfig.FLASE_POSITIVE)/(ServerConfig.PENETRATION_RATIO*(1-ServerConfig.FLASE_NEGATIVE));
+		double change_in_availability = (1-StartServer.getServerconfig().FLASE_POSITIVE)/
+				(StartServer.getServerconfig().PENETRATION_RATIO
+				*(1-StartServer.getServerconfig().FLASE_NEGATIVE));
 
 		/*Compute change in Parking availability wrt to activity*/
-		if(activity==ServerConfig.ACTIVITY_PARKED){//Parking
+		if(activity==serverConfig.ACTIVITY_PARKED){//Parking
 			new_availability = available_spaces - (int)Math.round(change_in_availability);
 			if(new_availability<0)
 				new_availability=0;

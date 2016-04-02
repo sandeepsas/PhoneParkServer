@@ -1,33 +1,47 @@
 package Runner;
-
+/*
+ * @Author: Sandeep Sasidharan
+ * Singleton class to read the server configuration file
+ * 
+ * */
 import java.io.*;
 import java.util.*;
 
-public class ServerConfig {
-	
+public final class ServerConfig {
 
-	public static final int ACTIVITY_PARKED = 1;
-	public static final int ACTIVITY_DEPARKED = 0;
-	
+
+	public final int ACTIVITY_PARKED = 1;
+	public final int ACTIVITY_DEPARKED = 0;
+
 	/*GCM parameters*/
-	public static int k_m; // Maximum number of edges to be displayed
-	public static int tau;
+	public  int k_m = 15; // Maximum number of edges to be displayed
+	public  int tau = 120;
 
-	public static double velocity = 8.9408/4.0; 
-	public static double velocityWalking = Double.POSITIVE_INFINITY;
-	public static int beta = 60*60;
-	
+	public  double velocity = 8.9408/4.0; 
+	public  double velocityWalking = Double.POSITIVE_INFINITY;
+	public  int beta = 60*60;
 
-	public static double FLASE_POSITIVE;
-	public static double FLASE_NEGATIVE;;
-	public static double PENETRATION_RATIO;
-	
-	
-	public static String DB_URL;
-	public static String USER;
-	public static String PASS;
 
-	ServerConfig(){
+	public  double FLASE_POSITIVE;
+	public  double FLASE_NEGATIVE;;
+	public  double PENETRATION_RATIO;
+
+
+	public  String DB_URL;
+	public  String USER;
+	public  String PASS;
+
+	public  String HIST_START_DATE;
+	public  String HIST_END_DATE;
+	
+	private static ServerConfig serverConfig = new ServerConfig( );
+
+	/* Singleton Class - Static 'instance' method */
+	public static ServerConfig getInstance( ) {
+		return serverConfig;
+	}
+
+	private ServerConfig(){
 		Properties prop = new Properties();
 		InputStream input = null;
 
@@ -48,10 +62,13 @@ public class ServerConfig {
 			PENETRATION_RATIO = Double.parseDouble(prop.getProperty("PENETRATION_RATIO"));
 			k_m = Integer.parseInt(prop.getProperty("NO_BLOCKS_DISPLAYED"))+2;
 			tau = Integer.parseInt(prop.getProperty("RECOVERY_FN_TIME"));
-			
+
 			DB_URL = prop.getProperty("DB_URL");
 			USER = prop.getProperty("USER");
 			PASS = prop.getProperty("PASS");
+
+			HIST_START_DATE = prop.getProperty("HIST_START_DATE");
+			HIST_END_DATE = prop.getProperty("HIST_END_DATE");
 
 
 		}catch (IOException ex) {

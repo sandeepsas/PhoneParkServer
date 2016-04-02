@@ -11,17 +11,18 @@ import java.sql.Statement;
 import org.json.JSONObject;
 
 import Runner.ServerConfig;
+import Runner.StartServer;
 
 public class WritePAT {
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = ServerConfig.DB_URL;
+	static final String DB_URL = StartServer.getServerconfig().DB_URL;
 
 	//  Database credentials
 
-	static final String USER = ServerConfig.USER;
-	static final String PASS = ServerConfig.PASS;
+	static final String USER = StartServer.getServerconfig().USER;
+	static final String PASS = StartServer.getServerconfig().PASS;
 
 	public boolean write(JSONObject jsonObj) {
 		// TODO Auto-generated method stub

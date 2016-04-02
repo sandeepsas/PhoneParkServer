@@ -9,6 +9,7 @@ import ParkRouter.ParkEdge;
 import ParkRouter.ParkNetwork;
 import ParkRouter.ParkStreetNetworkCreator;
 import Runner.ServerConfig;
+import Runner.StartServer;
 
 public class ParkBlockContainer {
 
@@ -37,7 +38,7 @@ public class ParkBlockContainer {
 			for (int j = 0; j < n; j++) {
 				if (edges[i][j] != null) {
 					adjNodesForI.add(j);
-					edgeCosts[i][j] = edgeWeights[i][j] / ServerConfig.velocity;
+					edgeCosts[i][j] = edgeWeights[i][j] / StartServer.getServerconfig().velocity;
 				}
 			}
 			adjNodes.add(i, adjNodesForI);
