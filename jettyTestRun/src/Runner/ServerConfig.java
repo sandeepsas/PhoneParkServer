@@ -14,8 +14,8 @@ public final class ServerConfig {
 	public final int ACTIVITY_DEPARKED = 0;
 
 	/*GCM parameters*/
-	public  int k_m = 15; // Maximum number of edges to be displayed
-	public  int tau = 120;
+	public  int k_m; // Maximum number of edges to be displayed
+	public  int tau;
 
 	public  double velocity = 8.9408/4.0; 
 	public  double velocityWalking = Double.POSITIVE_INFINITY;

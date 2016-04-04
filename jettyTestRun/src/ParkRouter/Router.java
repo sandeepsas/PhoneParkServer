@@ -9,12 +9,14 @@ package ParkRouter;
  * Starts the server
  * */
 import java.io.*;
-
+import java.time.LocalDateTime;
 import java.util.*;
 
 import Database.LoadHPP;
+import Database.LoadPRT;
 import MapDatabase.DirectedEdge;
 import MapDatabase.GraphNode;
+import MapDatabase.Pair;
 import Runner.ServerConfig;
 import Runner.StartServer;
 import StreetBlock.KdTree;
@@ -49,6 +51,7 @@ public class Router {
 
 	private ArrayList<Integer> runningOptTOPath = new ArrayList<Integer>();
 	private ArrayList<ArrayList<Integer>> optimalPaths = new ArrayList<ArrayList<Integer>>();
+	ArrayList<ArrayList<ArrayList<Integer>>> finalPathsList = new ArrayList<ArrayList<ArrayList<Integer>>>();
 
 	/* Statistical Matrices */
 	private double[][] probability;
@@ -92,7 +95,7 @@ public class Router {
 		road = creator.getRoad(); // Retrieve roads
 		nodes = creator.getNodes(); // Retrieve nodes
 		edges = creator.getEdges(); // Retrieve edges
-		parkingBlockTree = creator.getParkingBlockList();
+		//parkingBlockTree = creator.getParkingBlockList();
 		edgeWeights = creator.getEdgeWeights(); // Edge length
 		SP = creator.getShortestPaths(); // All pair shortest paths
 		creator.getSP_direction();// Will contain the first node to move towards
@@ -144,16 +147,27 @@ public class Router {
 		 * 20
 		 */
 		// @TODO - This need to be changed as per discussion on 07 Mar 2016
-		ArrayList<ArrayList<ArrayList<Integer>>> finalPathsList = new ArrayList<ArrayList<ArrayList<Integer>>>();
+		HashMap<Pair<Integer, Integer>,Integer> rsMap = LoadPRT.fetchRecord();
 		
-		for(int hh=0;hh<1;hh++){
+		for(int hh=0;hh<24;hh++){
 			avail = statisticMatrices.getAvailMatrix();
 
 			for (int i = 0; i < n; i++) {
 				for (int j = 0; j < n; j++) {
 					if (edges[i][j] != null) {
+						int streetID = edges[i][j].getStreetID();
 						probability[i][j] = edges[i][j].getProbability();
 						avail[i][j] = edges[i][j].getTotalAvailability();
+						Pair<Integer,Integer> key = new Pair<Integer,Integer>(streetID,hh);
+						if(rsMap.containsKey(key)){
+							int startTimeRestriction  = hh;
+							int endTimeRestriction  = rsMap.get(key);
+							if((hh>=startTimeRestriction) && 
+									(hh<endTimeRestriction)){
+								probability[i][j] = 0;
+								avail[i][j] = 0;
+							}
+						}
 					}
 				}
 			}
@@ -165,15 +179,20 @@ public class Router {
 			//computeProbAvail();
 
 			/* Compute the optimal paths using GCM function */
-			System.out.println("GCM Path Calculation");
+			System.out.println("GCM Path Calculation #"+hh);
 			optimalPaths = optAlgrorithmFinite();
-			System.out.println(optimalPaths.get(0).toString());
+			//System.out.println(optimalPaths.get(0).toString());
 			finalPathsList.add(optimalPaths);
 			/* Clear the runningOptTOPath member for Route request */
 			runningOptTOPath.clear();
 			
 		}
 		System.out.println("Process Finished");
+		System.out.println("Run started at "+ LocalDateTime.now() );
+	}
+
+	public ParkStreetNetworkCreator getCreator() {
+		return creator;
 	}
 
 	private void computeProbAvail() {
@@ -438,7 +457,9 @@ public class Router {
 	}
 
 	public ArrayList<Integer> getOPTPath(int initialLocation) {
-		runningOptTOPath = new ArrayList<Integer>(optimalPaths.get(initialLocation));
+		Calendar now = Calendar.getInstance();
+		int time = now.get(Calendar.HOUR_OF_DAY);
+		runningOptTOPath = new ArrayList<Integer>(finalPathsList.get(time).get(initialLocation));
 		return runningOptTOPath;
 	}
 

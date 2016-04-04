@@ -3,6 +3,7 @@ package ParkRouter;
 
 import java.util.*;
 
+import Database.LoadPRT;
 import MapDatabase.*;
 import StreetBlock.KdTree;
 import StreetBlock.KdTree.XYZPoint;
@@ -24,7 +25,7 @@ public class ParkStreetNetworkCreator {
 	private int SP_direction[][]; // first node to move toward in a shortest path
 
 	private HashMap<Long,Integer> graphNodeMap;
-	
+
 	public HashMap<Long,Integer> getGraphNodeMap(){
 		return graphNodeMap;
 	}
@@ -41,11 +42,12 @@ public class ParkStreetNetworkCreator {
 			readNodes(nodes2);
 			nodes = road.getNodes();
 			readEdges(edges2);
+			populateKDTree(edges2);
 			edges = road.getEdges();
 			edgeWeights = road.getEdgeWeights();
-			
-			
-			
+
+
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -122,11 +124,53 @@ public class ParkStreetNetworkCreator {
 			return leftSP;
 		}
 	}
-	List<XYZPoint> parkingBlockList = new ArrayList<XYZPoint>(); 
-	KdTree<XYZPoint> kdtreePB = new KdTree<XYZPoint> () ;
+
+	HashMap<Integer, KdTree<XYZPoint>> kdTreeMap = new HashMap<Integer, KdTree<XYZPoint>> ();
+
+	public void populateKDTree(LinkedList<DirectedEdge> edges2){
+		HashMap<Pair<Integer, Integer>,Integer> rsMap = LoadPRT.fetchRecord();
+		for(int hh=0;hh<24;hh++){
+			List<XYZPoint> parkingBlockList = new ArrayList<XYZPoint>(); 
+			KdTree<XYZPoint> kdtreePB = new KdTree<XYZPoint> () ;
+
+			Iterator<DirectedEdge> edge_itr = edges2.iterator();
+			int streetID = 1;
+			while(edge_itr.hasNext()){
+				DirectedEdge tempEdge = edge_itr.next();
+				double probability = 0.5;
+				double length = RoadGraph.distanceInMilesBetweenPoints(tempEdge.from().getLat(),
+						tempEdge.from().getLon(), tempEdge.to().getLat(), tempEdge.to().getLon());
+/*				if(length<0.01){
+					probability = 0.0;
+				}*/
+				Pair<Integer,Integer> key = new Pair<Integer,Integer>(streetID,hh);
+				if(rsMap.containsKey(key)){
+					probability = 0.0;
+/*					int startTimeRestriction  = hh;
+					int endTimeRestriction  = rsMap.get(key);
+					if((hh>=startTimeRestriction) && 
+							(hh<endTimeRestriction)){
+						probability = 0;
+					}*/
+				}
+				//Build KD-Tree here
+				Pair<Double,Double>mid_LATLONG = OsmConstants.midPoint(tempEdge.from().getLat(),
+						tempEdge.from().getLon(), tempEdge.to().getLat(), tempEdge.to().getLon());
+
+				parkingBlockList.add(new XYZPoint(""+probability,"",mid_LATLONG.getR(),mid_LATLONG.getL(),
+						tempEdge.from().getLat(),
+						tempEdge.from().getLon(), tempEdge.to().getLat(), 
+						tempEdge.to().getLon(),streetID));
+
+				streetID++;
+			}
+
+			kdtreePB = new KdTree<XYZPoint>(parkingBlockList);
+			kdTreeMap.put(hh, kdtreePB);
+		}
+	}
 	public void readEdges(LinkedList<DirectedEdge> edges2)
 	{
-
 		Iterator<DirectedEdge> edge_itr = edges2.iterator();
 		int nlines = 0;
 		int streetID = 1;
@@ -142,9 +186,9 @@ public class ParkStreetNetworkCreator {
 			double probability = 0.5;
 			double length = RoadGraph.distanceInMilesBetweenPoints(tempEdge.from().getLat(),
 					tempEdge.from().getLon(), tempEdge.to().getLat(), tempEdge.to().getLon());
-			if(length<0.01){
+/*			if(length<0.01){
 				probability = 0.0;
-			}
+			}*/
 			int totalSpaces = 0;
 			if(length>=0.015){
 				totalSpaces = (int)(150*length);
@@ -153,28 +197,21 @@ public class ParkStreetNetworkCreator {
 			ParkEdge e = new ParkEdge(streetID,nodes.get(nodeId1),
 					nodes.get(nodeId2),nBlocks,blockId,-1,nTotal,0,
 					tempEdge.isOneway(),probability,length,totalSpaces);
-			//Build KD-Tree here
-			Pair<Double,Double>mid_LATLONG = OsmConstants.midPoint(tempEdge.from().getLat(),
-					tempEdge.from().getLon(), tempEdge.to().getLat(), tempEdge.to().getLon());
-			
-			parkingBlockList.add(new XYZPoint(""+probability,"",mid_LATLONG.getR(),mid_LATLONG.getL(),
-					tempEdge.from().getLat(),
-					tempEdge.from().getLon(), tempEdge.to().getLat(), 
-					tempEdge.to().getLon(),streetID));
-			
-			
+
 			road.addEdge(e);
 
 			edgeList[nlines] = e;
 			nlines++;
 			streetID++;
 		}
-		kdtreePB = new KdTree<XYZPoint>(parkingBlockList);
-
 	}
 
-	public KdTree<XYZPoint> getParkingBlockList() {
+/*	public KdTree<XYZPoint> getParkingBlockList() {
 		return kdtreePB;
+	}*/
+
+	public HashMap<Integer, KdTree<XYZPoint>> getKDTreeMap() {
+		return kdTreeMap;
 	}
 
 	public void readNodes(LinkedList<GraphNode> nodes2)

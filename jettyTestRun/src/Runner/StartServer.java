@@ -99,8 +99,11 @@ public class StartServer {
 				.nearestNeighbourSearch(new KdTree.XYZPoint("", "address" ,
 						latitude, longitude,
 						0,0,0,0,0), 0.5);*/
+		
+		Calendar now = Calendar.getInstance();
+		int time = now.get(Calendar.HOUR_OF_DAY);
 
-		KdTree<XYZPoint> streetBlockTree = intl.pbTree;
+		KdTree<XYZPoint> streetBlockTree = intl.kdTreeMap.get(time);
 		Collection<XYZPoint> neigbors = streetBlockTree
 				.nearestNeighbourSearch(new KdTree.XYZPoint("", "address" ,
 						latitude, longitude,
@@ -234,7 +237,7 @@ public class StartServer {
 			UpdatePSST uPsst = new UpdatePSST();
 			uPsst.update(StreetBlockID,total_spaces,new_availability,timeStamp);
 			//Update Historic Parking Profile
-			LoadHPP.writeHPP(StreetBlockID,new_availability);
+			//LoadHPP.writeHPP(StreetBlockID,new_availability);
 		}
 		/*Return the new value of availability after parking/de-parking activity*/
 		return new_availability;

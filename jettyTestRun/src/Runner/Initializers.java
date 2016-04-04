@@ -1,6 +1,7 @@
 package Runner;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Map.Entry;
 import java.util.*;
 
@@ -28,11 +29,13 @@ public class Initializers {
 	static Router routeLoader;
 	HashMap<Long,Integer> gNodeMap;
 	KdTree<XYZPoint> pbTree = new KdTree<XYZPoint>();
+	HashMap<Integer, KdTree<XYZPoint>> kdTreeMap;
 	
 	/*Class constructor*/
 	public Initializers(){
 		
 		try {
+			System.out.println("Run started at "+ LocalDateTime.now() );
 			/*Parse openStreetMaps and store as class member*/
 			parseOSM = new ParseOSM();
 		} catch (IOException | XmlPullParserException e) {
@@ -44,6 +47,7 @@ public class Initializers {
 			/*Initialize and run the GCM algorithm for all the nodes*/
 			routeLoader = new Router(roadGraph.nodes,roadGraph.edges);
 			pbTree = routeLoader.getParkingBlockTree();
+			kdTreeMap = routeLoader.getCreator().getKDTreeMap();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
