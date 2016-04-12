@@ -116,7 +116,7 @@ public class LoadHPP {
 					+ "Day = '"+day+"' AND StartTime = '"+startTime+"' AND"
 							+ " EndTime = '"+endTime+"' AND Day = '"+day+"';";
 
-			System.out.println(sql);
+			//System.out.println(sql);
 			rs = stmt.executeQuery(sql);
 
 			if(rs.next()){
@@ -128,7 +128,7 @@ public class LoadHPP {
 			pH.setAvgParkEstForDateTime(avg_available_spaces);
 			
 			String avgSQL = sql = "SELECT * FROM phonepark01.HPP WHERE StreetBlockID = '"+sql_sequel+"';";
-			System.out.println(avgSQL);
+			//System.out.println(avgSQL);
 			rs = stmt.executeQuery(avgSQL);
 			
 			double sum_of_all_availability = 0.0;
@@ -247,6 +247,64 @@ public class LoadHPP {
 			}//end finally try
 		}//end try
 		
+	}
+	public static Pair<Double,Double> fetchAvailTimeBasedFromHPP(int StreetID,int day, int hour){
+		int streetBlockID = StreetID;
+		double available_spaces = 0;
+		double probability = 0.0;
+
+		String DB_URL = StartServer.getServerconfig().DB_URL;
+
+		String USER = StartServer.getServerconfig().USER;
+		String PASS = StartServer.getServerconfig().PASS;
+		ResultSet rs = null;
+		Connection conn = null;
+		Statement stmt = null;
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName("com.mysql.jdbc.Driver");
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql_sequel =  ""+streetBlockID;
+			
+			String sql;
+			sql = "SELECT * FROM phonepark01.HPP WHERE StreetBlockID = '"+sql_sequel+"' AND Day = '"+day+"' AND StartTime = '"+hour+"';";
+			//System.out.println(sql);
+			//int rs = stmt.executeUpdate(sql);
+			rs = stmt.executeQuery(sql);
+			if(rs.next()){
+				available_spaces = rs.getDouble(5);
+				probability = rs.getDouble(9);
+			}
+			
+			rs.close();
+			stmt.close();
+			conn.close();
+		}catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}finally{
+			//finally block used to close resources
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se2){
+			}// nothing we can do
+			try{
+				if(conn!=null)
+					conn.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}//end finally try
+		}//end try
+		return new Pair<Double, Double>(available_spaces,probability);
 	}
 
 }

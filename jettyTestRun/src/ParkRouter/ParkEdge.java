@@ -64,6 +64,11 @@ public class ParkEdge {
 		}
 	}
 
+	@Override
+	public String toString() {
+		return "ParkEdge [node1=" + node1 + ", node2=" + node2 + ", streetID=" + streetID + ", probability="
+				+ probability + "]";
+	}
 	public double getProbability() {
 		return probability;
 	}

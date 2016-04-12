@@ -12,13 +12,16 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import MapDatabase.Pair;
+import parkAttribs.StatisticMatrices;
+
 public class PSST2HPP {
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	static String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
 
 	static final String HIST_START_DATE = "2016-03-16";
-	static final String HIST_END_DATE = "2016-03-20";
+	static final String HIST_END_DATE = "2016-04-20";
 
 	public static void main(String[] args){
 		//  Database credentials
@@ -70,7 +73,7 @@ public class PSST2HPP {
 				String sql_bin = "SELECT * FROM phonepark01.psst WHERE StreetBlockID = "
 						+ "'"+streetBlockID+"' AND timestamp >= '"+startDateTime+"' AND "
 						+ "timestamp < '"+endDateTime+"'";
-				
+
 				System.out.println(sql_bin);
 				if(checkStreetMap.contains(sql_bin)){
 					continue;
@@ -86,35 +89,62 @@ public class PSST2HPP {
 				int sample_size  = 0;
 				int delta_time = 0;
 
-				while(ex_rs.next()){
+				List<Integer> a_list = new ArrayList<Integer>();
+				List<Integer> w_list = new ArrayList<Integer>();
+				
+				List<Pair<Pair<Integer,Integer>,Integer>> lp = 
+						new ArrayList<Pair<Pair<Integer,Integer>,Integer>>();
+				int start_time = 0;
+				int end_time = 60;
+				if(ex_rs.isBeforeFirst()){
+					while(ex_rs.next()){
 
-					int ex_totalSpaces = ex_rs.getInt("TotalSpaces");
-					int ex_availableSpaces = ex_rs.getInt("AvailableSpaces");
-					Timestamp ex_timeStamp = ex_rs.getTimestamp("TimeStamp");
-					System.out.println(streetBlockID+" "+ ex_totalSpaces+" "+ ex_availableSpaces +" "+ ex_timeStamp);
-					sum_product =sum_product+ ((ex_timeStamp.getMinutes()-delta_time)*ex_availableSpaces);
-					delta_time += ex_timeStamp.getMinutes();
-					sample_size++;
+						int ex_totalSpaces = ex_rs.getInt("TotalSpaces");
+						int ex_availableSpaces = ex_rs.getInt("AvailableSpaces");
+						a_list.add(ex_availableSpaces);
+						Timestamp ex_timeStamp = ex_rs.getTimestamp("TimeStamp");
+						
+						end_time = ex_timeStamp.getMinutes();
+						lp.add(new Pair<Pair<Integer, Integer>, Integer>(new Pair<Integer, Integer>(start_time,end_time),ex_availableSpaces));
+						start_time = end_time;
+						System.out.println(streetBlockID+" "+ ex_totalSpaces+" "+ ex_availableSpaces +" "+ ex_timeStamp);
+						sum_product =sum_product+ ((ex_timeStamp.getMinutes()-delta_time)*ex_availableSpaces);
+						w_list.add((ex_timeStamp.getMinutes()-delta_time));
+						delta_time += ex_timeStamp.getMinutes();
+						
+						sample_size++;
 
+					}
+					float avgEstAvail = sum_product/60;
+					double sd_c = 0;
+					double variace = 0;
+					double probability = 0.5;
+					if(sample_size>1){
+						for(int i=0;i<a_list.size();i++){
+							sd_c += w_list.get(i)*(a_list.get(i)-avgEstAvail)*(a_list.get(i)-avgEstAvail);
+						}
+						variace = sd_c/(sample_size);
+						probability = 1 - StatisticMatrices.Phi(0.5,avgEstAvail, Math.sqrt(variace));
+					}
+					/*Write to HPP*/
+					String sql_sequel_write = streetBlockID + "',"
+							+"'"+ startTime + "',"
+							+"'"+ endTime + "',"
+							+"'"+ day + "',"
+							+"'"+ avgEstAvail + "',"
+							+"'"+ sample_size + "',"
+							+"'"+ variace + "',"
+							+"'"+ probability + "'";
+					String writeSQL = "INSERT INTO phonepark01.HPP (StreetBlockID,StartTime,"
+							+ "EndTime,Day,AvgEstParkAvail,SampleSize,Variance,Probability) "
+							+ "VALUES ('"+sql_sequel_write+");";
+
+
+					Statement stmt_hpp = null;
+					stmt_hpp = conn_HPP.createStatement();
+					stmt_hpp.executeUpdate(writeSQL);
+					stmt_hpp.close();
 				}
-				float avgEstAvail = sum_product/60;
-
-				/*Write to HPP*/
-				String sql_sequel_write = streetBlockID + "',"
-						+"'"+ startTime + "',"
-						+"'"+ endTime + "',"
-						+"'"+ day + "',"
-						+"'"+ avgEstAvail + "',"
-						+"'"+ sample_size + "'";
-				String writeSQL = "INSERT INTO phonepark01.HPP (StreetBlockID,StartTime,"
-						+ "EndTime,Day,AvgEstParkAvail,SampleSize) "
-						+ "VALUES ('"+sql_sequel_write+");";
-
-
-				Statement stmt_hpp = null;
-				stmt_hpp = conn_HPP.createStatement();
-				stmt_hpp.executeUpdate(writeSQL);
-				stmt_hpp.close();
 				ex_rs.close();
 			}
 			conn_HPP.close();

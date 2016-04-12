@@ -149,7 +149,7 @@ public class Router {
 		// @TODO - This need to be changed as per discussion on 07 Mar 2016
 		HashMap<Pair<Integer, Integer>,Integer> rsMap = LoadPRT.fetchRecord();
 		
-		for(int hh=0;hh<24;hh++){
+		for(int hh=0;hh<3;hh++){
 			avail = statisticMatrices.getAvailMatrix();
 
 			for (int i = 0; i < n; i++) {
@@ -220,7 +220,7 @@ public class Router {
 						avail[i][j] += 0;
 					} else if (nBlocks == 1) {
 						int streetID = edges[i][j].getStreetID();
-						avail[i][j] = LoadHPP.pullDataFromHPP(streetID).getAvgParkEstForDateTime();
+						avail[i][j] += LoadHPP.pullDataFromHPP(streetID).getAvgParkEstForDateTime();
 					}
 				} else {
 					avail[i][j] += 0;

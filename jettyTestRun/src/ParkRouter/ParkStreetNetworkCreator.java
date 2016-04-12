@@ -3,10 +3,12 @@ package ParkRouter;
 
 import java.util.*;
 
+import Database.LoadHPP;
 import Database.LoadPRT;
 import MapDatabase.*;
 import StreetBlock.KdTree;
 import StreetBlock.KdTree.XYZPoint;
+import parkAttribs.StatisticMatrices;
 
 public class ParkStreetNetworkCreator {
 
@@ -129,7 +131,7 @@ public class ParkStreetNetworkCreator {
 
 	public void populateKDTree(LinkedList<DirectedEdge> edges2){
 		HashMap<Pair<Integer, Integer>,Integer> rsMap = LoadPRT.fetchRecord();
-		for(int hh=0;hh<24;hh++){
+		for(int hh=0;hh<3;hh++){
 			List<XYZPoint> parkingBlockList = new ArrayList<XYZPoint>(); 
 			KdTree<XYZPoint> kdtreePB = new KdTree<XYZPoint> () ;
 
@@ -137,21 +139,29 @@ public class ParkStreetNetworkCreator {
 			int streetID = 1;
 			while(edge_itr.hasNext()){
 				DirectedEdge tempEdge = edge_itr.next();
+				/*Get probability from HPP*/
+				Calendar cal = Calendar.getInstance();
+				int day = cal.get(Calendar.DAY_OF_WEEK);
+				Pair<Double,Double> mu_sigma =  LoadHPP.fetchAvailTimeBasedFromHPP(streetID,day, hh);
 				double probability = 0.5;
+				if(mu_sigma.getL()>0){
+					double avg_avail = mu_sigma.getL();
+					probability = mu_sigma.getR();
+				}
 				double length = RoadGraph.distanceInMilesBetweenPoints(tempEdge.from().getLat(),
 						tempEdge.from().getLon(), tempEdge.to().getLat(), tempEdge.to().getLon());
-/*				if(length<0.01){
+				if(length<0.01){
 					probability = 0.0;
-				}*/
+				}
 				Pair<Integer,Integer> key = new Pair<Integer,Integer>(streetID,hh);
 				if(rsMap.containsKey(key)){
 					probability = 0.0;
-/*					int startTimeRestriction  = hh;
+					int startTimeRestriction  = hh;
 					int endTimeRestriction  = rsMap.get(key);
 					if((hh>=startTimeRestriction) && 
 							(hh<endTimeRestriction)){
 						probability = 0;
-					}*/
+					}
 				}
 				//Build KD-Tree here
 				Pair<Double,Double>mid_LATLONG = OsmConstants.midPoint(tempEdge.from().getLat(),
