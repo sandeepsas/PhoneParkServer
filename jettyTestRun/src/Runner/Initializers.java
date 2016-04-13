@@ -7,6 +7,7 @@ import java.util.*;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import Database.PopulateHPP;
 import MapDatabase.*;
 
 import ParkRouter.*;
@@ -36,6 +37,8 @@ public class Initializers {
 		
 		try {
 			System.out.println("Run started at "+ LocalDateTime.now() );
+			System.out.println("Loading Historic Parking Profile Tables");
+			PopulateHPP.loadHistory();
 			/*Parse openStreetMaps and store as class member*/
 			parseOSM = new ParseOSM();
 		} catch (IOException | XmlPullParserException e) {

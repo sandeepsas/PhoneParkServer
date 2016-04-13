@@ -50,9 +50,7 @@ public class INTR2HPP {
 
 					String sql_bin = "SELECT * FROM phonepark01.intermediate WHERE StreetBlockID = "
 							+ "'"+streetBlockID+"' AND StartTime = '"+startTime+"' AND "
-							+ "EndTime = '"+endTime+"'";
-
-					System.out.println(sql_bin);
+							+ "EndTime = '"+endTime+"' AND Day = '"+day+"'";
 					if(checkStreetMap.contains(sql_bin)){
 						continue;
 					}
@@ -65,8 +63,6 @@ public class INTR2HPP {
 					float sum_product = 0;
 					//float weight_sum = 0;
 					int sample_size  = 0;
-					int cum_time = 0;
-					int last_avail = 0;
 
 					List<Integer> a_list = new ArrayList<Integer>();
 					List<Integer> w_list = new ArrayList<Integer>();
@@ -78,24 +74,13 @@ public class INTR2HPP {
 						while(ex_rs.next()){
 							
 							int duration = ex_rs.getInt("Duration");
-							cum_time+=duration;
 							int availableSpaces = ex_rs.getInt("Availability");
-
 							sum_product =sum_product+ (duration*availableSpaces);
 							a_list.add(availableSpaces);
 							w_list.add(duration);
 							sample_size++;
 
 						}
-						if(a_list.size()>1)
-							last_avail = a_list.get(a_list.size()-2);
-						else
-							last_avail = a_list.get(a_list.size()-1);
-
-						sum_product = sum_product+ ((60-cum_time)*last_avail);//last entry correction
-						a_list.add(last_avail);
-						w_list.add(60-cum_time);
-						sample_size++;
 						
 						float avgEstAvail = sum_product/60;
 						double sd_c = 0;

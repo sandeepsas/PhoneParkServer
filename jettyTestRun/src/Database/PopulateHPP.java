@@ -27,7 +27,7 @@ public class PopulateHPP {
 	static final String HIST_END_DATE = "2016-04-20";
 
 	//  Database credentials
-	public static void main(String[] args){
+	public static void loadHistory(){
 		final String USER = "root";
 		final String PASS = "";
 
@@ -50,7 +50,7 @@ public class PopulateHPP {
 			String sql = "SELECT * FROM phonepark01.psst WHERE timestamp >= '"+HIST_START_DATE+"' AND "
 					+ "timestamp < '"+HIST_END_DATE+"'";
 			rs = stmt.executeQuery(sql);
-			Map<Pair<Integer,Integer>, PsstData> prevStreetBlockAvail = new HashMap<Pair<Integer,Integer>, PsstData>();
+			Map<Pair<Integer,Pair<Integer,Integer>>, PsstData> prevStreetBlockAvail = new HashMap<Pair<Integer,Pair<Integer,Integer>>, PsstData>();
 
 			while(rs.next()){
 				int recordID = rs.getInt("RecordID");
@@ -74,9 +74,11 @@ public class PopulateHPP {
 				int insert_availability = 0;
 				
 				
-				if(prevStreetBlockAvail.containsKey(new Pair<Integer, Integer> (streetBlockID,startTime))){
+				if(prevStreetBlockAvail.containsKey(new Pair<Integer, Pair<Integer,Integer>> 
+				(streetBlockID,new Pair<Integer,Integer>(startTime,day)))){
 					
-					PsstData prev_spaces = prevStreetBlockAvail.get(new Pair<Integer, Integer> (streetBlockID,startTime));
+					PsstData prev_spaces = prevStreetBlockAvail.get(new Pair<Integer, 
+							Pair<Integer,Integer>> (streetBlockID,new Pair<Integer,Integer>(startTime,day)));
 					//prevStreetBlockAvail.remove(streetBlockID);
 					duration = duration - prev_spaces.timeStamp;
 					int mins = (int) ((duration / (1000*60)));
@@ -109,20 +111,21 @@ public class PopulateHPP {
 				stmt_intr.executeUpdate(writeSQL);
 				stmt_intr.close();
 
-				prevStreetBlockAvail.put(new Pair<Integer, Integer> (streetBlockID,startTime),new PsstData(recordID,streetBlockID,
+				prevStreetBlockAvail.put(new Pair<Integer, Pair<Integer, Integer>> (streetBlockID,new Pair<Integer, Integer>(startTime,day)),
+						new PsstData(recordID,streetBlockID,
 						 day,availableSpaces,minutes));
 			}
-			for (Entry<Pair<Integer, Integer>, PsstData> entry : prevStreetBlockAvail.entrySet()) {
-				Pair<Integer,Integer> key = entry.getKey();
+			for (Entry<Pair<Integer, Pair<Integer,Integer>>, PsstData> entry : prevStreetBlockAvail.entrySet()) {
+				Pair<Integer,Pair<Integer,Integer>> key = entry.getKey();
 			    PsstData value = entry.getValue();
 			    
 			    Date date = new Date(value.timeStamp );
 			    Statement stmt_final = conn_final.createStatement();
 
 			    String sql_sequel_final= key.getL() + "',"
-						+"'"+ value.day+ "',"
-						+"'"+  key.getR() + "',"
-						+"'"+ (key.getR()+1) + "',"
+						+"'"+ key.getR().getR()+ "',"
+						+"'"+  key.getR().getL() + "',"
+						+"'"+ (key.getR().getL()+1) + "',"
 						+"'"+ (60-date.getMinutes()) + "',"
 						+"'"+ value.availableSpaces+ "'";
 			    
