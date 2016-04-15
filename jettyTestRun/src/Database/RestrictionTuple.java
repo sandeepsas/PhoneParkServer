@@ -1,5 +1,11 @@
 package Database;
 
+/*
+ * @Author Sandeep
+ * 
+ * Data Structure to hold parking restriction Tuple
+ * */
+
 public class RestrictionTuple {
 	int streetID;
 	int startTime;

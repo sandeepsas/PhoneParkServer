@@ -1,5 +1,9 @@
 package Database;
-
+/*
+ * @Author Sandeep
+ * 
+ * Data Structure for storing parking history
+ * */
 public class ParkHistory {
 	
 	int totalSamplesForStreet;

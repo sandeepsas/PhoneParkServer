@@ -1,4 +1,11 @@
 package Database;
+/*
+ * @Author Sandeep
+ * 
+ * This Class fetches data from the Intermediate Table and populate the HPP Table
+ * 
+ * The mean, variance and the probability computations occur inside this class
+ * */
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -61,7 +68,6 @@ public class INTR2HPP {
 					ex_rs = ex_stmt.executeQuery(sql_bin);
 
 					float sum_product = 0;
-					//float weight_sum = 0;
 					int sample_size  = 0;
 
 					List<Integer> a_list = new ArrayList<Integer>();
@@ -88,9 +94,9 @@ public class INTR2HPP {
 						double probability = 0.5;
 						if(sample_size>1){
 							for(int i=0;i<a_list.size();i++){
-								sd_c += w_list.get(i)*(a_list.get(i)-avgEstAvail)*(a_list.get(i)-avgEstAvail);
+								sd_c += (w_list.get(i))*(a_list.get(i)-avgEstAvail)*(a_list.get(i)-avgEstAvail);
 							}
-							variace = sd_c/(sample_size-1);
+							variace = sd_c/60;
 							probability = 1 - StatisticMatrices.Phi(0.5,avgEstAvail, Math.sqrt(variace));
 						}
 						/*Write to HPP*/

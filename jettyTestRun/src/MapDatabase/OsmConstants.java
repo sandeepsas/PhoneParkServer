@@ -1,5 +1,10 @@
 package MapDatabase;
 
+/*
+ * @Author Sandeep
+ * 
+ * Stores Constants for OSM parsing
+ * */
 public class OsmConstants {
 
 	public static String GOOGLE_MAP_API_KEY = "AIzaSyAkBR5OFsUz1Np0Rg1bJSyb4ObuXYF4to4";

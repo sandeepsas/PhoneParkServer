@@ -1,5 +1,9 @@
 package Database;
-
+/*
+ * @Author Sandeep
+ * 
+ * Load Parking Restriction Table 
+ * */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;

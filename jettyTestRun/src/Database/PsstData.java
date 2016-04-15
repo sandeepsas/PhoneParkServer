@@ -1,5 +1,9 @@
 package Database;
-
+/*
+ * @Author Sandeep
+ * 
+ * Data Structure to hold PSST tuples
+ * */
 
 public class PsstData {
 

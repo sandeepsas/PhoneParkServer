@@ -1,7 +1,7 @@
 /**
  * DO NOT RUN THIS FILE
  */
-package ParkDBManager;
+/*package ParkDBManager;
 
 import java.sql.Timestamp;
 import java.util.Random;
@@ -10,25 +10,25 @@ import Database.LoadPST;
 import Database.UpdatePSST;
 import MapDatabase.Pair;
 
-/**
+*//**
  * @author Sandeep
  *
- */
+ *//*
 public class CreatePSST {
 
-	/**
+	*//**
 	 * @param args
-	 */
+	 *//*
 	public static void main(String[] args) {
 
-		/*Update Parking snap shot table PSST*/
+		Update Parking snap shot table PSST
 		UpdatePSST uPsst = new UpdatePSST();
 
-		/*Load PST database*/
+		Load PST database
 		LoadPST pst = new LoadPST();
 		for(int i=0;i<10000;i++){
 			int StreetBlockID = randMinMax(1,2855);
-			/*Fetch the parking availability values from PST database for the street Block*/
+			Fetch the parking availability values from PST database for the street Block
 			Pair<Integer, Integer>  rsPST = pst.fetchRecord(StreetBlockID);
 			int new_availability = 0;
 			if(rsPST.getL()>0){
@@ -56,3 +56,4 @@ public class CreatePSST {
 	}
 
 }
+*/

@@ -1,5 +1,11 @@
 package parkAttribs;
 
+/*
+ * @Author Sandeep
+ * 
+ * Statitstic Functions
+ * */
+
 public class StatisticMatrices {
 	
 	

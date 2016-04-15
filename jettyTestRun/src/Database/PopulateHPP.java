@@ -1,5 +1,11 @@
 package Database;
-
+/*
+ * @Author Sandeep
+ * 
+ * This class populates Historic Parking Profile. The class internally calls INTR2HPP class.
+ * 
+ * The main function of this class is to fetch data from PSST Table and populate Intermediate Table
+ * */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
