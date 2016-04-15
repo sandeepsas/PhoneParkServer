@@ -8,7 +8,6 @@ import Database.LoadPRT;
 import MapDatabase.*;
 import StreetBlock.KdTree;
 import StreetBlock.KdTree.XYZPoint;
-import parkAttribs.StatisticMatrices;
 
 public class ParkStreetNetworkCreator {
 

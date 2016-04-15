@@ -10,7 +10,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import org.json.JSONObject;
 
-import Runner.ServerConfig;
 import Runner.StartServer;
 
 public class WritePAT {

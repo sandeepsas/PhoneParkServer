@@ -17,7 +17,6 @@ import Database.LoadPRT;
 import MapDatabase.DirectedEdge;
 import MapDatabase.GraphNode;
 import MapDatabase.Pair;
-import Runner.ServerConfig;
 import Runner.StartServer;
 import StreetBlock.KdTree;
 import StreetBlock.KdTree.XYZPoint;

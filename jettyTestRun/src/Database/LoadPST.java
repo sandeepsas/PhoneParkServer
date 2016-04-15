@@ -15,7 +15,6 @@ import java.util.Map;
 
 import MapDatabase.GraphNode;
 import MapDatabase.Pair;
-import Runner.ServerConfig;
 import Runner.StartServer;
 import StreetBlock.KdTree.XYZPoint;
 

@@ -23,7 +23,6 @@ public class LoadPRT {
 		// JDBC driver name and database URL
 		final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 		final String DB_URL = StartServer.getServerconfig().DB_URL;
-		//static final String DB_NAME = "phonepark01.uicstatemid";
 
 		//  Database credentials
 

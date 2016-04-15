@@ -12,23 +12,20 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
-import MapDatabase.Pair;
+import Runner.StartServer;
 import parkAttribs.StatisticMatrices;
 
 public class INTR2HPP {
 
 		public static void Intermediate2Hpp(){
 			//  Database credentials
-			String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+			final String DB_URL = StartServer.getServerconfig().DB_URL;
 
-			final String USER = "root";
-			final String PASS = "";
+			final String USER = StartServer.getServerconfig().USER;
+			final String PASS = StartServer.getServerconfig().PASS;
 
 			Connection conn = null;
 			Connection conn_HPP = null;
@@ -72,9 +69,6 @@ public class INTR2HPP {
 
 					List<Integer> a_list = new ArrayList<Integer>();
 					List<Integer> w_list = new ArrayList<Integer>();
-					
-					List<Pair<Pair<Integer,Integer>,Integer>> lp = 
-							new ArrayList<Pair<Pair<Integer,Integer>,Integer>>();
 
 					if(ex_rs.isBeforeFirst()){
 						while(ex_rs.next()){

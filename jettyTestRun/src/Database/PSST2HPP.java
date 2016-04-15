@@ -1,11 +1,11 @@
-package Database;
-/*
+/*package Database;
+
  * @Author: Sandeep Sasidharan
  * 
  * This class populates Historic Database HPP from PSST Data
  * 
  * Weighted avergae is used to estimate the average parking availability
- * */
+ * 
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -40,9 +40,9 @@ public class PSST2HPP {
 			conn_HPP = DriverManager.getConnection(DB_URL,USER,PASS);
 			List<String> checkStreetMap = new ArrayList<String>();
 			stmt = conn.createStatement();
-			/*Truncate Table*/
+			Truncate Table
 			stmt.executeUpdate("TRUNCATE hpp");
-			/*Get all values between start and end dates of historic data*/
+			Get all values between start and end dates of historic data
 			String sql = "SELECT * FROM phonepark01.psst WHERE timestamp >= '"+HIST_START_DATE+"' AND "
 					+ "timestamp < '"+HIST_END_DATE+"'";
 			rs = stmt.executeQuery(sql);
@@ -53,7 +53,7 @@ public class PSST2HPP {
 				Timestamp timeStamp = rs.getTimestamp("TimeStamp");
 				System.out.println(streetBlockID+" "+ totalSpaces+" "+ availableSpaces +" "+ timeStamp+"\n \n");
 
-				/*For each value, find its mergeable within the time bin*/
+				For each value, find its mergeable within the time bin
 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
 				Calendar cal = Calendar.getInstance();
 				cal.setTime(timeStamp);
@@ -126,7 +126,7 @@ public class PSST2HPP {
 						variace = sd_c/(sample_size);
 						probability = 1 - StatisticMatrices.Phi(0.5,avgEstAvail, Math.sqrt(variace));
 					}
-					/*Write to HPP*/
+					Write to HPP
 					String sql_sequel_write = streetBlockID + "',"
 							+"'"+ startTime + "',"
 							+"'"+ endTime + "',"
@@ -177,3 +177,4 @@ public class PSST2HPP {
 }
 
 
+*/

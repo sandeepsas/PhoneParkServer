@@ -15,7 +15,6 @@ import java.sql.Statement;
 import java.util.Calendar;
 
 import MapDatabase.Pair;
-import Runner.ServerConfig;
 import Runner.StartServer;
 
 public class LoadHPP {

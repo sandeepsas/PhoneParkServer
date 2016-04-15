@@ -12,30 +12,28 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.concurrent.TimeUnit;
-
 import MapDatabase.Pair;
+import Runner.StartServer;
 
 public class PopulateHPP {
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
-	static String DB_URL = "jdbc:mysql://localhost:3306/phonepark01";
+	final static String DB_URL = StartServer.getServerconfig().DB_URL;
 
-	static final String HIST_START_DATE = "2016-03-16";
-	static final String HIST_END_DATE = "2016-04-20";
+	static final String HIST_START_DATE = StartServer.getServerconfig().HIST_START_DATE;
+	static final String HIST_END_DATE = StartServer.getServerconfig().HIST_END_DATE;
 
+	final static String USER = StartServer.getServerconfig().USER;
+	final static String PASS = StartServer.getServerconfig().PASS;
 	//  Database credentials
 	public static void loadHistory(){
-		final String USER = "root";
-		final String PASS = "";
+
 
 		Connection conn = null;
 		Connection conn_HPP = null;
