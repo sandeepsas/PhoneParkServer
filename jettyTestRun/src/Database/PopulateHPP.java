@@ -85,7 +85,8 @@ public class PopulateHPP {
 							Pair<Integer,Integer>> (streetBlockID,new Pair<Integer,Integer>(startTime,day)));
 					//prevStreetBlockAvail.remove(streetBlockID);
 					duration = duration - prev_spaces.timeStamp;
-					int mins = (int) ((duration / (1000*60)));
+					float mins = (int) ((duration / (1000)));
+					mins = mins/60;
 
 					/*Log to intermediate*/
 					sql_sequel_write = streetBlockID + "',"
@@ -99,12 +100,15 @@ public class PopulateHPP {
 					if(availableSpaces==0){
 						insert_availability = totalSpaces;
 					}
+					
+					float min_sec = (timeStamp.getMinutes()*60)+timeStamp.getSeconds();
+					min_sec = min_sec/60;
 
 					sql_sequel_write = streetBlockID + "',"
 							+"'"+ day + "',"
 							+"'"+ startTime + "',"
 							+"'"+ endTime + "',"
-							+"'"+ timeStamp.getMinutes() + "',"
+							+"'"+ min_sec + "',"
 							+"'"+ insert_availability + "'";
 					
 				}
@@ -125,12 +129,15 @@ public class PopulateHPP {
 			    
 			    Date date = new Date(value.timeStamp );
 			    Statement stmt_final = conn_final.createStatement();
+			    
+			    float min_sec = 3600-((date.getMinutes()*60)+date.getSeconds()) ;
+			    min_sec = min_sec/60;
 
 			    String sql_sequel_final= key.getL() + "',"
 						+"'"+ key.getR().getR()+ "',"
 						+"'"+  key.getR().getL() + "',"
 						+"'"+ (key.getR().getL()+1) + "',"
-						+"'"+ (60-date.getMinutes()) + "',"
+						+"'"+ min_sec+ "',"
 						+"'"+ value.availableSpaces+ "'";
 			    
 			    String finalSQL = "INSERT INTO phonepark01.intermediate (StreetBlockID,Day,StartTime,"

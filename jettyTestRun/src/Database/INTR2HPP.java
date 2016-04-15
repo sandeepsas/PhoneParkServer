@@ -65,6 +65,7 @@ public class INTR2HPP {
 					ex_rs = ex_stmt.executeQuery(sql_bin);
 
 					float sum_product = 0;
+					float sum_weight = 0;
 					int sample_size  = 0;
 
 					List<Integer> a_list = new ArrayList<Integer>();
@@ -74,6 +75,7 @@ public class INTR2HPP {
 						while(ex_rs.next()){
 							
 							int duration = ex_rs.getInt("Duration");
+							sum_weight += duration;
 							int availableSpaces = ex_rs.getInt("Availability");
 							sum_product =sum_product+ (duration*availableSpaces);
 							a_list.add(availableSpaces);
@@ -82,7 +84,7 @@ public class INTR2HPP {
 
 						}
 						
-						float avgEstAvail = sum_product/60;
+						float avgEstAvail = sum_product/sum_weight;
 						double sd_c = 0;
 						double variace = 0;
 						double probability = 0.5;
@@ -90,7 +92,7 @@ public class INTR2HPP {
 							for(int i=0;i<a_list.size();i++){
 								sd_c += (w_list.get(i))*(a_list.get(i)-avgEstAvail)*(a_list.get(i)-avgEstAvail);
 							}
-							variace = sd_c/60;
+							variace = sd_c/sum_weight;
 							probability = 1 - StatisticMatrices.Phi(0.5,avgEstAvail, Math.sqrt(variace));
 						}
 						/*Write to HPP*/
