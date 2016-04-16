@@ -69,12 +69,12 @@ public class INTR2HPP {
 					int sample_size  = 0;
 
 					List<Integer> a_list = new ArrayList<Integer>();
-					List<Integer> w_list = new ArrayList<Integer>();
+					List<Float> w_list = new ArrayList<Float>();
 
 					if(ex_rs.isBeforeFirst()){
 						while(ex_rs.next()){
 							
-							int duration = ex_rs.getInt("Duration");
+							float duration = ex_rs.getFloat("Duration");
 							sum_weight += duration;
 							int availableSpaces = ex_rs.getInt("Availability");
 							sum_product =sum_product+ (duration*availableSpaces);

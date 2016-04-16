@@ -147,8 +147,8 @@ public class Router {
 		 */
 		// @TODO - This need to be changed as per discussion on 07 Mar 2016
 		HashMap<Pair<Integer, Integer>,Integer> rsMap = LoadPRT.fetchRecord();
-		
-		for(int hh=0;hh<3;hh++){
+		/*Load 24 hour parking profile*/
+		for(int hh=0;hh<24;hh++){
 			avail = statisticMatrices.getAvailMatrix();
 
 			for (int i = 0; i < n; i++) {

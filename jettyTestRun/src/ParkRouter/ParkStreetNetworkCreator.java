@@ -130,7 +130,8 @@ public class ParkStreetNetworkCreator {
 
 	public void populateKDTree(LinkedList<DirectedEdge> edges2){
 		HashMap<Pair<Integer, Integer>,Integer> rsMap = LoadPRT.fetchRecord();
-		for(int hh=0;hh<3;hh++){
+		/*Load 24 hour parking profile*/
+		for(int hh=0;hh<24;hh++){
 			List<XYZPoint> parkingBlockList = new ArrayList<XYZPoint>(); 
 			KdTree<XYZPoint> kdtreePB = new KdTree<XYZPoint> () ;
 
