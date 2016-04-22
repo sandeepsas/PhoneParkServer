@@ -70,7 +70,10 @@ public class Router {
 	public KdTree<XYZPoint> getParkingBlockTree() {
 		return parkingBlockTree;
 	}
-
+/*
+ * Date Member
+ * */
+	int day = 1;
 	/*
 	 * Route constructor
 	 * 
@@ -79,6 +82,9 @@ public class Router {
 	 */
 	public Router(LinkedList<GraphNode> nodes2, LinkedList<DirectedEdge> edges2) throws IOException {
 		/* Store the nodes and edges in the class */
+		Calendar cal = Calendar.getInstance();
+		day = cal.get(Calendar.DAY_OF_WEEK);
+		
 		ll_nodes = nodes2;
 		ll_edges = edges2;
 		nBlocks = edges2.size(); // Total number of blocks
@@ -155,8 +161,10 @@ public class Router {
 				for (int j = 0; j < n; j++) {
 					if (edges[i][j] != null) {
 						int streetID = edges[i][j].getStreetID();
-						probability[i][j] = edges[i][j].getProbability();
-						avail[i][j] = edges[i][j].getTotalAvailability();
+						Pair<Double,Double> mu_sigma =  creator.getLoadHPP().fetchValFromHPPMap(streetID,day, hh);
+						probability[i][j] = mu_sigma.getR();
+						//probability[i][j] = edges[i][j].getProbability();
+						avail[i][j] = mu_sigma.getL();;
 						Pair<Integer,Integer> key = new Pair<Integer,Integer>(streetID,hh);
 						if(rsMap.containsKey(key)){
 							int startTimeRestriction  = hh;

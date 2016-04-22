@@ -13,11 +13,95 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Calendar;
+import java.util.HashMap;
 
 import MapDatabase.Pair;
 import Runner.StartServer;
 
 public class LoadHPP {
+	
+	String DB_URL = StartServer.getServerconfig().DB_URL;
+
+	String USER = StartServer.getServerconfig().USER;
+	String PASS = StartServer.getServerconfig().PASS;
+	
+	/*class members*/
+	
+	HashMap < Pair<Integer, Pair<Integer, Integer> >, Pair<Double, Double>> hPPMap = new 
+			HashMap< Pair<Integer, Pair<Integer, Integer> >,
+			Pair<Double, Double>>();
+	
+	public Pair<Double, Double> fetchValFromHPPMap(int StreetID,int day, int hour){
+		
+		Pair<Integer, Pair<Integer, Integer> > key = 
+				new Pair<Integer, Pair<Integer, Integer>>(StreetID, 
+						new Pair<Integer, Integer>(day,hour));
+		if(hPPMap.containsKey(key)){
+			return hPPMap.get(key);
+		}else{
+			return new Pair<Double, Double>(0.0,0.5);
+		}
+	}
+	
+	public LoadHPP(){
+		ResultSet rs = null;
+		Connection conn = null;
+		Statement stmt = null;
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName("com.mysql.jdbc.Driver");
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			
+			String sql;
+			sql = "SELECT * FROM phonepark01.HPP;";
+			System.out.println(sql);
+			//int rs = stmt.executeUpdate(sql);
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()){
+				int StreetID = rs.getInt(1);
+				int day = rs.getInt(4);
+				int hour = rs.getInt(2);
+				double available_spaces = rs.getDouble(5);
+				double probability = rs.getDouble(9);
+				Pair<Integer, Pair<Integer, Integer> > key = 
+						new Pair<Integer, Pair<Integer, Integer>>(StreetID, 
+								new Pair<Integer, Integer>(day,hour));
+				
+				hPPMap.put(key, new Pair<Double, Double>(available_spaces,probability));
+			}
+
+			rs.close();
+			stmt.close();
+			conn.close();
+		}catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}finally{
+			//finally block used to close resources
+			try{
+				if(stmt!=null)
+					stmt.close();
+			}catch(SQLException se2){
+			}// nothing we can do
+			try{
+				if(conn!=null)
+					conn.close();
+			}catch(SQLException se){
+				se.printStackTrace();
+			}//end finally try
+		}//end try
+	}
+	
+	
 	
 	public static double fetchAvailabilityFromHPP(Pair<Integer, String> streetPair){
 		int streetBlockID = streetPair.getL();
@@ -265,7 +349,9 @@ public class LoadHPP {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			//STEP 3: Open a connection
+			System.out.println(DB_URL+" "+USER+" "+PASS);
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+			
 
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();

@@ -30,9 +30,14 @@ public class ParkStreetNetworkCreator {
 	public HashMap<Long,Integer> getGraphNodeMap(){
 		return graphNodeMap;
 	}
+	LoadHPP loadHPP = new LoadHPP();
+	public LoadHPP getLoadHPP() {
+		return loadHPP;
+	}
 
 	public ParkStreetNetworkCreator(LinkedList<GraphNode> nodes2, LinkedList<DirectedEdge> edges2) {
 		try {
+			
 			N_NODES = nodes2.size();
 			N_EDGES = edges2.size();
 			road = new ParkNetwork(N_NODES);
@@ -142,10 +147,10 @@ public class ParkStreetNetworkCreator {
 				/*Get probability from HPP*/
 				Calendar cal = Calendar.getInstance();
 				int day = cal.get(Calendar.DAY_OF_WEEK);
-				Pair<Double,Double> mu_sigma =  LoadHPP.fetchAvailTimeBasedFromHPP(streetID,day, hh);
+				//Pair<Double,Double> mu_sigma =  LoadHPP.fetchAvailTimeBasedFromHPP(streetID,day, hh);
+				Pair<Double,Double> mu_sigma =  loadHPP.fetchValFromHPPMap(streetID,day, hh);
 				double probability = 0.5;
 				if(mu_sigma.getL()>0){
-					double avg_avail = mu_sigma.getL();
 					probability = mu_sigma.getR();
 				}
 				double length = RoadGraph.distanceInMilesBetweenPoints(tempEdge.from().getLat(),
@@ -154,6 +159,7 @@ public class ParkStreetNetworkCreator {
 					probability = 0.0;
 				}
 				Pair<Integer,Integer> key = new Pair<Integer,Integer>(streetID,hh);
+				/*Check for Parking Restrictions*/
 				if(rsMap.containsKey(key)){
 					probability = 0.0;
 					int startTimeRestriction  = hh;
